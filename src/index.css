@@ -1,349 +1,84 @@
-/* M'ZAKA - Styles Globaux */
-/* Identité Visuelle Infosec Burkina */
-/* Version 1.0.0 - Novembre 2025 */
-
-/* Import des variables M'ZAKA */
+/* M'ZAKA - Styles Simplifiés pour Build */
 @import './styles/mzaka-variables.css';
 
-/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-gray-200;
   }
   
   body {
-    @apply font-body text-earth-dark bg-faso-beige;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 18px; /* Taille minimum pour l'accessibilité */
     line-height: 1.6;
+    color: #1E1E1E;
+    background-color: #F5EDE0;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    font-family: 'Poppins', sans-serif;
   }
   
   /* Focus accessible */
   *:focus {
-    @apply outline-none ring-2 ring-burkina-red ring-offset-2 ring-offset-faso-beige;
-  }
-  
-  /* Scrollbar personnalisée */
-  ::-webkit-scrollbar {
-    @apply w-2;
-  }
-  
-  ::-webkit-scrollbar-track {
-    @apply bg-faso-beige-200;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    @apply bg-sahel-green rounded-full;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-sahel-green-600;
+    outline: none;
+    box-shadow: 0 0 0 2px #C1121F;
   }
 }
 
 @layer components {
   /* Container principal M'ZAKA */
   .page-container-mzaka {
-    @apply min-h-screen bg-faso-beige text-earth-dark;
-  }
-  
-  /* Header M'ZAKA */
-  .header-mzaka {
-    @apply bg-gradient-to-r from-sahel-green to-sahel-green-600 text-white;
-    @apply shadow-earth-lg relative overflow-hidden;
-  }
-  
-  .header-mzaka::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-burkina-red/10;
-    @apply pointer-events-none;
-  }
-  
-  /* Sidebar M'ZAKA */
-  .sidebar-mzaka {
-    @apply bg-gradient-to-b from-sahel-green to-sahel-green-700 text-white;
-    @apply shadow-earth min-h-screen;
-  }
-  
-  /* Main content M'ZAKA */
-  .main-content-mzaka {
-    @apply bg-faso-beige min-h-screen p-4 lg:p-6 xl:p-8;
-  }
-  
-  /* Cards M'ZAKA */
-  .card-mzaka {
-    @apply bg-white rounded-organic-xl p-6 shadow-earth border border-faso-beige-200;
-    @apply transition-all duration-200 ease-in-out;
-  }
-  
-  .card-mzaka:hover {
-    @apply transform -translate-y-1 shadow-earth-lg;
+    min-height: 100vh;
+    background-color: #F5EDE0;
+    color: #1E1E1E;
   }
   
   /* Boutons M'ZAKA */
   .btn-mzaka-primary {
-    @apply bg-burkina-red text-white border-2 border-burkina-red;
-    @apply font-body font-semibold text-lg px-6 py-4;
-    @apply rounded-organic-lg transition-all duration-200;
-    @apply hover:bg-burkina-red-600 hover:shadow-red-lg;
-    @apply focus:ring-2 focus:ring-burkina-red focus:ring-offset-2;
-    @apply min-h-touch-sm;
+    background-color: #C1121F;
+    color: white;
+    border: 2px solid #C1121F;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-mzaka-primary:hover {
+    background-color: #B91C1C;
+    box-shadow: 0 4px 12px rgba(193, 18, 31, 0.3);
+    transform: translateY(-1px);
   }
   
   .btn-mzaka-secondary {
-    @apply bg-sahel-green text-white border-2 border-sahel-green;
-    @apply font-body font-semibold text-lg px-6 py-4;
-    @apply rounded-organic-lg transition-all duration-200;
-    @apply hover:bg-sahel-green-600 hover:shadow-green-lg;
-    @apply focus:ring-2 focus:ring-sahel-green focus:ring-offset-2;
-    @apply min-h-touch-sm;
-  }
-  
-  .btn-mzaka-accent {
-    @apply bg-sun-gold text-earth-dark border-2 border-sun-gold;
-    @apply font-body font-semibold text-lg px-6 py-4;
-    @apply rounded-organic-lg transition-all duration-200;
-    @apply hover:bg-sun-gold-600 hover:shadow-gold-lg hover:text-white;
-    @apply focus:ring-2 focus:ring-sun-gold focus:ring-offset-2;
-    @apply min-h-touch-sm;
-  }
-  
-  /* Navigation M'ZAKA */
-  .nav-mzaka {
-    @apply flex items-center space-x-2 text-faso-beige-100;
-    @apply hover:text-sun-gold transition-colors duration-200;
-  }
-  
-  .nav-mzaka.active {
-    @apply text-sun-gold font-semibold;
-  }
-  
-  /* Formulaires M'ZAKA */
-  .input-mzaka {
-    @apply w-full px-4 py-3 text-lg bg-white border-2 border-faso-beige-200;
-    @apply rounded-organic-lg focus:border-burkina-red focus:ring-1 focus:ring-burkina-red;
-    @apply transition-all duration-200 min-h-touch-sm;
-  }
-  
-  .select-mzaka {
-    @apply w-full px-4 py-3 text-lg bg-white border-2 border-faso-beige-200;
-    @apply rounded-organic-lg focus:border-burkina-red focus:ring-1 focus:ring-burkina-red;
-    @apply transition-all duration-200 min-h-touch-sm;
-  }
-  
-  /* Badges M'ZAKA */
-  .badge-mzaka-success {
-    @apply bg-sahel-green text-white px-3 py-1 rounded-organic font-body font-medium text-sm;
-  }
-  
-  .badge-mzaka-warning {
-    @apply bg-sun-gold text-earth-dark px-3 py-1 rounded-organic font-body font-medium text-sm;
-  }
-  
-  .badge-mzaka-danger {
-    @apply bg-burkina-red text-white px-3 py-1 rounded-organic font-body font-medium text-sm;
-  }
-  
-  /* Alertes M'ZAKA */
-  .alert-mzaka-info {
-    @apply bg-faso-beige-200 border-l-4 border-sahel-green p-4 rounded-organic;
-  }
-  
-  .alert-mzaka-warning {
-    @apply bg-sun-gold/10 border-l-4 border-sun-gold p-4 rounded-organic;
-  }
-  
-  .alert-mzaka-error {
-    @apply bg-burkina-red/10 border-l-4 border-burkina-red p-4 rounded-organic;
-  }
-  
-  /* Animations M'ZAKA */
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-in-out;
-  }
-  
-  .animate-slide-up {
-    animation: slideUp 0.3s ease-out;
-  }
-  
-  .animate-slide-down {
-    animation: slideDown 0.3s ease-out;
-  }
-  
-  .animate-bounce-organic {
-    animation: bounceOrganic 1s infinite;
-  }
-  
-  .animate-pulse-red {
-    animation: pulseRed 2s infinite;
-  }
-  
-  .animate-pulse-green {
-    animation: pulseGreen 2s infinite;
-  }
-}
-
-@layer utilities {
-  /* Classes utilitaires M'ZAKA */
-  .text-balance {
-    text-wrap: balance;
-  }
-  
-  .line-clamp-1 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-  }
-  
-  .line-clamp-2 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-  
-  .line-clamp-3 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-  }
-  
-  /* Touch targets pour mobile */
-  .touch-target {
+    background-color: #146B3A;
+    color: white;
+    border: 2px solid #146B3A;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
     min-height: 44px;
-    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  /* Gradients M'ZAKA */
-  .gradient-mzaka-primary {
-    background: linear-gradient(135deg, var(--burkina-red) 0%, var(--burkina-red-600) 100%);
-  }
-  
-  .gradient-mzaka-secondary {
-    background: linear-gradient(135deg, var(--sahel-green) 0%, var(--sahel-green-600) 100%);
-  }
-  
-  .gradient-mzaka-accent {
-    background: linear-gradient(135deg, var(--sun-gold) 0%, var(--sun-gold-600) 100%);
-  }
-  
-  .gradient-mzaka-header {
-    background: linear-gradient(135deg, var(--sahel-green) 0%, var(--sahel-green-700) 100%);
+  .btn-mzaka-secondary:hover {
+    background-color: #059669;
+    box-shadow: 0 4px 12px rgba(20, 107, 58, 0.3);
+    transform: translateY(-1px);
   }
 }
-
-/* 🌍 Animations clés */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes bounceOrganic {
-  0%, 20%, 53%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40%, 43% {
-    transform: translateY(-8px);
-  }
-  70% {
-    transform: translateY(-4px);
-  }
-  90% {
-    transform: translateY(-2px);
-  }
-}
-
-@keyframes pulseRed {
-  0%, 100% {
-    background-color: var(--burkina-red);
-    box-shadow: 0 0 0 0 rgba(193, 18, 31, 0.7);
-  }
-  70% {
-    background-color: var(--burkina-red-600);
-    box-shadow: 0 0 0 10px rgba(193, 18, 31, 0);
-  }
-}
-
-@keyframes pulseGreen {
-  0%, 100% {
-    background-color: var(--sahel-green);
-    box-shadow: 0 0 0 0 rgba(20, 107, 58, 0.7);
-  }
-  70% {
-    background-color: var(--sahel-green-600);
-    box-shadow: 0 0 0 10px rgba(20, 107, 58, 0);
-  }
-}
-
-/* 📱 Responsive design */
-@media (max-width: 768px) {
-  .mobile-hidden {
-    display: none;
-  }
-  
-  .mobile-show {
-    display: block;
-  }
-}
-
-@media (min-width: 769px) {
-  .mobile-hidden {
-    display: block;
-  }
-  
-  .mobile-show {
-    display: none;
-  }
-}
-
-/* 🌓 Mode sombre M'ZAKA */
-[data-theme="dark"] {
-  .page-container-mzaka {
-    @apply bg-earth-dark-900 text-faso-beige;
-  }
-  
-  .card-mzaka {
-    @apply bg-earth-dark-800 border-earth-dark-700;
-  }
-  
-  .input-mzaka, .select-mzaka {
-    @apply bg-earth-dark-800 border-earth-dark-600 text-faso-beige;
-  }
-}
-
-/* 🌟 Fin des styles M'ZAKA */

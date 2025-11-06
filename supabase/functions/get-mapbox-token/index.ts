@@ -1,4 +1,4 @@
-// Edge Function pour récupérer le token Mapbox depuis les Secrets Supabase
+// Edge Function pour récupérer le token Mapbox avec clé hardcodée
 // URL: https://haffcubwactwjpngcpdf.supabase.co/functions/v1/get-mapbox-token
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
@@ -15,27 +15,16 @@ serve(async (req) => {
   }
 
   try {
-    // Récupérer le token Mapbox depuis les Secrets Supabase
-    const mapboxToken = Deno.env.get('MAPBOX_TOKEN')
-
-    if (!mapboxToken) {
-      return new Response(
-        JSON.stringify({ 
-          error: 'Token Mapbox non configuré dans les Secrets Supabase',
-          hint: 'Ajoutez MAPBOX_TOKEN dans les Secrets du projet Supabase'
-        }),
-        { 
-          status: 500,
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-        },
-      )
-    }
+    // La clé API Mapbox fournie par l'utilisateur
+    const mapboxToken = 'pk.eyJ1IjoicHNvbWV0IiwiYSI6ImNtYTgwZ2xmMzEzdWcyaXM2ZG45d3A4NmEifQ.MYXzdc5CREmcvtBLvfV0Lg';
 
     // Retourner le token
     return new Response(
       JSON.stringify({ 
         token: mapboxToken,
-        success: true
+        success: true,
+        expires: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(), // 24h
+        issued: new Date().toISOString()
       }),
       { 
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -54,4 +43,3 @@ serve(async (req) => {
     )
   }
 })
-

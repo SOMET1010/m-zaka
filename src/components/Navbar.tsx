@@ -48,7 +48,7 @@ const Navbar = ({ showSidebarTrigger = false }: NavbarProps) => {
             <picture>
               <img
                 src={monToitLogo}
-                alt="Mon Toit - Plateforme Immobilière Certifiée ANSUT"
+                alt="MZAKA - Plateforme Immobilière Ouagadougou"
                 className="h-10 sm:h-12 w-auto object-contain shrink-0 group-hover:scale-105 transition-smooth"
                 loading="eager"
                 fetchPriority="high"
@@ -59,11 +59,11 @@ const Navbar = ({ showSidebarTrigger = false }: NavbarProps) => {
             </picture>
             <div className="hidden sm:flex flex-col">
               <span className="text-2xl font-bold text-primary leading-tight">
-                Mon Toit
+                MZAKA
               </span>
               <span className="text-xs text-secondary leading-tight flex items-center gap-1 font-semibold">
                 <ShieldCheck className="h-3.5 w-3.5" />
-                Propulsé par ANSUT
+                Faso Dan Fani
               </span>
             </div>
             </Link>
@@ -128,7 +128,7 @@ const Navbar = ({ showSidebarTrigger = false }: NavbarProps) => {
                         <p className="text-xs text-muted-foreground">{user.email}</p>
                         {(profile?.oneci_verified || profile?.cnam_verified) && (
                           <Badge variant="outline" className="w-fit mt-1 text-xs border-primary text-primary">
-                            ✓ Certifié ANSUT
+                            ✓ Certifié Faso Dan Fani
                           </Badge>
                         )}
                       </div>
@@ -193,7 +193,7 @@ const Navbar = ({ showSidebarTrigger = false }: NavbarProps) => {
                           <DropdownMenuItem asChild>
                             <Link to="/admin/certifications" className="cursor-pointer flex items-center">
                               <Shield className="mr-3 h-4 w-4 text-primary" />
-                              <span>Certifications ANSUT</span>
+                              <span>Certifications Faso Dan Fani</span>
                               <CertificationNotificationBadge />
                             </Link>
                           </DropdownMenuItem>
