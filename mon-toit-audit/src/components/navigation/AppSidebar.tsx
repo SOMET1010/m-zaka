@@ -35,7 +35,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
-import monToitLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
 
 export function AppSidebar() {
   const { profile } = useAuth();
@@ -94,13 +94,13 @@ export function AppSidebar() {
       <SidebarHeader className="border-b px-3 py-2">
         <Link to="/" className="flex items-center gap-2">
           <img 
-            src={monToitLogo} 
-            alt="Mon Toit" 
+            src={mzakaLogo} 
+            alt="MZAKA" 
             className="h-8 w-8"
           />
           {open && (
             <div className="flex flex-col">
-              <span className="text-sm font-bold text-primary">Mon Toit</span>
+              <span className="text-sm font-bold text-primary">MZAKA</span>
               <span className="text-xs text-muted-foreground">Certifié ANSUT</span>
             </div>
           )}

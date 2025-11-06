@@ -26,6 +26,8 @@ import { MainLayout } from "@/components/layout/MainLayout";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Search from "./pages/Search";
+import PropertiesPage from "./pages/PropertiesPage";
+import PropertyDetailPage from "./pages/PropertyDetailPage";
 
 // Lazy load heavy pages
 const PropertyDetail = lazy(() => import("./pages/PropertyDetail"));
@@ -127,12 +129,13 @@ const AppContent = () => {
             <Route path="/offline" element={<Suspense fallback={<PageSkeleton />}><Offline /></Suspense>} />
             <Route path="/recherche" element={<Search />} />
             <Route path="/explorer" element={<Explorer />} />
+            <Route path="/properties" element={<PropertiesPage />} />
             <Route path="/carte-intelligente" element={<SmartMapV2 />} />
 
             <Route path="/a-propos" element={<AboutPage />} />
             <Route path="/property/:id" element={
               <Suspense fallback={<PropertyDetailSkeleton />}>
-                <PropertyDetailWrapper />
+                <PropertyDetailPage />
               </Suspense>
             } />
             <Route path="/certification" element={<Certification />} />

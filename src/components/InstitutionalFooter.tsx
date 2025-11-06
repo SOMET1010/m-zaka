@@ -5,7 +5,7 @@
 
 import { Link } from 'react-router-dom';
 import { Shield, ShieldCheck, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
-import monToitLogo from '@/assets/logo/mon-toit-logo.png';
+import mzakaLogo from '@/assets/logo/mzaka-logo.png';
 
 export const InstitutionalFooter = () => {
   const currentYear = new Date().getFullYear();
@@ -34,7 +34,7 @@ export const InstitutionalFooter = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src={monToitLogo} 
+                src={mzakaLogo} 
                 alt="MZAKA" 
                 className="h-10 w-auto " 
               />
@@ -128,14 +128,14 @@ export const InstitutionalFooter = () => {
             <div className="space-y-3 text-sm text-gray-700">
               <div className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                <a href="mailto:contact@montoit.ci" className="hover:text-gray-900 transition-colors">
-                  contact@montoit.ci
+                <a href="mailto:contact@mzaka.bf" className="hover:text-gray-900 transition-colors">
+                  contact@mzaka.bf
                 </a>
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                <a href="tel:+2250700000000" className="hover:text-gray-900 transition-colors">
-                  +225 07 00 00 00 00
+                <a href="tel:+226000000000" className="hover:text-gray-900 transition-colors">
+                  +226 00 00 00 00
                 </a>
               </div>
               <div className="flex items-start gap-2">

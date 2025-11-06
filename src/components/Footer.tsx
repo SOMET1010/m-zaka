@@ -1,6 +1,6 @@
 import { Shield, Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-import monToitLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mzaka-logo.png";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           
           {/* Zone gauche : Logo + Copyright + Badge ANSUT */}
           <div className="flex items-center gap-4">
-            <img src={monToitLogo} alt="MZAKA" className="h-6 w-auto" />
+            <img src={mzakaLogo} alt="MZAKA" className="h-6 w-auto" />
             <span className="text-gray-700">© 2025 MZAKA</span>
             <div className="flex items-center gap-1.5 px-2 py-1 bg-burkina-red-600 border border-burkina-red-700 rounded">
               <Shield className="h-3 w-3 text-white" />

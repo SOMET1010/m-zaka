@@ -39,7 +39,7 @@ import {
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { CulturalBadge } from "@/components/ui/cultural-badge";
-import monToitLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
 import { cn } from "@/lib/utils";
 
 export function ModernAppSidebar() {
@@ -191,7 +191,7 @@ export function ModernAppSidebar() {
       <SidebarHeader className="border-b border-border/50 px-4 py-4 bg-gradient-to-r from-primary/5 to-secondary/5">
         <Link to="/" className="flex items-center gap-3">
           <motion.img 
-            src={monToitLogo} 
+            src={mzakaLogo} 
             alt="MZAKA" 
             className="h-10 w-10 rounded-lg shadow-md"
             whileHover={{ scale: 1.05, rotate: 5 }}

@@ -35,7 +35,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
-import monToitLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
 
 export function AppSidebar() {
   const { profile } = useAuth();
@@ -94,7 +94,7 @@ export function AppSidebar() {
       <SidebarHeader className="border-b px-3 py-2">
         <Link to="/" className="flex items-center gap-2">
           <img 
-            src={monToitLogo} 
+            src={mzakaLogo} 
             alt="MZAKA" 
             className="h-8 w-8"
           />

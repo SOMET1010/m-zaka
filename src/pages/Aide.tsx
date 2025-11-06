@@ -23,8 +23,8 @@ const Aide = () => {
               <CardDescription>Réponse sous 24h</CardDescription>
             </CardHeader>
             <CardContent>
-              <a href="mailto:contact@montoit.ci" className="text-orange-600 hover:text-orange-700 font-medium">
-                contact@montoit.ci
+              <a href="mailto:contact@mzaka.bf" className="text-orange-600 hover:text-orange-700 font-medium">
+                contact@mzaka.bf
               </a>
             </CardContent>
           </Card>
@@ -36,8 +36,8 @@ const Aide = () => {
               <CardDescription>Lun-Ven 8h-18h</CardDescription>
             </CardHeader>
             <CardContent>
-              <a href="tel:+22507000000" className="text-orange-600 hover:text-orange-700 font-medium">
-                +225 07 00 00 00 00
+              <a href="tel:+22600000000" className="text-orange-600 hover:text-orange-700 font-medium">
+                +226 00 00 00 00
               </a>
             </CardContent>
           </Card>
@@ -49,7 +49,7 @@ const Aide = () => {
               <CardDescription>Support instantané</CardDescription>
             </CardHeader>
             <CardContent>
-              <a href="https://wa.me/22507000000" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:text-orange-700 font-medium">
+              <a href="https://wa.me/22600000000" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:text-orange-700 font-medium">
                 Démarrer une conversation
               </a>
             </CardContent>

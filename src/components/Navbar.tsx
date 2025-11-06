@@ -15,7 +15,7 @@ import {
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import monToitLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
 import NotificationBell from "@/components/NotificationBell";
 import CertificationNotificationBadge from "@/components/admin/CertificationNotificationBadge";
 import { VerificationProgress } from "@/components/navigation/VerificationProgress";
@@ -47,7 +47,7 @@ const Navbar = ({ showSidebarTrigger = false }: NavbarProps) => {
             <Link to="/" className="flex items-center gap-3 group">
             <picture>
               <img
-                src={monToitLogo}
+                src={mzakaLogo}
                 alt="MZAKA - Plateforme Immobilière Ouagadougou"
                 className="h-10 sm:h-12 w-auto object-contain shrink-0 group-hover:scale-105 transition-smooth"
                 loading="eager"
