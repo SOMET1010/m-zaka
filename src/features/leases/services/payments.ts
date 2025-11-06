@@ -191,7 +191,7 @@ async function sendPaymentNotifications(
     message: 'Le locataire a effectué le paiement. Le bail est maintenant actif.',
     type: 'payment_received',
     data: { lease_id: leaseId, receipt_url: receiptUrl },
-    deep_link: `mon-toit://baux/${leaseId}`,
+    deep_link: `mzaka://baux/${leaseId}`,
   });
 
   // Notification au locataire
@@ -201,7 +201,7 @@ async function sendPaymentNotifications(
     message: 'Votre paiement a été confirmé. Le bail est maintenant actif.',
     type: 'payment_confirmed',
     data: { lease_id: leaseId, receipt_url: receiptUrl },
-    deep_link: `mon-toit://baux/${leaseId}`,
+    deep_link: `mzaka://baux/${leaseId}`,
   });
 }
 

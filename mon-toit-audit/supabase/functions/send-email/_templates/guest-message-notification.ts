@@ -106,7 +106,7 @@ export const guestMessageNotificationTemplate = (data: GuestMessageNotificationD
           <tr>
             <td style="padding: 32px 0 24px;">
               <p style="color: #898989; font-size: 12px; line-height: 22px; margin: 0;">
-                <a href="https://mon-toit.ci" target="_blank" style="color: #898989; text-decoration: underline;">
+                <a href="https://mzaka.ci" target="_blank" style="color: #898989; text-decoration: underline;">
                   Mon Toit
                 </a>, votre plateforme de location immobilière en Côte d'Ivoire
               </p>

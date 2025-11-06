@@ -36,7 +36,7 @@ const MentionsLegales = () => {
 
       <h2>Contact</h2>
       <p>
-        Email : <a href="mailto:contact@montoit.ci">contact@montoit.ci</a><br />
+        Email : <a href="mailto:contact@mzaka.bf">contact@mzaka.bf</a><br />
         Téléphone : +225 27 XX XX XX XX
       </p>
     </LegalPage>

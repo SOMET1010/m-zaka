@@ -46,7 +46,7 @@ Deno.test("HTML template renders all data correctly", () => {
     oldRole: "🏠 Locataire",
     newRole: "🔑 Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const html = roleChangeConfirmationTemplate(data);
@@ -64,7 +64,7 @@ Deno.test("HTML template escapes malicious userName", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const html = roleChangeConfirmationTemplate(data);
@@ -97,7 +97,7 @@ Deno.test("HTML template has correct lang attribute", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const html = roleChangeConfirmationTemplate(data);
@@ -110,7 +110,7 @@ Deno.test("HTML template has accessibility attributes", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const html = roleChangeConfirmationTemplate(data);
@@ -128,7 +128,7 @@ Deno.test("HTML template has Outlook MSO support", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const html = roleChangeConfirmationTemplate(data);
@@ -148,7 +148,7 @@ Deno.test("Text template renders all data correctly", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const text = roleChangeConfirmationTextTemplate(data);
@@ -165,7 +165,7 @@ Deno.test("Text template escapes malicious content", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const text = roleChangeConfirmationTextTemplate(data);
@@ -181,11 +181,11 @@ Deno.test("Text template has security warning", () => {
     oldRole: "Locataire",
     newRole: "Propriétaire",
     timestamp: "15 octobre 2025, 14:30",
-    dashboardUrl: "https://montoit.ci/mes-biens"
+    dashboardUrl: "https://mzaka.bf/mes-biens"
   };
   
   const text = roleChangeConfirmationTextTemplate(data);
   
   assertStringIncludes(text, "SÉCURITÉ");
-  assertStringIncludes(text, "support@montoit.ci");
+  assertStringIncludes(text, "support@mzaka.bf");
 });

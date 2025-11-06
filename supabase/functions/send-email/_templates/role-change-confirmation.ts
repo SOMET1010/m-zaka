@@ -40,7 +40,7 @@ const EMAIL_STYLES = {
     xlarge: "40px",
   },
   logo: {
-    url: "https://btxhuqtirylvkgvoutoc.supabase.co/storage/v1/object/public/assets/mon-toit-logo.png",
+    url: "https://btxhuqtirylvkgvoutoc.supabase.co/storage/v1/object/public/assets/mzaka-logo.png",
     width: "120",
     height: "auto",
   },
@@ -218,7 +218,7 @@ export const roleChangeConfirmationTemplate = (data: RoleChangeData): string => 
                     </p>
                     <p style="margin: 8px 0 0 0; color: ${EMAIL_STYLES.colors.dangerText}; font-size: 14px; line-height: 1.5;">
                       Si vous n'êtes pas à l'origine de ce changement, veuillez contacter immédiatement notre support à 
-                      <a href="mailto:support@montoit.ci" style="color: ${EMAIL_STYLES.colors.danger}; text-decoration: underline; font-weight: 500;">support@montoit.ci</a>
+                      <a href="mailto:support@mzaka.bf" style="color: ${EMAIL_STYLES.colors.danger}; text-decoration: underline; font-weight: 500;">support@mzaka.bf</a>
                     </p>
                   </td>
                 </tr>
@@ -274,7 +274,7 @@ Date du changement : ${timestamp}
 Accédez à votre espace : ${dashboardUrl}
 
 SÉCURITÉ :
-Si vous n'êtes pas à l'origine de ce changement, veuillez contacter immédiatement notre support à support@montoit.ci
+Si vous n'êtes pas à l'origine de ce changement, veuillez contacter immédiatement notre support à support@mzaka.bf
 
 ---
 Cet email a été envoyé par Mon Toit - Votre plateforme de location immobilière en Côte d'Ivoire.

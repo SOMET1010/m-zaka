@@ -5,7 +5,7 @@
 
 import { Link } from 'react-router-dom';
 import { Shield, ShieldCheck, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
-import monToitLogo from '@/assets/logo/mon-toit-logo.png';
+import monToitLogo from '@/assets/logo/mzaka-logo.png';
 
 export const InstitutionalFooter = () => {
   const currentYear = new Date().getFullYear();
@@ -128,8 +128,8 @@ export const InstitutionalFooter = () => {
             <div className="space-y-3 text-sm text-gray-300">
               <div className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                <a href="mailto:contact@montoit.ci" className="hover:text-white transition-colors">
-                  contact@montoit.ci
+                <a href="mailto:contact@mzaka.bf" className="hover:text-white transition-colors">
+                  contact@mzaka.bf
                 </a>
               </div>
               <div className="flex items-start gap-2">

@@ -398,7 +398,7 @@ const Guide = () => {
                     <AccordionItem value="s2">
                       <AccordionTrigger>Comment signaler une annonce frauduleuse ?</AccordionTrigger>
                       <AccordionContent>
-                        Sur chaque annonce, cliquez sur &quot;Signaler&quot; et indiquez la raison. Notre équipe de modération vérifiera dans les 24h. En cas d&apos;urgence, contactez-nous à contact@montoit.ci.
+                        Sur chaque annonce, cliquez sur &quot;Signaler&quot; et indiquez la raison. Notre équipe de modération vérifiera dans les 24h. En cas d&apos;urgence, contactez-nous à contact@mzaka.bf.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="s3">
@@ -424,7 +424,7 @@ const Guide = () => {
                     <AccordionItem value="t1">
                       <AccordionTrigger>Je ne reçois pas d&apos;emails de notification</AccordionTrigger>
                       <AccordionContent>
-                        Vérifiez d&apos;abord vos spams/courriers indésirables. Ajoutez contact@montoit.ci à vos contacts. Si le problème persiste, vérifiez vos préférences de notification dans &quot;Mon profil&quot; &gt; &quot;Notifications&quot;.
+                        Vérifiez d&apos;abord vos spams/courriers indésirables. Ajoutez contact@mzaka.bf à vos contacts. Si le problème persiste, vérifiez vos préférences de notification dans &quot;Mon profil&quot; &gt; &quot;Notifications&quot;.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="t2">
@@ -506,8 +506,8 @@ const Guide = () => {
                   <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold mb-1">Email Support</p>
-                    <a href="mailto:contact@montoit.ci" className="text-primary hover:underline">
-                      contact@montoit.ci
+                    <a href="mailto:contact@mzaka.bf" className="text-primary hover:underline">
+                      contact@mzaka.bf
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">Réponse sous 24h</p>
                   </div>

@@ -39,7 +39,7 @@ import {
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { CulturalBadge } from "@/components/ui/cultural-badge";
-import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mzaka-logo.png";
 import { cn } from "@/lib/utils";
 
 export function ModernAppSidebar() {

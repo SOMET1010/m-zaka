@@ -50,7 +50,7 @@ export const defaultWebViewSecurityConfig: WebViewSecurityConfig = {
  * Allowed domains for the application
  */
 export const ALLOWED_DOMAINS = [
-  'montoit.ci',
+  'mzaka.bf',
   'supabase.co',
   'mapbox.com',
   'api.mapbox.com',

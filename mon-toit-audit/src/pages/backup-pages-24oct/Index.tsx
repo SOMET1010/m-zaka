@@ -19,7 +19,7 @@ const Index = () => {
           name="description" 
           content="Trouvez votre logement idéal en Côte d'Ivoire. Baux certifiés ANSUT, dossiers vérifiés, signature électronique. Plus de 3,500 logements à Abidjan, Yopougon, Cocody." 
         />
-        <link rel="canonical" href="https://montoit.ci" />
+        <link rel="canonical" href="https://mzaka.bf" />
       </Helmet>
 
       <main role="main">

@@ -35,7 +35,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
-import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mzaka-logo.png";
 
 export function AppSidebar() {
   const { profile } = useAuth();

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { memo } from "react";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import monToitLogo from "@/assets/logo/mon-toit-logo.png";
+import monToitLogo from "@/assets/logo/mzaka-logo.png";
 import { LazyIllustration } from "@/components/illustrations/LazyIllustration";
 import { getIllustrationPath } from "@/lib/utils";
 

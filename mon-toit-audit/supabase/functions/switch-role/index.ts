@@ -199,7 +199,7 @@ serve(async (req) => {
       .eq('id', user.id)
       .single();
 
-    const siteUrl = Deno.env.get('SUPABASE_URL')?.replace('.supabase.co', '') || 'https://montoit.ci';
+    const siteUrl = Deno.env.get('SUPABASE_URL')?.replace('.supabase.co', '') || 'https://mzaka.bf';
     const dashboardUrl = `${siteUrl}${newRole === 'locataire' ? '/dashboard' : '/mes-biens'}`;
 
     const { error: emailError } = await supabaseClient.functions.invoke('send-email', {

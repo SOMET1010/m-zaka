@@ -193,9 +193,9 @@ export class PWAInstaller {
 }
 
 export class PWACacheManager {
-  private static CACHE_NAME = 'mon-toit-v1';
-  private static STATIC_CACHE = 'mon-toit-static-v1';
-  private static IMAGE_CACHE = 'mon-toit-images-v1';
+  private static CACHE_NAME = 'mzaka-v1';
+  private static STATIC_CACHE = 'mzaka-static-v1';
+  private static IMAGE_CACHE = 'mzaka-images-v1';
 
   /**
    * Initialize caching strategies

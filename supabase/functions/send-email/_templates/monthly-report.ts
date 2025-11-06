@@ -120,7 +120,7 @@ export const monthlyReportTemplate = (data: any) => {
                 <!-- CTA -->
                 <tr>
                   <td style="padding: 0 40px 32px 40px; text-align: center;">
-                    <a href="https://montoit.ci/owner-dashboard" style="display: inline-block; padding: 14px 32px; background: #8b5cf6; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">📊 Voir mon dashboard complet</a>
+                    <a href="https://mzaka.bf/owner-dashboard" style="display: inline-block; padding: 14px 32px; background: #8b5cf6; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">📊 Voir mon dashboard complet</a>
                   </td>
                 </tr>
 
@@ -128,7 +128,7 @@ export const monthlyReportTemplate = (data: any) => {
                 <tr>
                   <td style="padding: 24px 40px; border-top: 1px solid #e5e7eb; text-align: center;">
                     <p style="margin: 0; font-size: 12px; color: #9ca3af;">MonToit ANSUT - Plateforme de location certifiée</p>
-                    <p style="margin: 8px 0 0 0; font-size: 12px; color: #9ca3af;">Des questions ? Contactez-nous à <a href="mailto:support@montoit.ci" style="color: #8b5cf6; text-decoration: none;">support@montoit.ci</a></p>
+                    <p style="margin: 8px 0 0 0; font-size: 12px; color: #9ca3af;">Des questions ? Contactez-nous à <a href="mailto:support@mzaka.bf" style="color: #8b5cf6; text-decoration: none;">support@mzaka.bf</a></p>
                   </td>
                 </tr>
               </table>

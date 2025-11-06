@@ -49,7 +49,7 @@ const Confidentialite = () => {
 
       <h2>6. Contact</h2>
       <p>
-        Pour toute question : <a href="mailto:privacy@montoit.ci">privacy@montoit.ci</a>
+        Pour toute question : <a href="mailto:privacy@mzaka.bf">privacy@mzaka.bf</a>
       </p>
     </LegalPage>
   );

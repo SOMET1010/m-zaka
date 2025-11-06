@@ -210,7 +210,7 @@ const CertificationFAQ = () => {
                     <ul className="list-disc pl-5 mt-2 space-y-1">
                       <li>Consultez notre guide complet dans la section Documentation</li>
                       <li>Contactez notre support via la messagerie interne</li>
-                      <li>Envoyez un email à support@montoit.ci</li>
+                      <li>Envoyez un email à support@mzaka.bf</li>
                       <li>Appelez notre hotline : +225 XX XX XX XX XX</li>
                     </ul>
                     <p className="mt-2">

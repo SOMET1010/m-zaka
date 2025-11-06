@@ -117,7 +117,7 @@ async function sendSecurityAlert(email: string, attempts: number, ipAddress: str
       },
       body: JSON.stringify({
         from: 'MonToit Security <no-reply@notifications.ansut.ci>',
-        to: ['admin@montoit.ci'], // Email fixe pour les alertes
+        to: ['admin@mzaka.bf'], // Email fixe pour les alertes
         subject: `🚨 Alerte Sécurité - Tentatives de connexion échouées`,
         html: `
           <h2>Alerte de Sécurité</h2>

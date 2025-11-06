@@ -338,7 +338,7 @@ class ErrorBoundary extends Component<Props, State> {
                 <p>Si l'erreur persiste, contactez notre support technique:</p>
                 <div className="flex items-center justify-center gap-2 mt-2">
                   <Badge variant="secondary">
-                    support@mon-toit.ci
+                    support@mzaka.ci
                   </Badge>
                   <Badge variant="outline">
                     +225 27 22 00 00 00

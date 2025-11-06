@@ -108,7 +108,7 @@ export const PropertyOwnerContact = ({
                 className="w-full"
                 asChild
               >
-                <a href={`mailto:contact@montoit.ci?subject=Demande de renseignements - ${propertyId}`}>
+                <a href={`mailto:contact@mzaka.bf?subject=Demande de renseignements - ${propertyId}`}>
                   <Mail className="h-4 w-4 mr-2" />
                   Envoyer un email
                 </a>

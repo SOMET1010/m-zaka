@@ -17,7 +17,7 @@ import { detectSuspiciousContent } from './sanitize';
 const SENTRY_CONFIG = {
   dsn: import.meta.env.VITE_SENTRY_DSN || 'https://example@sentry.io/project-id',
   environment: import.meta.env.MODE || 'development',
-  release: `mon-toit@${import.meta.env.VITE_APP_VERSION || '1.0.0'}`,
+  release: `mzaka@${import.meta.env.VITE_APP_VERSION || '1.0.0'}`,
 
   // Performance monitoring - BrowserTracing requires separate package
   // integrations: [
@@ -110,7 +110,7 @@ const SENTRY_CONFIG = {
 
   // Configuration des tags par défaut
   defaultTags: {
-    platform: 'mon-toit',
+    platform: 'mzaka',
     version: import.meta.env.VITE_APP_VERSION || '1.0.0',
     environment: import.meta.env.MODE || 'development'
   },

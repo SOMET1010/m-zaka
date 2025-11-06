@@ -79,8 +79,8 @@ const PropertyDetail = () => {
     description: property?.description?.substring(0, 155) || `${property?.property_type || 'Bien'} à ${property?.city || 'Ouagadougou'} - ${property?.monthly_rent ? property.monthly_rent.toLocaleString('fr-FR') + ' FCFA/mois' : 'Prix sur demande'}`,
     ogTitle: property ? `${property.title} - ${property.city}` : 'Bien Immobilier',
     ogDescription: property?.description?.substring(0, 200),
-    ogImage: property?.main_image || property?.images?.[0] || 'https://mon-toit.lovable.app/placeholder.svg',
-    ogUrl: property ? `https://mon-toit.lovable.app/properties/${property.id}` : 'https://mon-toit.lovable.app',
+    ogImage: property?.main_image || property?.images?.[0] || 'https://mzaka.lovable.app/placeholder.svg',
+    ogUrl: property ? `https://mzaka.lovable.app/properties/${property.id}` : 'https://mzaka.lovable.app',
     twitterCard: 'summary_large_image'
   });
 

@@ -90,8 +90,8 @@ serve(async (req) => {
       return new Response(
         JSON.stringify({ 
           error: 'Manual validation required',
-          message: 'L\'ajout du rôle Agence nécessite une validation manuelle. Veuillez contacter le support à support@montoit.ci',
-          supportEmail: 'support@montoit.ci'
+          message: 'L\'ajout du rôle Agence nécessite une validation manuelle. Veuillez contacter le support à support@mzaka.bf',
+          supportEmail: 'support@mzaka.bf'
         }),
         { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       );
@@ -173,7 +173,7 @@ serve(async (req) => {
             timeStyle: 'short',
             timeZone: 'Africa/Abidjan'
           }),
-          profileUrl: `${Deno.env.get('SUPABASE_URL')?.replace('.supabase.co', '') || 'https://montoit.ci'}/profile`
+          profileUrl: `${Deno.env.get('SUPABASE_URL')?.replace('.supabase.co', '') || 'https://mzaka.bf'}/profile`
         }
       }
     });

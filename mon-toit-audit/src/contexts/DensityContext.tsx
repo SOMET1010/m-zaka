@@ -18,7 +18,7 @@ const spacingMaps: Record<UIDensity, { card: string; section: string; padding: s
   dense: { card: 'space-y-2', section: 'space-y-4', padding: 'p-2' },
 };
 
-const STORAGE_KEY = 'mon-toit-ui-density';
+const STORAGE_KEY = 'mzaka-ui-density';
 
 const DensityContext = createContext<DensityContextType | undefined>(undefined);
 

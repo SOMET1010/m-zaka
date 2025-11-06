@@ -162,7 +162,7 @@ async function sendSignatureNotifications(
     message: 'Le bail a été signé électroniquement. Vous pouvez maintenant procéder au paiement.',
     type: 'lease_signed',
     data: { lease_id: leaseId },
-    deep_link: `mon-toit://baux/${leaseId}`,
+    deep_link: `mzaka://baux/${leaseId}`,
   });
 
   // Notification au locataire
@@ -172,7 +172,7 @@ async function sendSignatureNotifications(
     message: 'Le bail a été signé électroniquement. Le propriétaire peut maintenant procéder au paiement.',
     type: 'lease_signed',
     data: { lease_id: leaseId },
-    deep_link: `mon-toit://baux/${leaseId}`,
+    deep_link: `mzaka://baux/${leaseId}`,
   });
 }
 

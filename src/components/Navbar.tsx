@@ -15,7 +15,7 @@ import {
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import mzakaLogo from "@/assets/logo/mon-toit-logo.png";
+import mzakaLogo from "@/assets/logo/mzaka-logo.png";
 import NotificationBell from "@/components/NotificationBell";
 import CertificationNotificationBadge from "@/components/admin/CertificationNotificationBadge";
 import { VerificationProgress } from "@/components/navigation/VerificationProgress";

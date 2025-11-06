@@ -9,12 +9,12 @@ const config: CapacitorConfig = {
     iosScheme: 'https',
     // Security: Restrict navigation to app domains
     allowNavigation: [
-      'https://montoit.ci',
+      'https://mzaka.bf',
       'https://*.supabase.co',
       'https://api.mapbox.com',
       'https://tiles.mapbox.com',
       'https://*.mapbox.com',
-      'https://mon-toit.netlify.app/'
+      'https://mzaka.netlify.app/'
     ],
     // Cleartext is not permitted
     cleartext: false,
