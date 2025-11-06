@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🧪 Test du build local de Mon Toit"
+echo "🧪 Test du build local de MZAKA"
 echo "=================================="
 echo ""
 

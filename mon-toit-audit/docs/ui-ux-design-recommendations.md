@@ -1,8 +1,8 @@
-# Recommandations Design UI/UX - Mon Toit
+# Recommandations Design UI/UX - MZAKA
 
 ## Vue d'Ensemble
 
-Ce document contient les recommandations complètes d'amélioration de l'interface utilisateur et de l'expérience utilisateur pour la plateforme immobilière Mon Toit, une application web progressive moderne pour le marché immobilier ivoirien.
+Ce document contient les recommandations complètes d'amélioration de l'interface utilisateur et de l'expérience utilisateur pour la plateforme immobilière MZAKA, une application web progressive moderne pour le marché immobilier ivoirien.
 
 ## 1. Améliorations du Système de Design
 
@@ -17,7 +17,7 @@ Ce document contient les recommandations complètes d'amélioration de l'interfa
 
 /* Palette d'intégration culturelle */
 --ivory-coast-gold: 45 100% 51%;      /* Prospérité économique */
---lagoon-blue: 202 48% 42%;          /* Lagune d'Abidjan */
+--lagoon-blue: 202 48% 42%;          /* Lagune d'Ouagadougou */
 --tropical-green: 140 60% 30%;       /* Régions forestières */
 ```
 
@@ -269,14 +269,14 @@ Design de formulaire multi-étapes:
 
 ## Conclusion
 
-Mon Toit démontre déjà une base solide avec son système de design complet et son approche centrée sur l'utilisateur. Ces recommandations s'appuient sur les forces existantes tout en adressant les opportunités d'amélioration dans le marché immobilier concurrentiel.
+MZAKA démontre déjà une base solide avec son système de design complet et son approche centrée sur l'utilisateur. Ces recommandations s'appuient sur les forces existantes tout en adressant les opportunités d'amélioration dans le marché immobilier concurrentiel.
 
-L'accent sur la pertinence culturelle, l'accessibilité et le design mobile-first positionnera Mon Toit comme la plateforme immobilière leader en Côte d'Ivoire et sur les marchés d'expansion potentiels.
+L'accent sur la pertinence culturelle, l'accessibilité et le design mobile-first positionnera MZAKA comme la plateforme immobilière leader en Burkina Faso et sur les marchés d'expansion potentiels.
 
 L'approche d'implémentation par phases assure des cycles de développement gérables tout en offrant une valeur continue aux utilisateurs. Des tests utilisateurs réguliers et la collecte de feedback seront essentiels pour valider les décisions de design et assurer que la plateforme répond aux besoins évolutifs des utilisateurs.
 
 ---
 
 **Document créé:** 16 octobre 2025
-**Plateforme:** Mon Toit - Plateforme Immobilière Certifiée Côte d'Ivoire
+**Plateforme:** MZAKA - Plateforme Immobilière Certifiée Burkina Faso
 **Période d'implémentation recommandée:** 12 mois

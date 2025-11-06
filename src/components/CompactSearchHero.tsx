@@ -43,7 +43,7 @@ export const CompactSearchHero = () => {
                 </SelectTrigger>
                 <SelectContent className="bg-background border border-border z-50">
                   <SelectItem value="all">Toutes les villes</SelectItem>
-                  <SelectItem value="Abidjan">Abidjan</SelectItem>
+                  <SelectItem value="Ouagadougou">Ouagadougou</SelectItem>
                   <SelectItem value="Yopougon">Yopougon</SelectItem>
                   <SelectItem value="Cocody">Cocody</SelectItem>
                   <SelectItem value="Marcory">Marcory</SelectItem>

@@ -14,7 +14,7 @@ const Explorer = () => {
       {/* Page Header unifié avec design ivoirien */}
       <PageHeader
         title="Explorer les biens"
-        description="Découvrez tous nos biens immobiliers vérifiés à travers la Côte d'Ivoire"
+        description="Découvrez tous nos biens immobiliers vérifiés à travers la Burkina Faso"
         badge="Exploration interactive"
         icon={<Map className="h-10 w-10" />}
       />

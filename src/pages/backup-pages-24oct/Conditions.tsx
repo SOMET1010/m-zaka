@@ -6,7 +6,7 @@ const Conditions = () => {
       <h2>1. Objet</h2>
       <p>
         Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès 
-        et l'utilisation de la plateforme Mon Toit propulsée par ANSUT.
+        et l'utilisation de la plateforme MZAKA propulsée par ANSUT.
       </p>
 
       <h2>2. Inscription</h2>
@@ -30,13 +30,13 @@ const Conditions = () => {
 
       <h2>5. Responsabilité</h2>
       <p>
-        Mon Toit agit en qualité d'intermédiaire. La responsabilité des transactions 
+        MZAKA agit en qualité d'intermédiaire. La responsabilité des transactions 
         incombe aux parties (locataire/propriétaire).
       </p>
 
       <h2>6. Modification des CGU</h2>
       <p>
-        Mon Toit se réserve le droit de modifier ces CGU à tout moment. 
+        MZAKA se réserve le droit de modifier ces CGU à tout moment. 
         Les utilisateurs seront notifiés par email.
       </p>
     </LegalPage>

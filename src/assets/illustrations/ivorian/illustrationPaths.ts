@@ -13,13 +13,13 @@ export const illustrationPaths = {
   // Agent immobilier - Features, Certification
   'real-estate-agent': '/src/assets/illustrations/ivorian/real-estate-agent.png',
   
-  // Quartier d'Abidjan - Explorer, HowItWorks
+  // Quartier d'Ouagadougou - Explorer, HowItWorks
   'abidjan-neighborhood': '/src/assets/illustrations/ivorian/abidjan-neighborhood.png',
   
   // Salon moderne - PropertyCard, Explorer
   'modern-living-room': '/src/assets/illustrations/ivorian/modern-living-room.png',
   
-  // Skyline d'Abidjan - Hero alternatif, Footer
+  // Skyline d'Ouagadougou - Hero alternatif, Footer
   'abidjan-skyline': '/src/assets/illustrations/ivorian/abidjan-skyline.png',
   
   // Remise de clés - Testimonials, Success page

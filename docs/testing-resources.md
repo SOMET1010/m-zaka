@@ -1,6 +1,6 @@
 # Testing Resources & Guides
 
-This document provides comprehensive testing resources for the Mon Toit API, including unit tests, integration tests, end-to-end testing, and performance testing strategies.
+This document provides comprehensive testing resources for the MZAKA API, including unit tests, integration tests, end-to-end testing, and performance testing strategies.
 
 ## Table of Contents
 1. [Testing Strategy Overview](#testing-strategy-overview)
@@ -113,7 +113,7 @@ describe('PropertyService', () => {
     it('should search properties with filters', async () => {
       // Arrange
       const filters = {
-        city: 'Abidjan',
+        city: 'Ouagadougou',
         maxPrice: 200000,
         minBedrooms: 2
       };
@@ -122,7 +122,7 @@ describe('PropertyService', () => {
         {
           id: '1',
           title: 'Test Apartment',
-          city: 'Abidjan',
+          city: 'Ouagadougou',
           monthly_rent: 150000,
           bedrooms: 3
         }
@@ -138,7 +138,7 @@ describe('PropertyService', () => {
 
       // Assert
       expect(mockSupabase.rpc).toHaveBeenCalledWith('get_public_properties', {
-        p_city: 'Abidjan',
+        p_city: 'Ouagadougou',
         p_property_type: null,
         p_min_rent: null,
         p_max_rent: 200000,
@@ -193,7 +193,7 @@ describe('PropertyService', () => {
       const propertyData = {
         title: 'New Property',
         address: '123 Test St',
-        city: 'Abidjan',
+        city: 'Ouagadougou',
         propertyType: 'appartement',
         monthlyRent: 150000
       };
@@ -513,7 +513,7 @@ describe('PropertyAPI Integration', () => {
       const createData = {
         title: 'Integration Test Property',
         address: '123 Test Street',
-        city: 'Abidjan',
+        city: 'Ouagadougou',
         propertyType: 'appartement',
         monthlyRent: 150000,
         bedrooms: 2,
@@ -552,14 +552,14 @@ describe('PropertyAPI Integration', () => {
       const testProperty = await propertyAPI.createProperty({
         title: 'Search Test Property',
         address: '456 Search Ave',
-        city: 'Abidjan',
+        city: 'Ouagadougou',
         propertyType: 'appartement',
         monthlyRent: 120000
       });
 
       // Search by city
       const searchResults = await propertyAPI.searchProperties({
-        city: 'Abidjan'
+        city: 'Ouagadougou'
       });
 
       expect(searchResults.length).toBeGreaterThan(0);
@@ -825,8 +825,8 @@ describe('Property Management', () => {
 
     // Fill property form
     cy.get('[data-testid="property-title"]').type('Beautiful Apartment');
-    cy.get('[data-testid="property-address"]').type('123 Main St, Abidjan');
-    cy.get('[data-testid="property-city"]').type('Abidjan');
+    cy.get('[data-testid="property-address"]').type('123 Main St, Ouagadougou');
+    cy.get('[data-testid="property-city"]').type('Ouagadougou');
     cy.get('[data-testid="property-type"]').select('appartement');
     cy.get('[data-testid="monthly-rent"]').type('150000');
     cy.get('[data-testid="bedrooms"]').type('3');
@@ -893,7 +893,7 @@ describe('Property Search', () => {
 
   it('should search properties with filters', () => {
     // Set search filters
-    cy.get('[data-testid="search-city"]').type('Abidjan');
+    cy.get('[data-testid="search-city"]').type('Ouagadougou');
     cy.get('[data-testid="property-type"]').select('appartement');
     cy.get('[data-testid="min-price"]').type('100000');
     cy.get('[data-testid="max-price"]').type('200000');
@@ -936,17 +936,17 @@ describe('Property Search', () => {
 
   it('should save search criteria', () => {
     // Set filters
-    cy.get('[data-testid="search-city"]').type('Abidjan');
+    cy.get('[data-testid="search-city"]').type('Ouagadougou');
     cy.get('[data-testid="property-type"]').select('villa');
 
     // Save search
     cy.get('[data-testid="save-search-button"]').click();
-    cy.get('[data-testid="search-name-input"]').type('My Abidjan Villa Search');
+    cy.get('[data-testid="search-name-input"]').type('My Ouagadougou Villa Search');
     cy.get('[data-testid="confirm-save"]').click();
 
     // Verify saved search
     cy.get('[data-testid="saved-searches"]')
-      .should('contain', 'My Abidjan Villa Search');
+      .should('contain', 'My Ouagadougou Villa Search');
   });
 });
 ```
@@ -958,7 +958,7 @@ describe('Property Search', () => {
 #### Environment Variables
 ```json
 {
-  "name": "Mon Toit API Environment",
+  "name": "MZAKA API Environment",
   "values": [
     {
       "key": "baseUrl",
@@ -1155,7 +1155,7 @@ scenarios:
             apikey: "{{ $processEnvironment.ANON_KEY }}"
             Content-Type: "application/json"
           json:
-            p_city: "Abidjan"
+            p_city: "Ouagadougou"
             p_max_rent: 200000
             p_min_bedrooms: 2
       - think: 1
@@ -1335,7 +1335,7 @@ async function seedTestData() {
     {
       title: 'Test Apartment 1',
       address: '123 Test St',
-      city: 'Abidjan',
+      city: 'Ouagadougou',
       property_type: 'appartement',
       monthly_rent: 150000,
       bedrooms: 2,
@@ -1345,7 +1345,7 @@ async function seedTestData() {
     {
       title: 'Test Villa 1',
       address: '456 Test Ave',
-      city: 'Abidjan',
+      city: 'Ouagadougou',
       property_type: 'villa',
       monthly_rent: 300000,
       bedrooms: 4,
@@ -1504,4 +1504,4 @@ jobs:
           cmd_options: '-a'
 ```
 
-This comprehensive testing documentation provides everything needed to ensure the Mon Toit API is thoroughly tested, secure, and performant.
+This comprehensive testing documentation provides everything needed to ensure the MZAKA API is thoroughly tested, secure, and performant.

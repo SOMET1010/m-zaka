@@ -126,7 +126,7 @@ const CertificationFAQ = () => {
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     La certification ANSUT est actuellement gratuite pour tous les utilisateurs de la plateforme 
-                    Mon Toit. C'est un service inclus pour garantir la sécurité et la légalité de toutes les 
+                    MZAKA. C'est un service inclus pour garantir la sécurité et la légalité de toutes les 
                     transactions immobilières sur notre plateforme.
                   </AccordionContent>
                 </AccordionItem>

@@ -5,7 +5,7 @@ const Confidentialite = () => {
     <LegalPage title="Politique de confidentialité" lastUpdated="5 octobre 2025">
       <h2>1. Collecte des données</h2>
       <p>
-        Mon Toit collecte les données personnelles suivantes :
+        MZAKA collecte les données personnelles suivantes :
       </p>
       <ul>
         <li>Données d'identification (nom, prénom, email, téléphone)</li>

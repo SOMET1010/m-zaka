@@ -151,7 +151,7 @@ const AdminDashboard = () => {
               <StickyHeader>
                 <h1 className="text-2xl font-bold">Administration ANSUT</h1>
                 <p className="text-sm text-muted-foreground">
-                  Gestion et validation de la plateforme Mon Toit
+                  Gestion et validation de la plateforme MZAKA
                 </p>
               </StickyHeader>
 

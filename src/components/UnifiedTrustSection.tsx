@@ -94,7 +94,7 @@ const UnifiedTrustSection = () => {
         <div className="mb-16">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-foreground mb-2">
-              Pourquoi choisir Mon Toit
+              Pourquoi choisir MZAKA
             </h3>
             <p className="text-lg text-muted-foreground">
               Un service public au service de votre tranquillité

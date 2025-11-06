@@ -1,5 +1,5 @@
 /**
- * Mobile Push Notifications Service for Mon Toit Real Estate App
+ * Mobile Push Notifications Service for MZAKA Real Estate App
  *
  * This file provides push notification functionality for property alerts,
  * messages, and other real-time updates for the real estate application.

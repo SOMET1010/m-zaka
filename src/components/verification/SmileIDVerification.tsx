@@ -15,7 +15,7 @@ import { Camera, CheckCircle, XCircle, AlertCircle, Shield, Loader2 } from 'luci
  * Smile ID est une solution de vérification d'identité biométrique qui :
  * - Vérifie l'authenticité des documents d'identité
  * - Compare la photo du document avec un selfie en temps réel
- * - Se connecte aux bases de données gouvernementales (ONECI en Côte d'Ivoire)
+ * - Se connecte aux bases de données gouvernementales (ONECI en Burkina Faso)
  * - Détecte les tentatives de fraude (deepfakes, photos imprimées, etc.)
  * 
  * Documentation: https://docs.usesmileid.com/

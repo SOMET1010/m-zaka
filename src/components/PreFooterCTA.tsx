@@ -12,7 +12,7 @@ const PreFooterCTA = () => {
             Prêt à <span className="text-primary">commencer</span> ?
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Rejoignez des milliers d'Ivoiriens qui font confiance à Mon Toit
+            Rejoignez des milliers d'Ivoiriens qui font confiance à MZAKA
           </p>
         </div>
 

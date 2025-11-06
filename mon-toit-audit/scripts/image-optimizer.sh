@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Script de compression automatique d'images - Mon Toit
+# Script de compression automatique d'images - MZAKA
 # Usage: ./scripts/image-optimizer.sh [options]
 
 set -e
 
-echo "🖼️  Optimiseur d'Images Mon Toit - $(date)"
+echo "🖼️  Optimiseur d'Images MZAKA - $(date)"
 echo "====================================="
 
 # Couleurs pour l'output

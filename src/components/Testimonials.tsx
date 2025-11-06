@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: "Kouadio Marc",
     role: "Locataire certifié ANSUT",
-    location: "Cocody, Abidjan",
+    location: "Cocody, Ouagadougou",
     content: "J'ai trouvé mon appartement en 48h grâce à ma certification ANSUT. Les propriétaires me répondaient immédiatement car mon dossier était déjà complet et vérifié. Un gain de temps incroyable !",
     rating: 5,
     avatar: "KM",
@@ -27,8 +27,8 @@ const testimonials = [
   {
     name: "Adjoua Sarah",
     role: "Propriétaire",
-    location: "Marcory, Abidjan",
-    content: "Fini les dossiers incomplets et les vérifications interminables. Avec Mon Toit, je ne reçois que des candidatures sérieuses et certifiées. Le paiement Mobile Money est un vrai plus pour mes locataires.",
+    location: "Marcory, Ouagadougou",
+    content: "Fini les dossiers incomplets et les vérifications interminables. Avec MZAKA, je ne reçois que des candidatures sérieuses et certifiées. Le paiement Mobile Money est un vrai plus pour mes locataires.",
     rating: 5,
     avatar: "AS",
     avatarGradient: "bg-gradient-to-br from-primary to-orange-600",
@@ -37,7 +37,7 @@ const testimonials = [
   {
     name: "Immobilier Plus SARL",
     role: "Agence immobilière",
-    location: "Plateau, Abidjan",
+    location: "Plateau, Ouagadougou",
     content: "Le tableau de bord agence nous permet de gérer 50+ propriétés efficacement. Les contrats digitaux et le suivi des paiements nous font gagner des heures chaque semaine. Un outil professionnel indispensable.",
     rating: 5,
     avatar: "IP",
@@ -65,7 +65,7 @@ const Testimonials = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center">
               <div className="text-white p-8 max-w-xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-2">Ils ont trouvé leur toit</h2>
-                <p className="text-lg opacity-90">Des milliers de locataires satisfaits grâce à Mon Toit</p>
+                <p className="text-lg opacity-90">Des milliers de locataires satisfaits grâce à MZAKA</p>
               </div>
             </div>
           </div>

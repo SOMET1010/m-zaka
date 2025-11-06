@@ -1,4 +1,4 @@
-# Configuration Sentry - Mon Toit
+# Configuration Sentry - MZAKA
 
 ## 🎯 Objectif
 

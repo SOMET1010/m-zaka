@@ -1,6 +1,6 @@
-# Mon Toit API Documentation
+# MZAKA API Documentation
 
-🏠 **Comprehensive API documentation for the Mon Toit certified real estate platform in Côte d'Ivoire**
+🏠 **Comprehensive API documentation for the MZAKA certified real estate platform in Burkina Faso**
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-Mon Toit is a modern Progressive Web App (PWA) certified real estate platform that connects landlords, tenants, and agencies in Côte d'Ivoire. This comprehensive API documentation provides everything developers need to integrate with the Mon Toit platform.
+MZAKA is a modern Progressive Web App (PWA) certified real estate platform that connects landlords, tenants, and agencies in Burkina Faso. This comprehensive API documentation provides everything developers need to integrate with the MZAKA platform.
 
 ### 🚀 Key Features
 
@@ -39,7 +39,7 @@ Mon Toit is a modern Progressive Web App (PWA) certified real estate platform th
 
 - Node.js 16+ (for JavaScript/TypeScript SDK)
 - Valid email address for registration
-- Mon Toit developer account (optional for extended features)
+- MZAKA developer account (optional for extended features)
 
 ### Basic Setup
 
@@ -58,7 +58,7 @@ const supabase = createClient(
 
 // Search for properties
 const { data, error } = await supabase.rpc('get_public_properties', {
-  p_city: 'Abidjan',
+  p_city: 'Ouagadougou',
   p_max_rent: 200000
 });
 ```
@@ -75,7 +75,7 @@ supabase = create_client('https://btxhuqtirylvkgvoutoc.supabase.co', 'your-anon-
 
 # Search for properties
 response = supabase.rpc('get_public_properties', {
-    'p_city': 'Abidjan',
+    'p_city': 'Ouagadougou',
     'p_max_rent': 200000
 }).execute()
 
@@ -90,7 +90,7 @@ curl -X POST "https://btxhuqtirylvkgvoutoc.supabase.co/rest/v1/rpc/get_public_pr
   -H "apikey: your-anon-key" \
   -H "Content-Type: application/json" \
   -d '{
-    "p_city": "Abidjan",
+    "p_city": "Ouagadougou",
     "p_max_rent": 200000,
     "p_min_bedrooms": 2
   }'
@@ -579,7 +579,7 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 
 ## 🔗 Related Links
 
-- [🌐 Mon Toit Website](https://mon-toit.ci)
+- [🌐 MZAKA Website](https://mon-toit.ci)
 - [📱 Mobile App (PWA)](https://mon-toit.ci)
 - [📧 Contact Support](mailto:support@mon-toit.ci)
 - [📖 Developer Blog](https://blog.mon-toit.ci)
@@ -596,6 +596,6 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 
 ---
 
-**Built with ❤️ for the Côte d'Ivoire real estate community**
+**Built with ❤️ for the Burkina Faso real estate community**
 
-© 2024 Mon Toit. All rights reserved.
+© 2024 MZAKA. All rights reserved.

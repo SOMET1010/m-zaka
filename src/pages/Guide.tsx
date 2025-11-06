@@ -31,7 +31,7 @@ const Guide = () => {
     <MainLayout>
       <PageHeader
         title="Centre d'aide"
-        description="Guides détaillés, FAQ et support pour profiter pleinement de Mon Toit"
+        description="Guides détaillés, FAQ et support pour profiter pleinement de MZAKA"
         badge="Centre d'aide"
         icon={<HelpCircle className="h-10 w-10" />}
       />
@@ -213,7 +213,7 @@ const Guide = () => {
           <div className="mb-16">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-2">Questions fréquentes</h2>
-              <p className="text-muted-foreground">Tout ce que vous devez savoir sur Mon Toit</p>
+              <p className="text-muted-foreground">Tout ce que vous devez savoir sur MZAKA</p>
             </div>
             
             {/* Barre de recherche FAQ */}

@@ -95,12 +95,12 @@ export function AppSidebar() {
         <Link to="/" className="flex items-center gap-2">
           <img 
             src={monToitLogo} 
-            alt="Mon Toit" 
+            alt="MZAKA" 
             className="h-8 w-8"
           />
           {open && (
             <div className="flex flex-col">
-              <span className="text-sm font-bold text-primary">Mon Toit</span>
+              <span className="text-sm font-bold text-primary">MZAKA</span>
               <span className="text-xs text-muted-foreground">Certifié ANSUT</span>
             </div>
           )}

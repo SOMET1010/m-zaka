@@ -58,8 +58,8 @@ export function ComplianceSection() {
           {/* Additional compliance text */}
           <div className="mt-8 text-center">
             <p className="text-xs text-muted-foreground max-w-3xl mx-auto">
-              Mon Toit respecte les normes de sécurité et de confidentialité les plus strictes. 
-              Toutes les données sont hébergées en Côte d'Ivoire et conformes à la législation ivoirienne. 
+              MZAKA respecte les normes de sécurité et de confidentialité les plus strictes. 
+              Toutes les données sont hébergées en Burkina Faso et conformes à la législation ivoirienne. 
               Nous utilisons des technologies certifiées par l'ANSUT pour garantir la souveraineté numérique.
             </p>
           </div>

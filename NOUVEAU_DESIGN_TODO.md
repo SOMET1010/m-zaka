@@ -55,7 +55,7 @@
 - [x] Vérifier les URLs des images dans la base de données
 - [x] Identifier pourquoi les images affichent "Image en chargement..." (URLs nulles/invalides)
 - [x] Corriger le problème de chargement
-- [x] Ajouter 8 vraies photos de biens à Abidjan comme fallback
+- [x] Ajouter 8 vraies photos de biens à Ouagadougou comme fallback
 - [x] Créer SimpleImageEnhanced avec fallback intelligent par type
 - [x] Intégrer SimpleImageEnhanced dans PropertyCard
 - [ ] Tester le chargement des images après déploiement

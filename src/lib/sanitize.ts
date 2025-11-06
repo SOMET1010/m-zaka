@@ -1,7 +1,7 @@
 import DOMPurify from 'dompurify';
 
 /**
- * Configuration de DOMPurify pour la plateforme Mon Toit
+ * Configuration de DOMPurify pour la plateforme MZAKA
  * Adaptée pour permettre les éléments HTML nécessaires tout en bloquant les attaques XSS
  */
 

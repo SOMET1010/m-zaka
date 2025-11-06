@@ -37,7 +37,7 @@ interface State {
 }
 
 /**
- * Composant ErrorBoundary robuste pour la plateforme Mon Toit
+ * Composant ErrorBoundary robuste pour la plateforme MZAKA
  * Capture les erreurs React, les rapporte à Sentry, et fournit une expérience utilisateur de qualité
  */
 class ErrorBoundary extends Component<Props, State> {

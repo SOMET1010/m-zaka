@@ -1,4 +1,4 @@
-// Centralized type definitions for Mon Toit
+// Centralized type definitions for MZAKA
 
 // Database enums
 export type UserType = 'locataire' | 'proprietaire' | 'agence' | 'admin_ansut';

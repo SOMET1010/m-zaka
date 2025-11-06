@@ -1,27 +1,35 @@
 /**
- * MON TOIT - Design System
+ * M'ZAKA - Design System
  * "Le logement en toute confiance"
  * 
  * Charte visuelle professionnelle pour la plateforme immobilière certifiée ANSUT
+ * Theme Burkina Faso - Faso Dan Fani
  */
 
 :root {
-  /* ===== COULEURS PRINCIPALES ===== */
+  /* ===== COULEURS PRINCIPALES - BURKINA FASO ===== */
   
-  /* Bleu ANSUT - Confiance, institution, stabilité */
-  --color-primary: #2256A3;
-  --color-primary-light: #4A7BC8;
-  --color-primary-dark: #1A4278;
-  --color-primary-50: rgba(34, 86, 163, 0.05);
-  --color-primary-100: rgba(34, 86, 163, 0.1);
-  --color-primary-200: rgba(34, 86, 163, 0.2);
+  /* Rouge Burkina - Courage, action, confiance */
+  --color-primary: #C1121F;
+  --color-primary-light: #DC2626;
+  --color-primary-dark: #991B1B;
+  --color-primary-50: rgba(193, 18, 31, 0.05);
+  --color-primary-100: rgba(193, 18, 31, 0.1);
+  --color-primary-200: rgba(193, 18, 31, 0.2);
   
-  /* Orange - Chaleur, énergie, proximité */
-  --color-secondary: #F08224;
-  --color-secondary-light: #FF9D4A;
-  --color-secondary-dark: #D66B0F;
-  --color-secondary-50: rgba(240, 130, 36, 0.05);
-  --color-secondary-100: rgba(240, 130, 36, 0.1);
+  /* Vert Sahel - Nature, croissance, stabilité */
+  --color-secondary: #146B3A;
+  --color-secondary-light: #059669;
+  --color-secondary-dark: #047857;
+  --color-secondary-50: rgba(20, 107, 58, 0.05);
+  --color-secondary-100: rgba(20, 107, 58, 0.1);
+  
+  /* Or du Soleil - Prospérité, action, accent */
+  --color-accent: #F9B208;
+  --color-accent-light: #FBBF24;
+  --color-accent-dark: #D97706;
+  --color-accent-50: rgba(249, 178, 8, 0.05);
+  --color-accent-100: rgba(249, 178, 8, 0.1);
   
   /* Couleurs neutres - Lisibilité, équilibre */
   --color-white: #FFFFFF;
@@ -37,16 +45,16 @@
   --color-gray-900: #111827;
   
   /* Couleurs fonctionnelles */
-  --color-success: #10B981;
-  --color-success-light: #34D399;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
-  --color-info: #3B82F6;
+  --color-success: #146B3A;  /* Vert Sahel */
+  --color-success-light: #059669;
+  --color-warning: #F9B208;  /* Or du Soleil */
+  --color-error: #C1121F;    /* Rouge Burkina */
+  --color-info: #C1121F;
   
-  /* Drapeau ivoirien (optionnel pour accents) */
-  --color-ci-orange: #F77F00;
-  --color-ci-white: #FFFFFF;
-  --color-ci-green: #009E60;
+  /* Drapeau burkinabé (accents culturels) */
+  --color-bf-red: #C1121F;
+  --color-bf-green: #146B3A;
+  --color-bf-gold: #F9B208;
   
   /* ===== TYPOGRAPHIE ===== */
   
@@ -157,7 +165,7 @@
   transition: all var(--transition-base);
 }
 
-/* ===== MOTIFS CULTURELS (Textures africaines) ===== */
+/* ===== MOTIFS CULTURELS (Faso Dan Fani) ===== */
 
 .pattern-african {
   background-image: 
@@ -170,10 +178,10 @@
     );
 }
 
-.pattern-kente {
+.pattern-faso {
   background-image: 
-    linear-gradient(90deg, var(--color-ci-orange) 25%, transparent 25%),
-    linear-gradient(var(--color-ci-green) 25%, transparent 25%);
+    linear-gradient(90deg, var(--color-bf-red) 25%, transparent 25%),
+    linear-gradient(var(--color-bf-green) 25%, transparent 25%);
   background-size: 20px 20px;
   opacity: 0.05;
 }

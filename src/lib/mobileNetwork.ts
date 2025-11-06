@@ -1,5 +1,5 @@
 /**
- * Mobile Network Service for Mon Toit Real Estate App
+ * Mobile Network Service for MZAKA Real Estate App
  *
  * This file provides network detection, offline functionality, and
  * connectivity management for the real estate application.

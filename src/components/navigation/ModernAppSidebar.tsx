@@ -76,7 +76,7 @@ export function ModernAppSidebar() {
   // Navigation rapide (visible sur l'accueil même pour non-connectés)
   const quickActions = !profile ? [
     { to: "/auth", icon: User, label: "Se connecter", color: "text-orange-500", highlight: true },
-    { to: "/a-propos", icon: ShieldCheck, label: "Pourquoi Mon Toit ?", color: "text-purple-500" },
+    { to: "/a-propos", icon: ShieldCheck, label: "Pourquoi MZAKA ?", color: "text-purple-500" },
   ] : [];
 
   // Action supplémentaire pour l'accueil (visible uniquement sur la page d'accueil)
@@ -192,7 +192,7 @@ export function ModernAppSidebar() {
         <Link to="/" className="flex items-center gap-3">
           <motion.img 
             src={monToitLogo} 
-            alt="Mon Toit" 
+            alt="MZAKA" 
             className="h-10 w-10 rounded-lg shadow-md"
             whileHover={{ scale: 1.05, rotate: 5 }}
             transition={{ type: "spring", stiffness: 400 }}
@@ -200,7 +200,7 @@ export function ModernAppSidebar() {
           {open && (
             <div className="flex flex-col">
               <span className="text-base font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Mon Toit
+                MZAKA
               </span>
               <CulturalBadge variant="kente" className="text-xs px-2 py-0.5">
                 Certifié ANSUT
@@ -394,7 +394,7 @@ export function ModernAppSidebar() {
       <SidebarFooter className="border-t border-border/50 p-3 bg-gradient-to-r from-muted/30 to-transparent">
         {open ? (
           <div className="flex items-center justify-between text-xs text-muted-foreground px-2">
-            <span>© 2025 Mon Toit</span>
+            <span>© 2025 MZAKA</span>
             <Star className="h-3 w-3 text-kente-gold fill-kente-gold" />
           </div>
         ) : (

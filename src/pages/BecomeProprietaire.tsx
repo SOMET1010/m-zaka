@@ -117,7 +117,7 @@ export const BecomeProprietaire = () => {
           🔑 Devenir Propriétaire
         </h1>
         <p className="text-muted-foreground">
-          Pour publier des biens sur Mon Toit, vous devez compléter les étapes de vérification suivantes.
+          Pour publier des biens sur MZAKA, vous devez compléter les étapes de vérification suivantes.
         </p>
       </div>
 

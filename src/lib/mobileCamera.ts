@@ -1,5 +1,5 @@
 /**
- * Mobile Camera Service for Mon Toit Real Estate App
+ * Mobile Camera Service for MZAKA Real Estate App
  *
  * This file provides camera functionality for property photos, videos,
  * and document scanning for the real estate application.
@@ -334,7 +334,7 @@ export class MobileCameraService {
 
       await Share.share({
         title: `Photo du bien immobilier - ${photo.fileName}`,
-        text: 'Découvrez ce bien immobilier sur Mon Toit',
+        text: 'Découvrez ce bien immobilier sur MZAKA',
         url: photo.url,
       });
 

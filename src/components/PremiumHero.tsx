@@ -33,7 +33,7 @@ export const PremiumHero = () => {
     <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Image de fond avec overlay */}
       <div className="absolute inset-0 z-0">
-        {/* Image d'Abidjan (Unsplash placeholder) */}
+        {/* Image d'Ouagadougou (Unsplash placeholder) */}
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -82,7 +82,7 @@ export const PremiumHero = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             <Sparkles className="h-4 w-4" />
-            Plateforme N°1 en Côte d'Ivoire
+            Plateforme N°1 au Burkina Faso
           </motion.div>
 
           {/* Titre Principal avec Gradient */}
@@ -126,7 +126,7 @@ export const PremiumHero = () => {
                   </SelectTrigger>
                   <SelectContent className="bg-white border border-border z-50">
                     <SelectItem value="all">Toutes les villes</SelectItem>
-                    <SelectItem value="Abidjan">Abidjan</SelectItem>
+                    <SelectItem value="Ouagadougou">Ouagadougou</SelectItem>
                     <SelectItem value="Yopougon">Yopougon</SelectItem>
                     <SelectItem value="Cocody">Cocody</SelectItem>
                     <SelectItem value="Marcory">Marcory</SelectItem>

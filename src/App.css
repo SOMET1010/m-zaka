@@ -1,8 +1,12 @@
+/* M'ZAKA - Application Styles with Burkina Faso Theme */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #1E1E1E;
+  background-color: #F5EDE0;
+  min-height: 100vh;
 }
 
 .logo {
@@ -10,12 +14,15 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  filter: drop-shadow(0 0 1em #C1121F80);
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #C1121Faa);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #146B3Aaa);
 }
 
 @keyframes logo-spin {
@@ -35,8 +42,60 @@
 
 .card {
   padding: 2em;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(30, 30, 30, 0.1);
+  border: 1px solid #F5EDE0;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(30, 30, 30, 0.15);
+  border-color: #C1121F;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #6D6D6D;
+  font-size: 18px;
+}
+
+/* Custom M'ZAKA styles */
+.mzaka-card-primary {
+  border-top: 4px solid #C1121F;
+}
+
+.mzaka-card-secondary {
+  border-top: 4px solid #146B3A;
+}
+
+.mzaka-card-accent {
+  border-top: 4px solid #F9B208;
+}
+
+.mzaka-button {
+  background: linear-gradient(135deg, #C1121F 0%, #B91C1C 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(193, 18, 31, 0.2);
+}
+
+.mzaka-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(193, 18, 31, 0.3);
+}
+
+.mzaka-button-secondary {
+  background: linear-gradient(135deg, #146B3A 0%, #059669 100%);
+  box-shadow: 0 4px 12px rgba(20, 107, 58, 0.2);
+}
+
+.mzaka-button-secondary:hover {
+  box-shadow: 0 8px 24px rgba(20, 107, 58, 0.3);
 }

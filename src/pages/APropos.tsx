@@ -19,17 +19,17 @@ const APropos = () => {
               <AkanPattern />
               <div className="relative z-10">
                 <h1 className="text-h1 text-center mb-4">
-                  <span className="text-gradient-primary">À propos</span> de Mon Toit
+                  <span className="text-gradient-primary">À propos</span> de MZAKA
                 </h1>
                 <p className="text-xl text-muted-foreground text-center">
-                  La plateforme de confiance pour l'immobilier en Côte d'Ivoire
+                  La plateforme de confiance pour l'immobilier en Burkina Faso
                 </p>
               </div>
             </div>
 
             <div className="prose prose-lg max-w-none mb-12">
               <p>
-                <strong>Mon Toit</strong> est une plateforme innovante propulsée par <strong>ANSUT</strong> 
+                <strong>MZAKA</strong> est une plateforme innovante propulsée par <strong>ANSUT</strong> 
                 (Agence Nationale du Service Universel des Télécommunications/TIC), 
                 dédiée à révolutionner le marché immobilier ivoirien.
               </p>

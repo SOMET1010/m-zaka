@@ -1,4 +1,4 @@
-name: Mon Toit CI/CD Pipeline
+name: MZAKA CI/CD Pipeline
 
 on:
   push:

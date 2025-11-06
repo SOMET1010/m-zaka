@@ -47,11 +47,11 @@ export function FeaturesSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             Pourquoi choisir{' '}
-            <span className="text-primary">Mon Toit</span> ?
+            <span className="text-primary">MZAKA</span> ?
           </h2>
           <p className="text-lg text-muted-foreground">
             Service numérique innovant propulsé par ANSUT. 
-            Nous simplifions la location immobilière en Côte d'Ivoire avec des technologies certifiées.
+            Nous simplifions la location immobilière en Burkina Faso avec des technologies certifiées.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export function FeaturesSection() {
               </h3>
               
               <p className="text-lg text-muted-foreground">
-                Mon Toit est la première et unique plateforme immobilière certifiée par 
+                MZAKA est la première et unique plateforme immobilière certifiée par 
                 l'Autorité Nationale de Sécurisation des Transactions Urbaines (ANSUT). 
                 Cette certification garantit la légalité, la sécurité et la transparence 
                 de toutes les transactions effectuées sur notre plateforme.

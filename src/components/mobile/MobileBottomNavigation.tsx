@@ -1,5 +1,5 @@
 /**
- * Mobile Bottom Navigation Component for Mon Toit App
+ * Mobile Bottom Navigation Component for MZAKA App
  *
  * This component provides a mobile-optimized bottom navigation bar
  * with haptic feedback and smooth transitions.

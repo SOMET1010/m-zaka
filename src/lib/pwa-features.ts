@@ -1,5 +1,5 @@
 /**
- * Enhanced PWA Features for Mon Toit
+ * Enhanced PWA Features for MZAKA
  * Progressive Web App utilities for mobile optimization
  */
 
@@ -86,7 +86,7 @@ export class PWAInstaller {
         </svg>
       </div>
       <div class="install-prompt-content">
-        <div class="install-prompt-title">Installer Mon Toit</div>
+        <div class="install-prompt-title">Installer MZAKA</div>
         <div class="install-prompt-description">Accédez à votre plateforme immobilière préférée hors ligne</div>
       </div>
       <button class="install-prompt-button">Installer</button>
@@ -164,7 +164,7 @@ export class PWAInstaller {
         </svg>
       </div>
       <div class="install-prompt-content">
-        <div class="install-prompt-title">Installer Mon Toit</div>
+        <div class="install-prompt-title">Installer MZAKA</div>
         <div class="install-prompt-description">
           Appuyez sur <strong>Partager</strong> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="18" cy="5" r="3"></circle>

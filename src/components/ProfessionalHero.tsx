@@ -2,7 +2,7 @@
  * MON TOIT - Hero Section Professionnel
  * "Trouvez votre Toit Idéal"
  * 
- * Design UX/UI avec palette "Coucher de soleil ivoirien":
+ * Design UX/UI avec palette "Coucher de soleil burkinabè":
  * - Fond crème clair avec dégradé pastel subtil
  * - Titre orange vif pour impact visuel
  * - Motifs culturels Kente discrets
@@ -42,11 +42,11 @@ export const ProfessionalHero = () => {
   return (
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
       
-      {/* Image de fond - Illustration Abidjan */}
+      {/* Image de fond - Illustration Ouagadougou */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/hero/abidjan-illustration.png)',
+          backgroundImage: 'url(/images/hero/ouagadougou-illustration.png)',
           backgroundPosition: 'center 60%' // Meilleur cadrage sur mobile
         }}
       />
@@ -143,7 +143,7 @@ export const ProfessionalHero = () => {
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-medium px-4 sm:px-0">
-              Explorez une vaste sélection de biens immobiliers à Abidjan et partout en Côte d'Ivoire
+              Explorez une vaste sélection de biens immobiliers à Ouagadougou et partout en Burkina Faso
             </p>
           </motion.div>
 
@@ -180,7 +180,7 @@ export const ProfessionalHero = () => {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="all">Toutes les villes</SelectItem>
-                      <SelectItem value="Abidjan">Abidjan</SelectItem>
+                      <SelectItem value="Ouagadougou">Ouagadougou</SelectItem>
                       <SelectItem value="Yamoussoukro">Yamoussoukro</SelectItem>
                       <SelectItem value="Bouaké">Bouaké</SelectItem>
                       <SelectItem value="San-Pédro">San-Pédro</SelectItem>

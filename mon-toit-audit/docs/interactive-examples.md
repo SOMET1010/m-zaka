@@ -1,6 +1,6 @@
 # Interactive API Examples & SDK Guides
 
-This document provides comprehensive, interactive examples for integrating with the Mon Toit API, including SDK implementations in multiple languages and ready-to-use code snippets.
+This document provides comprehensive, interactive examples for integrating with the MZAKA API, including SDK implementations in multiple languages and ready-to-use code snippets.
 
 ## Quick Start Guide
 
@@ -225,9 +225,9 @@ class PropertyAPI {
 // Usage
 const propertyAPI = new PropertyAPI(supabase);
 
-// Search for apartments in Abidjan
+// Search for apartments in Ouagadougou
 const properties = await propertyAPI.searchProperties({
-  city: 'Abidjan',
+  city: 'Ouagadougou',
   propertyType: 'appartement',
   maxPrice: 200000,
   minBedrooms: 2
@@ -311,7 +311,7 @@ property_api = PropertyAPI(supabase)
 
 # Search for properties
 properties = await property_api.search_properties({
-    'city': 'Abidjan',
+    'city': 'Ouagadougou',
     'property_type': 'appartement',
     'max_price': 200000,
     'min_bedrooms': 2
@@ -421,7 +421,7 @@ const userAPI = new UserAPI(supabase);
 await userAPI.updateProfile({
   fullName: 'John Doe',
   bio: 'Real estate investor',
-  city: 'Abidjan',
+  city: 'Ouagadougou',
   phone: '+225XXXXXXXXX'
 });
 
@@ -1094,7 +1094,7 @@ describe('PropertyAPI', () => {
   describe('searchProperties', () => {
     it('should search properties with filters', async () => {
       const mockProperties = [
-        { id: '1', title: 'Test Property', city: 'Abidjan' }
+        { id: '1', title: 'Test Property', city: 'Ouagadougou' }
       ];
 
       (supabase.rpc as jest.Mock).mockResolvedValue({
@@ -1103,12 +1103,12 @@ describe('PropertyAPI', () => {
       });
 
       const result = await propertyAPI.searchProperties({
-        city: 'Abidjan',
+        city: 'Ouagadougou',
         maxPrice: 200000
       });
 
       expect(supabase.rpc).toHaveBeenCalledWith('get_public_properties', {
-        p_city: 'Abidjan',
+        p_city: 'Ouagadougou',
         p_property_type: null,
         p_min_rent: null,
         p_max_rent: 200000,
@@ -1135,7 +1135,7 @@ describe('PropertyAPI', () => {
         id: '1',
         title: 'New Property',
         address: '123 Test St',
-        city: 'Abidjan'
+        city: 'Ouagadougou'
       };
 
       (supabase.auth.getUser as jest.Mock).mockResolvedValue({
@@ -1156,7 +1156,7 @@ describe('PropertyAPI', () => {
       const result = await propertyAPI.createProperty({
         title: 'New Property',
         address: '123 Test St',
-        city: 'Abidjan',
+        city: 'Ouagadougou',
         propertyType: 'appartement',
         monthlyRent: 150000
       });
@@ -1185,7 +1185,7 @@ describe('Property Search', () => {
 
   it('should search for properties', () => {
     // Enter search criteria
-    cy.get('[data-testid="city-input"]').type('Abidjan');
+    cy.get('[data-testid="city-input"]').type('Ouagadougou');
     cy.get('[data-testid="property-type-select"]').select('appartement');
     cy.get('[data-testid="max-price-input"]').type('200000');
 
@@ -1227,7 +1227,7 @@ describe('Property Search', () => {
 #### Environment Variables
 ```json
 {
-  "name": "Mon Toit API",
+  "name": "MZAKA API",
   "values": [
     {
       "key": "baseUrl",
@@ -1252,7 +1252,7 @@ describe('Property Search', () => {
 ```json
 {
   "info": {
-    "name": "Mon Toit API Collection",
+    "name": "MZAKA API Collection",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -1353,7 +1353,7 @@ describe('Property Search', () => {
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"p_city\": \"Abidjan\",\n  \"p_max_rent\": 200000,\n  \"p_min_bedrooms\": 2\n}"
+              "raw": "{\n  \"p_city\": \"Ouagadougou\",\n  \"p_max_rent\": 200000,\n  \"p_min_bedrooms\": 2\n}"
             },
             "url": {
               "raw": "{{baseUrl}}/rest/v1/rpc/get_public_properties",
@@ -1382,7 +1382,7 @@ describe('Property Search', () => {
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"title\": \"Beautiful Apartment\",\n  \"address\": \"123 Main St\",\n  \"city\": \"Abidjan\",\n  \"property_type\": \"appartement\",\n  \"monthly_rent\": 150000,\n  \"bedrooms\": 3,\n  \"bathrooms\": 2\n}"
+              "raw": "{\n  \"title\": \"Beautiful Apartment\",\n  \"address\": \"123 Main St\",\n  \"city\": \"Ouagadougou\",\n  \"property_type\": \"appartement\",\n  \"monthly_rent\": 150000,\n  \"bedrooms\": 3,\n  \"bathrooms\": 2\n}"
             },
             "url": {
               "raw": "{{baseUrl}}/rest/v1/properties",
@@ -1438,4 +1438,4 @@ swagger-codegen generate \
   -o ./sdk/php
 ```
 
-This comprehensive documentation provides everything developers need to integrate with the Mon Toit API, from basic authentication to complex real-time applications and SDK generation.
+This comprehensive documentation provides everything developers need to integrate with the MZAKA API, from basic authentication to complex real-time applications and SDK generation.

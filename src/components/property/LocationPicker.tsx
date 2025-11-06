@@ -33,10 +33,10 @@ export const LocationPicker = ({ onLocationSelect, initialLat, initialLng, city 
   useEffect(() => {
     if (!mapContainer.current) return;
 
-    // Get initial position from city or default to Abidjan
+    // Get initial position from city or default to Ouagadougou
     const cityCoords = city ? CITY_COORDINATES[city] : null;
     const initialCoords: [number, number] = 
-      coordinates || cityCoords || CITY_COORDINATES['Abidjan'];
+      coordinates || cityCoords || CITY_COORDINATES['Ouagadougou'];
 
     mapboxgl.accessToken = 'pk.eyJ1IjoibG92YWJsZS1kZXYiLCJhIjoiY200N2lwbDJhMDBseTJrcHlnOTluZnN1biJ9.JLechweMLsxP7qlR6cT-Og';
     

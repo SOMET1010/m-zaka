@@ -1,10 +1,10 @@
 openapi: 3.1.0
 info:
-  title: Mon Toit API
+  title: MZAKA API
   description: |
-    Certified real estate platform API for Côte d'Ivoire.
+    Certified real estate platform API for Burkina Faso.
 
-    Mon Toit is a comprehensive property rental platform connecting landlords, tenants, and agencies with ANSUT certification features.
+    MZAKA is a comprehensive property rental platform connecting landlords, tenants, and agencies with ANSUT certification features.
 
     ## Authentication
     The API uses JWT-based authentication via Supabase Auth. Include the JWT token in the Authorization header:
@@ -24,7 +24,7 @@ info:
     ```
   version: 1.0.0
   contact:
-    name: Mon Toit API Support
+    name: MZAKA API Support
     email: support@mon-toit.ci
     url: https://mon-toit.ci
   license:

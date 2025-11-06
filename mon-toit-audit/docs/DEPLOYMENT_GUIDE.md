@@ -299,7 +299,7 @@ Fichier `scripts/deploy.sh`:
 
 set -e
 
-echo "🚀 Déploiement Mon Toit 2.0.0 - Début"
+echo "🚀 Déploiement MZAKA 2.0.0 - Début"
 
 # Variables
 ENVIRONMENT=${1:-production}
@@ -576,5 +576,5 @@ location.reload();
 ---
 
 **✅ Guide de déploiement validé le 25 octobre 2025**  
-**🚀 Prêt pour la production - Mon Toit 2.0.0**  
+**🚀 Prêt pour la production - MZAKA 2.0.0**  
 **📞 Support: tech@mon-toit.ci**

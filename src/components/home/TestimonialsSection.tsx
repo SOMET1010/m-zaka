@@ -5,21 +5,21 @@ const testimonials = [
     name: 'Kouadio Adjoua',
     role: 'Locataire à Cocody',
     rating: 5,
-    text: 'Grâce à Mon Toit, j\'ai trouvé mon appartement idéal en moins d\'une semaine. La plateforme est simple, sécurisée et les biens sont vraiment vérifiés. Je recommande vivement !',
+    text: 'Grâce à MZAKA, j\'ai trouvé mon appartement idéal en moins d\'une semaine. La plateforme est simple, sécurisée et les biens sont vraiment vérifiés. Je recommande vivement !',
     avatar: 'KA'
   },
   {
     name: 'Yao Kouassi',
     role: 'Propriétaire à Marcory',
     rating: 5,
-    text: 'En tant que propriétaire, Mon Toit m\'a permis de louer mes biens rapidement avec des locataires de confiance. La certification ANSUT rassure vraiment les deux parties.',
+    text: 'En tant que propriétaire, MZAKA m\'a permis de louer mes biens rapidement avec des locataires de confiance. La certification ANSUT rassure vraiment les deux parties.',
     avatar: 'YK'
   },
   {
     name: 'Diallo Aminata',
     role: 'Agent immobilier',
     rating: 5,
-    text: 'Mon Toit a révolutionné ma façon de travailler. Le système de mandats est clair, les outils sont professionnels et mes clients sont satisfaits. C\'est un vrai plus pour mon activité.',
+    text: 'MZAKA a révolutionné ma façon de travailler. Le système de mandats est clair, les outils sont professionnels et mes clients sont satisfaits. C\'est un vrai plus pour mon activité.',
     avatar: 'DA'
   }
 ];
@@ -35,7 +35,7 @@ export function TestimonialsSection() {
             <span className="text-secondary">confiance</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Découvrez les témoignages de nos utilisateurs satisfaits à travers toute la Côte d'Ivoire.
+            Découvrez les témoignages de nos utilisateurs satisfaits à travers toute la Burkina Faso.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export function TestimonialsSection() {
               
               <p className="text-lg text-muted-foreground">
                 Chaque jour, des familles ivoiriennes trouvent le logement de leurs rêves 
-                grâce à Mon Toit. Notre mission est de rendre l'accès au logement simple, 
+                grâce à MZAKA. Notre mission est de rendre l'accès au logement simple, 
                 transparent et sécurisé pour tous.
               </p>
 

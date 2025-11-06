@@ -40,7 +40,7 @@ log_to_file() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
 }
 
-log_info "🔒 Démarrage de la migration de sécurité - Mon Toit"
+log_info "🔒 Démarrage de la migration de sécurité - MZAKA"
 log_to_file "=== DÉBUT DE LA MIGRATION ==="
 
 # 1. Création du backup
@@ -151,7 +151,7 @@ log_info "📊 Génération du rapport de migration..."
 
 REPORT_FILE="$PROJECT_DIR/security-migration-report.md"
 cat > "$REPORT_FILE" << EOF
-# Rapport de Migration de Sécurité - Mon Toit
+# Rapport de Migration de Sécurité - MZAKA
 
 **Date:** $(date '+%d/%m/%Y à %H:%M:%S')  
 **Version:** 1.0.0  

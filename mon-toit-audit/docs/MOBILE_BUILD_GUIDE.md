@@ -1,8 +1,8 @@
-# Guide de Build Mobile - Mon Toit
+# Guide de Build Mobile - MZAKA
 
 ## Vue d'ensemble
 
-Ce guide détaille le processus de compilation et de déploiement des applications mobiles Mon Toit utilisant Capacitor.
+Ce guide détaille le processus de compilation et de déploiement des applications mobiles MZAKA utilisant Capacitor.
 
 ## Prérequis
 
@@ -60,7 +60,7 @@ Le fichier `capacitor.config.ts` contient la configuration standardisée :
 ```typescript
 const config: CapacitorConfig = {
   appId: 'ci.montoit.app',
-  appName: 'Mon Toit',
+  appName: 'MZAKA',
   webDir: 'dist',
   server: {
     androidScheme: 'https',

@@ -71,7 +71,7 @@ const Aide = () => {
               <AccordionContent className="text-gray-600">
                 Pour créer votre dossier vérifié, cliquez sur "Je cherche un logement" sur la page d'accueil, puis suivez les étapes :
                 <ol className="list-decimal list-inside mt-2 space-y-1">
-                  <li>Créez votre compte Mon Toit</li>
+                  <li>Créez votre compte MZAKA</li>
                   <li>Complétez vos informations personnelles</li>
                   <li>Vérifiez votre identité avec Smile ID (CNI ou passeport)</li>
                   <li>Ajoutez vos documents (bulletins de salaire, attestation d'emploi)</li>
@@ -118,7 +118,7 @@ const Aide = () => {
                 Comment fonctionne le paiement Mobile Money ?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600">
-                Mon Toit accepte tous les moyens de paiement Mobile Money :
+                MZAKA accepte tous les moyens de paiement Mobile Money :
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   <li><strong>Orange Money</strong> : Paiement instantané</li>
                   <li><strong>MTN Mobile Money</strong> : Paiement instantané</li>
@@ -133,7 +133,7 @@ const Aide = () => {
                 Comment signer mon bail électroniquement ?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600">
-                La signature électronique sur Mon Toit utilise la technologie PSE (Prestataire de Services Électroniques) agréé par l'ANSUT :
+                La signature électronique sur MZAKA utilise la technologie PSE (Prestataire de Services Électroniques) agréé par l'ANSUT :
                 <ol className="list-decimal list-inside mt-2 space-y-1">
                   <li>Recevez le bail par email et sur votre tableau de bord</li>
                   <li>Vérifiez les conditions du bail</li>
@@ -214,8 +214,8 @@ const Aide = () => {
           </CardHeader>
           <CardContent className="space-y-2">
             <p className="text-gray-700">
-              Mon Toit est une plateforme certifiée ANSUT qui respecte les standards nationaux de sécurité et de confidentialité.
-              Toutes vos données personnelles sont chiffrées et stockées en Côte d'Ivoire conformément à la loi sur la protection des données.
+              MZAKA est une plateforme certifiée ANSUT qui respecte les standards nationaux de sécurité et de confidentialité.
+              Toutes vos données personnelles sont chiffrées et stockées en Burkina Faso conformément à la loi sur la protection des données.
             </p>
             <div className="flex gap-4 mt-4">
               <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-50">

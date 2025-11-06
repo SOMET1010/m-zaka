@@ -1,6 +1,6 @@
-# Guide de Sécurité - Mon Toit
+# Guide de Sécurité - MZAKA
 
-Ce document détaille les pratiques de sécurité implémentées dans l'application Mon Toit et les bonnes pratiques à suivre pour maintenir la sécurité du système.
+Ce document détaille les pratiques de sécurité implémentées dans l'application MZAKA et les bonnes pratiques à suivre pour maintenir la sécurité du système.
 
 ## Table des matières
 

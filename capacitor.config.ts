@@ -1,27 +1,27 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'ci.montoit.app',
-  appName: 'Mon Toit',
+  appId: 'bf.mzaka.app',
+  appName: 'MZAKA',
   webDir: 'dist',
   server: {
     androidScheme: 'https',
     iosScheme: 'https',
     // Security: Restrict navigation to app domains
     allowNavigation: [
-      'https://montoit.ci',
+      'https://mzaka.bf',
       'https://*.supabase.co',
       'https://api.mapbox.com',
       'https://tiles.mapbox.com',
       'https://*.mapbox.com',
-      'https://mon-toit.netlify.app/'
+      'https://mzaka.netlify.app/'
     ],
     // Cleartext is not permitted
     cleartext: false,
   },
   // iOS configuration
   ios: {
-    scheme: 'montoit',
+    scheme: 'mzaka',
     // Build configuration
     contentInset: 'automatic',
     // WebView configuration
@@ -59,12 +59,12 @@ const config: CapacitorConfig = {
     // StatusBar configuration
     StatusBar: {
       style: 'dark',
-      backgroundColor: '#E67E3A', // Abidjan Sunset (orange)
+      backgroundColor: '#E67E3A', // Ouagadougou Sunset (orange)
       overlaysWebView: true,
     },
     // App plugin configuration
     App: {
-      appendUserAgent: ' MonToit-Secure-App/1.0',
+      appendUserAgent: ' MZAKA-Secure-App/1.0',
       handleUrlOpen: true,
       allowNavigation: true,
     },
@@ -105,7 +105,7 @@ const config: CapacitorConfig = {
     },
     // Preferences plugin configuration
     Preferences: {
-      group: 'montoit.storage',
+      group: 'mzaka.storage',
     },
     // Browser plugin configuration
     Browser: {

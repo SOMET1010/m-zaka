@@ -1,5 +1,5 @@
 /**
- * Configuration Sentry améliorée pour la plateforme Mon Toit
+ * Configuration Sentry améliorée pour la plateforme MZAKA
  * Includes security monitoring, performance tracking, and user feedback
  */
 

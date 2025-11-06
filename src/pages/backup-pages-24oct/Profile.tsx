@@ -313,7 +313,7 @@ const Profile = () => {
                   <Label htmlFor="city">Ville</Label>
                   <Input
                     id="city"
-                    placeholder="Ex: Abidjan, Yamoussoukro"
+                    placeholder="Ex: Ouagadougou, Yamoussoukro"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                   />

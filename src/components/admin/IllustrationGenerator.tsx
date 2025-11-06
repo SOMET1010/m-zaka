@@ -16,7 +16,7 @@ const ILLUSTRATIONS: Illustration[] = [
   {
     filename: "famille-heureuse-cocody",
     description: "Famille ivoirienne heureuse devant leur maison",
-    prompt: "Flat design vector illustration of a happy Ivorian family standing in front of their modern house in Cocody, Abidjan. Family of 4 people (parents and 2 children) smiling, contemporary West African home with orange and blue accent colors (#E67E22, #2C5F7F). Warm, welcoming atmosphere, clean composition, professional real estate marketing style. Ultra-realistic details, vibrant colors, 16:9 aspect ratio."
+    prompt: "Flat design vector illustration of a happy Ivorian family standing in front of their modern house in Cocody, Ouagadougou. Family of 4 people (parents and 2 children) smiling, contemporary West African home with orange and blue accent colors (#E67E22, #2C5F7F). Warm, welcoming atmosphere, clean composition, professional real estate marketing style. Ultra-realistic details, vibrant colors, 16:9 aspect ratio."
   },
   {
     filename: "couple-visite-appartement",
@@ -30,8 +30,8 @@ const ILLUSTRATIONS: Illustration[] = [
   },
   {
     filename: "quartier-anime-abidjan",
-    description: "Rue animée d'Abidjan",
-    prompt: "Flat design illustration of a vibrant Abidjan neighborhood street scene. Orange taxis, people in colorful wax fabric, local shops, modern buildings mixed with traditional architecture. Lively atmosphere, warm colors with orange and blue accents (#E67E22, #2C5F7F). West African urban life, dynamic composition, 16:9 aspect ratio."
+    description: "Rue animée d'Ouagadougou",
+    prompt: "Flat design illustration of a vibrant Ouagadougou neighborhood street scene. Orange taxis, people in colorful wax fabric, local shops, modern buildings mixed with traditional architecture. Lively atmosphere, warm colors with orange and blue accents (#E67E22, #2C5F7F). West African urban life, dynamic composition, 16:9 aspect ratio."
   },
   {
     filename: "interieur-moderne-salon",
@@ -40,8 +40,8 @@ const ILLUSTRATIONS: Illustration[] = [
   },
   {
     filename: "vue-aerienne-abidjan",
-    description: "Skyline stylisé d'Abidjan",
-    prompt: "Minimalist flat design illustration of Abidjan skyline view. Recognizable landmarks including Plateau business district, Henri Konan Bédié Bridge. Stylized, elegant composition with orange and blue color scheme (#E67E22, #2C5F7F). Modern, clean lines, abstract geometric shapes, 16:9 aspect ratio."
+    description: "Skyline stylisé d'Ouagadougou",
+    prompt: "Minimalist flat design illustration of Ouagadougou skyline view. Recognizable landmarks including Plateau business district, Henri Konan Bédié Bridge. Stylized, elegant composition with orange and blue color scheme (#E67E22, #2C5F7F). Modern, clean lines, abstract geometric shapes, 16:9 aspect ratio."
   },
   {
     filename: "remise-cles-ceremonie",

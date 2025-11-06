@@ -1,11 +1,11 @@
-# Décisions Architecturales - Mon Toit
+# Décisions Architecturales - MZAKA
 
 ## 1. Vérification d'Identité: Azure Face API vs Smile ID
 
 ### Date de décision: 2025-10-05
 
 ### Contexte
-Le projet Mon Toit nécessite un système de vérification d'identité robuste pour:
+Le projet MZAKA nécessite un système de vérification d'identité robuste pour:
 - Vérifier l'identité des utilisateurs (ONECI)
 - Effectuer la reconnaissance faciale (Face Verification)
 - Valider les documents d'identité
@@ -90,7 +90,7 @@ Deux options principales ont été évaluées:
 
 **Phase 1 - POC (Proof of Concept)**:
 - Créer compte Smile ID test
-- Tester APIs sur documents CI (Côte d'Ivoire)
+- Tester APIs sur documents CI (Burkina Faso)
 - Comparer performances et coûts
 - Évaluer qualité OCR et liveness detection
 
@@ -144,4 +144,4 @@ Deux options principales ont été évaluées:
 - Edge function actuelle: `supabase/functions/face-verification/index.ts`
 
 ### Dernière mise à jour
-2025-10-05 par l'équipe Mon Toit
+2025-10-05 par l'équipe MZAKA

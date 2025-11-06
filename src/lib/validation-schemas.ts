@@ -1,5 +1,5 @@
 /**
- * Schémas de validation Zod sécurisés pour la plateforme Mon Toit
+ * Schémas de validation Zod sécurisés pour la plateforme MZAKA
  * Fournit une validation robuste contre les injections et les données malveillantes
  */
 

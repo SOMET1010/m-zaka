@@ -1,6 +1,6 @@
-# 🏠 Mon Toit - Plateforme Immobilière Certifiée ANSUT
+# 🏠 MZAKA - Plateforme Immobilière Certifiée ANSUT
 
-**La première plateforme immobilière certifiée par l'ANSUT en Côte d'Ivoire** 🇨🇮
+**La première plateforme immobilière certifiée par l'ANSUT en Burkina Faso** 🇨🇮
 
 Location sécurisée avec signature électronique, vérification d'identité et paiement mobile money.
 
@@ -44,4 +44,4 @@ Voir [DOCUMENTATION.md](DOCUMENTATION.md) pour le guide complet.
 
 ---
 
-**🏠 Mon Toit - Le logement en toute confiance** 🇨🇮
+**🏠 MZAKA - Le logement en toute confiance** 🇨🇮

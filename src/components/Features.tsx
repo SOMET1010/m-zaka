@@ -12,8 +12,8 @@ const ANSUT_FULL_NAME = "Agence Nationale du Service Universel des Télécommuni
 const ANSUT_SHORT_NAME = "ANSUT";
 const ANSUT_MINISTRY = "Ministère de la Transition Numérique et de la Digitalisation";
 
-// Configuration - Mon Toit (le produit/service)
-const PRODUCT_NAME = "Mon Toit";
+// Configuration - MZAKA (le produit/service)
+const PRODUCT_NAME = "MZAKA";
 const PRODUCT_TAGLINE = "Dossier de location numérique certifié par l'État";
 
 // Types
@@ -242,13 +242,13 @@ const Features = () => {
       aria-labelledby="features-heading"
     >
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
-        {/* Header - Mon Toit en avant */}
+        {/* Header - MZAKA en avant */}
         <header className="text-center mb-16">
           <div className="flex flex-col items-center justify-center gap-3 mb-6">
-            {/* Logo Mon Toit - PRINCIPAL */}
+            {/* Logo MZAKA - PRINCIPAL */}
             <img 
               src={monToitLogo} 
-              alt="Mon Toit - Dossier de location numérique certifié" 
+              alt="MZAKA - Dossier de location numérique certifié" 
               className="h-14 md:h-16" 
             />
             
@@ -305,7 +305,7 @@ const Features = () => {
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Sans Mon Toit */}
+            {/* Sans MZAKA */}
             <div className="bg-gray-100 rounded-lg p-8 shadow-sm">
               <h4 className="text-xl font-bold mb-6 text-foreground flex items-center gap-2">
                 <X className="h-6 w-6 text-destructive" aria-hidden="true" />
@@ -314,7 +314,7 @@ const Features = () => {
               <ComparisonList items={withoutMonToit} />
             </div>
 
-            {/* Avec Mon Toit */}
+            {/* Avec MZAKA */}
             <div className="bg-white rounded-lg p-8 shadow-lg border-2 border-primary/20 relative overflow-hidden">
               <div className="relative z-10">
                 <div className="flex items-center justify-between mb-6">
@@ -352,11 +352,11 @@ const Features = () => {
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <span>Hébergement en Côte d'Ivoire</span>
+                  <span>Hébergement au Burkina Faso</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <span>Conformité RGPD et loi ivoirienne</span>
+                  <span>Conformité RGPD et loi burkinabè</span>
                 </div>
               </div>
             </div>

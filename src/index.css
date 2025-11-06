@@ -1,5 +1,6 @@
 /* M'ZAKA - Styles Simplifiés pour Build */
 @import './styles/mzaka-variables.css';
+@import './styles/mzaka-burkina.css';
 
 @tailwind base;
 @tailwind components;

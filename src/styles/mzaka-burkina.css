@@ -6,25 +6,25 @@
 /* ===== VARIABLES CSS POUR LE MARCHÉ BURKINABÉ ===== */
 
 :root {
-  /* Couleurs inspirées du drapeau et de la culture burkinabé */
-  --color-burkina-red: #EF4444;
-  --color-burkina-yellow: #FBBF24;
-  --color-burkina-green: #10B981;
+  /* Couleurs inspirées du drapeau du Burkina Faso */
+  --color-burkina-red: #C1121F;
+  --color-burkina-yellow: #F9B208;
+  --color-burkina-green: #146B3A;
   --color-earth: #92400E;
   --color-sand: #F3F4F6;
   --color-mud: #78716C;
   
-  /* Palette principale M'ZAKA adaptée */
-  --color-mzaka-primary: #1E40AF;      /* Bleu profond - confiance */
-  --color-mzaka-secondary: #DC2626;    /* Rouge terre - énergie locale */
-  --color-mzaka-accent: #FBBF24;       /* Jaune or - prosperité */
-  --color-mzaka-success: #059669;      /* Vert croissance */
-  --color-mzaka-warning: #D97706;      /* Orange attention */
+  /* Palette principale M'ZAKA - Couleurs Faso Dan Fani */
+  --color-mzaka-primary: #C1121F;      /* Rouge Burkina - action principale */
+  --color-mzaka-secondary: #146B3A;    /* Vert Sahel - action secondaire */
+  --color-mzaka-accent: #F9B208;       /* Or du soleil - accent */
+  --color-mzaka-success: #146B3A;      /* Vert croissance */
+  --color-mz-warning: #F9B208;         /* Or attention */
   --color-mzaka-neutral: #6B7280;      /* Gris équilibré */
   
   /* Gradients inspirés des paysages burkinabés */
-  --gradient-savanna: linear-gradient(135deg, #92400E 0%, #FBBF24 100%);
-  --gradient-sunset: linear-gradient(135deg, #DC2626 0%, #FBBF24 100%);
+  --gradient-savanna: linear-gradient(135deg, #146B3A 0%, #F9B208 100%);
+  --gradient-sunset: linear-gradient(135deg, #C1121F 0%, #F9B208 100%);
   --gradient-earth: linear-gradient(135deg, #78716C 0%, #F3F4F6 100%);
   
   /* Typographie optimisée pour la lecture locale */
@@ -84,8 +84,8 @@ button:hover,
 
 /* Menu principal avec icônes plus grandes */
 .navbar-main {
-  background: linear-gradient(90deg, var(--color-mzaka-primary) 0%, #1E3A8A 100%);
-  box-shadow: 0 2px 10px rgba(30, 64, 175, 0.1);
+  background: linear-gradient(90deg, var(--color-mzaka-primary) 0%, #B91C1C 100%);
+  box-shadow: 0 2px 10px rgba(193, 18, 31, 0.1);
 }
 
 .navbar-item {
@@ -225,7 +225,7 @@ button:hover,
 
 .form-input:focus {
   border-color: var(--color-mzaka-primary);
-  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+  box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.1);
   outline: none;
 }
 
@@ -530,8 +530,8 @@ textarea:focus-visible {
 /* Mode sombre (optionnel) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-mzaka-primary: #3B82F6;
-    --color-mzaka-secondary: #EF4444;
+    --color-mzaka-primary: #DC2626;
+    --color-mzaka-secondary: #10B981;
     --color-mzaka-neutral: #9CA3AF;
   }
   

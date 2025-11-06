@@ -1,6 +1,6 @@
 /**
  * MON TOIT - Mobile Hero
- * Version mobile du Hero avec palette "Coucher de soleil ivoirien"
+ * Version mobile du Hero avec palette "Coucher de soleil burkinabè"
  * Optimisé pour petits écrans (<768px)
  */
 
@@ -29,11 +29,11 @@ export const MobileHero = () => {
   return (
     <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
       
-      {/* Image de fond - Illustration Abidjan */}
+      {/* Image de fond - Illustration Ouagadougou */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/hero/abidjan-illustration.png)',
+          backgroundImage: 'url(/images/hero/ouagadougou-illustration.png)',
           backgroundPosition: 'center 60%'
         }}
       />
@@ -94,7 +94,7 @@ export const MobileHero = () => {
 
           {/* Sous-titre */}
           <p className="text-sm text-gray-600 max-w-sm font-medium px-2">
-            Explorez une vaste sélection de biens immobiliers à Abidjan
+            Explorez une vaste sélection de biens immobiliers à Ouagadougou
           </p>
 
           {/* Formulaire de recherche */}
@@ -121,7 +121,7 @@ export const MobileHero = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="all">Toutes les villes</SelectItem>
-                    <SelectItem value="Abidjan">Abidjan</SelectItem>
+                    <SelectItem value="Ouagadougou">Ouagadougou</SelectItem>
                     <SelectItem value="Yamoussoukro">Yamoussoukro</SelectItem>
                     <SelectItem value="Bouaké">Bouaké</SelectItem>
                     <SelectItem value="San-Pédro">San-Pédro</SelectItem>

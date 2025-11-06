@@ -2,7 +2,7 @@
 
 ## 📋 Vue d'ensemble
 
-Ce document détaille l'implémentation complète des 7 épics de sécurité critiques pour la plateforme Mon Toit.
+Ce document détaille l'implémentation complète des 7 épics de sécurité critiques pour la plateforme MZAKA.
 
 **Date d'implémentation** : 5 octobre 2025  
 **Responsable** : Équipe de sécurité  
@@ -390,7 +390,7 @@ if (recentUnauthorized.length > 10) {
 
 ## 📞 Contacts
 
-**Responsable Sécurité** : Équipe Mon Toit  
+**Responsable Sécurité** : Équipe MZAKA  
 **Questions** : Voir `docs/SECURITY.md` pour la politique de sécurité complète
 
 ---

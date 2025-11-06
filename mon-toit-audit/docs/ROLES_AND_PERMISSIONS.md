@@ -1,6 +1,6 @@
-# Système de Rôles et Permissions - Mon Toit
+# Système de Rôles et Permissions - MZAKA
 
-Ce document détaille le système complet de rôles et permissions de l'application Mon Toit.
+Ce document détaille le système complet de rôles et permissions de l'application MZAKA.
 
 ## Table des matières
 
@@ -13,7 +13,7 @@ Ce document détaille le système complet de rôles et permissions de l'applicat
 
 ## Vue d'ensemble
 
-Le système de sécurité de Mon Toit utilise **deux niveaux** de contrôle d'accès :
+Le système de sécurité de MZAKA utilise **deux niveaux** de contrôle d'accès :
 
 1. **user_type** : Type de compte utilisateur (stocké dans `profiles.user_type`)
 2. **app_role** : Rôles système pour permissions avancées (stocké dans `user_roles.role`)

@@ -25,7 +25,7 @@ export const SutaChatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: "👋 Bonjour ! Je suis SUTA, votre assistant intelligent Mon Toit. Comment puis-je vous aider aujourd'hui ?"
+      content: "👋 Bonjour ! Je suis SUTA, votre assistant intelligent MZAKA. Comment puis-je vous aider aujourd'hui ?"
     }
   ]);
   const [input, setInput] = useState("");
@@ -160,7 +160,7 @@ export const SutaChatbot = () => {
             </Avatar>
             <div className="flex-1">
               <h3 className="font-semibold">Sarrah</h3>
-              <p className="text-xs opacity-90">Assistante Mon Toit</p>
+              <p className="text-xs opacity-90">Assistante MZAKA</p>
             </div>
           </div>
 

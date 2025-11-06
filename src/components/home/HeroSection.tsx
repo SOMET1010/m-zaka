@@ -48,7 +48,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img
           src="/hero_building.jpg"
-          alt="Immeuble moderne à Abidjan - Orchid Apartments"
+          alt="Immeuble moderne à Ouagadougou - Orchid Apartments"
           className="w-full h-full object-cover"
           loading="eager"
           fetchPriority="high"
@@ -81,7 +81,7 @@ export function HeroSection() {
               Trouvez votre{' '}
               <span className="text-accent">Toit Idéal</span>
               <br />
-              en Côte d'Ivoire
+              en Burkina Faso
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
               Plateforme immobilière <strong>propulsée par ANSUT</strong>. 

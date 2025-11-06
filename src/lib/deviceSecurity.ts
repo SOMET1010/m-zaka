@@ -1,5 +1,5 @@
 /**
- * Device Security Detection for Mon Toit Mobile App
+ * Device Security Detection for MZAKA Mobile App
  *
  * This file contains security utilities to detect jailbroken/rooted devices,
  * debuggers, emulators, and other security-compromised environments.

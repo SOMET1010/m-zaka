@@ -1,5 +1,5 @@
 /**
- * Mobile Navigation Handler for Mon Toit App
+ * Mobile Navigation Handler for MZAKA App
  *
  * This file contains utilities for handling mobile-specific navigation,
  * back button management, and action buttons in the Capacitor environment.

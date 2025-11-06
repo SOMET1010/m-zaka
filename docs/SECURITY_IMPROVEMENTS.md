@@ -1,8 +1,8 @@
-# Améliorations de Sécurité - Plateforme Mon Toit
+# Améliorations de Sécurité - Plateforme MZAKA
 
 ## Vue d'ensemble
 
-Ce document décrit les améliorations critiques de sécurité implémentées pour protéger la plateforme Mon Toit contre les vulnérabilités web courantes et les attaques malveillantes.
+Ce document décrit les améliorations critiques de sécurité implémentées pour protéger la plateforme MZAKA contre les vulnérabilités web courantes et les attaques malveillantes.
 
 ## 🛡️ Protections Implémentées
 
@@ -226,4 +226,4 @@ npm install zod  # si non déjà installé
 
 **Dernière mise à jour :** 16 Octobre 2024
 **Version :** 1.0.0
-**Responsable :** Équipe de Sécurité Mon Toit
+**Responsable :** Équipe de Sécurité MZAKA

@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-Ce document décrit l'implémentation de la protection des numéros de téléphone sur la plateforme Mon Toit, mise en place pour résoudre la vulnérabilité critique **"All User Personal Information Exposed to Anyone"**.
+Ce document décrit l'implémentation de la protection des numéros de téléphone sur la plateforme MZAKA, mise en place pour résoudre la vulnérabilité critique **"All User Personal Information Exposed to Anyone"**.
 
 ## Problème Initial
 

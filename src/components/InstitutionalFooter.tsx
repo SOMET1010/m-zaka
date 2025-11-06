@@ -35,16 +35,16 @@ export const InstitutionalFooter = () => {
             <div className="flex items-center gap-3">
               <img 
                 src={monToitLogo} 
-                alt="Mon Toit" 
+                alt="MZAKA" 
                 className="h-10 w-auto " 
               />
               <div>
-                <h3 className="font-bold text-lg">Mon Toit</h3>
-                <p className="text-xs text-gray-600">Le logement en toute confiance</p>
+                <h3 className="font-bold text-lg">MZAKA</h3>
+                <p className="text-xs text-gray-600">Le logement en toute confiance au Burkina Faso</p>
               </div>
             </div>
             <p className="text-sm text-gray-700 leading-relaxed">
-              Plateforme immobilière propulsée par ANSUT pour la recherche et la publication de logements en Côte d'Ivoire.
+              Plateforme immobilière MZAKA pour la recherche et la publication de logements au Burkina Faso.
             </p>
             <div className="flex items-start gap-2 text-xs text-gray-600">
               <Shield className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
@@ -141,8 +141,8 @@ export const InstitutionalFooter = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
                 <span>
-                  Abidjan, Plateau<br />
-                  Côte d'Ivoire
+                  Ouagadougou, Centre<br />
+                  Burkina Faso
                 </span>
               </div>
             </div>
@@ -155,7 +155,7 @@ export const InstitutionalFooter = () => {
             
             {/* Copyright */}
             <div className="flex items-center gap-2">
-              <span>© {currentYear} Mon Toit</span>
+              <span>© {currentYear} MZAKA</span>
               <span className="hidden md:inline">•</span>
               <span className="hidden md:inline">Tous droits réservés</span>
             </div>
@@ -174,7 +174,7 @@ export const InstitutionalFooter = () => {
 
             {/* Lien ANSUT */}
             <a
-              href="https://ansut.ci"
+              href="https://ansut.bf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-gray-600 hover:text-gray-900 transition-colors"
@@ -189,7 +189,7 @@ export const InstitutionalFooter = () => {
         <div className="mt-6 pt-6 border-t border-gray-800">
           <p className="text-xs text-gray-500 text-center leading-relaxed">
             Cette plateforme s'inscrit dans le cadre de l'interopérabilité des services publics numériques
-            de la République de Côte d'Ivoire, conformément aux standards ANSUT.
+            du Burkina Faso, conformément aux standards nationaux.
           </p>
         </div>
       </div>

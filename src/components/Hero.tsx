@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-      {/* Dégradé de fond ivoirien moderne */}
+      {/* Dégradé de fond burkinabè moderne */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#FFF8F0] via-[#FFE8D6] to-[#FFD4B8]">
         {/* Motifs décoratifs subtils */}
         <div className="absolute inset-0 opacity-[0.03]" 
@@ -50,7 +50,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Illustration de maisons ivoiriennes en arrière-plan */}
+      {/* Illustration de maisons burkinabè en arrière-plan */}
       <div className="absolute right-0 bottom-0 w-1/2 h-2/3 opacity-10 hidden lg:block">
         <svg viewBox="0 0 800 600" className="w-full h-full">
           {/* Maison 1 */}
@@ -90,8 +90,8 @@ const Hero = () => {
           
           <p className="text-xl sm:text-2xl md:text-3xl text-[#34495E] mb-8 font-medium leading-relaxed">
             Explorez une vaste sélection de biens immobiliers à{" "}
-            <span className="font-bold text-[#E67E22]">Abidjan</span> et partout en{" "}
-            <span className="font-bold text-[#E67E22]">Côte d'Ivoire</span>
+            <span className="font-bold text-[#E67E22]">Ouagadougou</span> et partout en{" "}
+            <span className="font-bold text-[#E67E22]">Burkina Faso</span>
           </p>
 
           {/* Barre de recherche moderne */}
@@ -100,7 +100,7 @@ const Hero = () => {
               <div className="relative">
                 <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-6 w-6 text-[#E67E22]" />
                 <Input
-                  placeholder="Cocody, Riviera, Plateau, Yopougon..."
+                  placeholder="Ouaga 2000, Cissin, Koulouba, Dapoya..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
@@ -148,7 +148,7 @@ const Hero = () => {
             {/* Recherches populaires */}
             <div className="flex flex-wrap items-center gap-2 mt-4 pt-4 border-t border-gray-200">
               <span className="text-sm font-medium text-gray-600">Populaire :</span>
-              {['Cocody', 'Riviera Golf', 'Plateau', 'Marcory'].map((location) => (
+              {['Ouaga 2000', 'Cissin', 'Koulouba', 'Dapoya'].map((location) => (
                 <button
                   key={location}
                   onClick={() => handleQuickSearch(location)}

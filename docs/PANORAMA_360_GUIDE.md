@@ -39,7 +39,7 @@ La fonctionnalité de visite panoramique 360° permet aux utilisateurs avec doss
 ## 📋 Prérequis
 
 ### Pour Voir les Visites 360°
-1. ✅ Compte créé sur Mon Toit
+1. ✅ Compte créé sur MZAKA
 2. ✅ Dossier locataire validé (identité, revenus, etc.)
 3. ✅ Le bien doit avoir des images panoramiques uploadées
 
@@ -86,7 +86,7 @@ La fonctionnalité de visite panoramique 360° permet aux utilisateurs avec doss
 - Ratio 2:1 obligatoire
 
 #### Uploader les Images 360°
-1. Connectez-vous à Mon Toit
+1. Connectez-vous à MZAKA
 2. Allez dans "Mes Biens"
 3. Éditez le bien concerné
 4. Section "Médias" > "Images panoramiques"
@@ -260,11 +260,11 @@ Les utilisateurs avec dossier validé peuvent :
 - ✅ Zoomer et naviguer de manière fluide
 - ✅ Profiter d'un chargement optimisé avec prefetching
 
-Cette fonctionnalité positionne Mon Toit comme une plateforme innovante et moderne sur le marché immobilier ivoirien.
+Cette fonctionnalité positionne MZAKA comme une plateforme innovante et moderne sur le marché immobilier ivoirien.
 
 ---
 
 **Version** : 1.0.0
 **Date** : 13 octobre 2025
-**Auteur** : Équipe Mon Toit
+**Auteur** : Équipe MZAKA
 **Status** : ✅ Production Ready

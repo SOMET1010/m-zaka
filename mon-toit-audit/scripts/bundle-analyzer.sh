@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Script d'analyse et d'optimisation du bundle Mon Toit
+# Script d'analyse et d'optimisation du bundle MZAKA
 # Usage: ./scripts/bundle-analyzer.sh
 
 set -e
 
-echo "🔍 Analyse du Bundle Mon Toit - $(date)"
+echo "🔍 Analyse du Bundle MZAKA - $(date)"
 echo "=================================="
 
 # Couleurs pour l'output

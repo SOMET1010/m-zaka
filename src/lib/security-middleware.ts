@@ -1,5 +1,5 @@
 /**
- * Middleware de sécurité pour les hooks et services de la plateforme Mon Toit
+ * Middleware de sécurité pour les hooks et services de la plateforme MZAKA
  * Fournit des protections contre les attaques communes et la validation des données
  */
 

@@ -5,10 +5,10 @@ const MentionsLegales = () => {
     <LegalPage title="Mentions légales" lastUpdated="5 octobre 2025">
       <h2>Éditeur du site</h2>
       <p>
-        <strong>Mon Toit</strong><br />
+        <strong>MZAKA</strong><br />
         Plateforme propulsée par ANSUT<br />
         (Agence Nationale de Sécurisation des Transactions)<br />
-        Abidjan, Côte d'Ivoire
+        Ouagadougou, Burkina Faso
       </p>
 
       <h2>Directeur de publication</h2>
@@ -23,12 +23,12 @@ const MentionsLegales = () => {
       <h2>Propriété intellectuelle</h2>
       <p>
         L'ensemble du contenu de ce site (textes, images, logos, code source) 
-        est la propriété exclusive de Mon Toit / ANSUT.
+        est la propriété exclusive de MZAKA / ANSUT.
       </p>
 
       <h2>Crédits</h2>
       <ul>
-        <li>Logo Mon Toit : ANSUT</li>
+        <li>Logo MZAKA : ANSUT</li>
         <li>Framework : React + TypeScript</li>
         <li>UI : shadcn/ui + Tailwind CSS</li>
         <li>Backend : Lovable Cloud</li>

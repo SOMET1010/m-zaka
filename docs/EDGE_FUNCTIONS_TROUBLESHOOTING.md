@@ -1,4 +1,4 @@
-# Troubleshooting Edge Functions - Mon Toit
+# Troubleshooting Edge Functions - MZAKA
 
 **Date :** 7 octobre 2025  
 **Version :** 1.0.0
@@ -170,4 +170,4 @@ Si le problème persiste après avoir suivi ces étapes :
 ---
 
 **Dernière mise à jour :** 7 octobre 2025  
-**Maintenu par :** Équipe Technique Mon Toit
+**Maintenu par :** Équipe Technique MZAKA

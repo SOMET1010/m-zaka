@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "🚿 Mon Toit Detox — Hygiène de code adaptée Lovable"
+echo "🚿 MZAKA Detox — Hygiène de code adaptée Lovable"
 
 # 0) Détection gestionnaire de paquets (avec Bun)
 PKG=""
@@ -144,7 +144,7 @@ const check = async (title, cmd, severity = 'warning') => {
   }
 };
 
-console.log("🧪 Mon Toit — Rapport d'hygiène de code\n");
+console.log("🧪 MZAKA — Rapport d'hygiène de code\n");
 
 // Checks non-cassants
 await check("Formatage Prettier", "npm run -s format:check", "warning");
@@ -178,7 +178,7 @@ echo "🧪 Génération du rapport d'hygiène..."
 run run -s check:hygiene || true
 
 echo ""
-echo "✅ Detox Mon Toit terminé !"
+echo "✅ Detox MZAKA terminé !"
 echo ""
 echo "📊 Prochaines étapes recommandées :"
 echo "  1. Lire le rapport d'hygiène : npm run check:hygiene"

@@ -1,5 +1,5 @@
 /**
- * Mobile Browser Service for Mon Toit Real Estate App
+ * Mobile Browser Service for MZAKA Real Estate App
  *
  * This file provides browser functionality for opening external links,
   * property websites, maps, and other web content within the mobile app.
@@ -265,8 +265,8 @@ export class MobileBrowserService {
 
     try {
       await Share.share({
-        title: 'Lien partagé depuis Mon Toit',
-        text: 'Découvrez ce lien sur Mon Toit',
+        title: 'Lien partagé depuis MZAKA',
+        text: 'Découvrez ce lien sur MZAKA',
         url: this.currentUrl,
       });
 

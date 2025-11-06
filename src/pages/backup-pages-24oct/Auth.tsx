@@ -332,7 +332,7 @@ const Auth = () => {
           <div className="mb-8">
             <LazyIllustration
               src={getIllustrationPath("ivorian-family-house")}
-              alt="Trouvez votre logement en Côte d'Ivoire"
+              alt="Trouvez votre logement en Burkina Faso"
               className="w-full h-[250px] md:h-[300px] rounded-2xl"
               animate={true}
             />
@@ -345,10 +345,10 @@ const Auth = () => {
               
               <div className="space-y-4">
                 <h1 className="text-4xl font-bold text-foreground">
-                  Bienvenue sur Mon Toit
+                  Bienvenue sur MZAKA
                 </h1>
                 <p className="text-lg text-muted-foreground">
-                  La plateforme immobilière certifiée ANSUT pour la Côte d'Ivoire
+                  La plateforme immobilière certifiée ANSUT pour la Burkina Faso
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -384,7 +384,7 @@ const Auth = () => {
             <Card>
               <CardHeader>
                 <CardTitle>Connexion</CardTitle>
-                <CardDescription>Connectez-vous à votre compte Mon Toit</CardDescription>
+                <CardDescription>Connectez-vous à votre compte MZAKA</CardDescription>
                 {userTypeFromUrl && (
                   <p className="text-xs text-muted-foreground mt-2 bg-muted/50 p-2 rounded">
                     💡 <strong>Vous avez déjà un compte ?</strong> Connectez-vous puis gérez vos rôles depuis <Link to="/profil" className="text-primary hover:underline font-medium">votre profil</Link>
@@ -509,7 +509,7 @@ const Auth = () => {
                   {userTypeFromUrl === 'agence' && 'Créez votre compte Agence immobilière'}
                   {userTypeFromUrl === 'proprietaire' && 'Créez votre compte Propriétaire'}
                   {userTypeFromUrl === 'locataire' && 'Créez votre compte Locataire'}
-                  {!userTypeFromUrl && 'Créez votre compte Mon Toit'}
+                  {!userTypeFromUrl && 'Créez votre compte MZAKA'}
                 </CardDescription>
                 {userTypeFromUrl && (
                   <p className="text-xs text-muted-foreground mt-2 bg-muted/50 p-2 rounded">

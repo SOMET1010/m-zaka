@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Script de validation finale des optimisations Mon Toit
+# Script de validation finale des optimisations MZAKA
 # Date: 25 octobre 2025
 # Version: 2.0.0
 
 set -e
 
-echo "🚀 Démarrage de la validation finale des optimisations Mon Toit"
+echo "🚀 Démarrage de la validation finale des optimisations MZAKA"
 echo "=================================================================="
 
 # Couleurs pour l'affichage
@@ -207,7 +207,7 @@ cat > "$report_file" << EOF
 # ✅ RAPPORT DE VALIDATION - CORRECTIONS FINALES ET OPTIMISATIONS
 
 **Date de validation:** $(date '+%d %B %Y à %H:%M')
-**Projet:** Mon Toit Platform
+**Projet:** MZAKA Platform
 **Version:** 2.0.0 - Optimisée et Performance
 
 ## Résumé de la validation

@@ -2,7 +2,7 @@
 
 ## 📋 Vue d'ensemble
 
-Ce guide est destiné aux administrateurs et tiers de confiance responsables de la certification des baux dans Mon Toit.
+Ce guide est destiné aux administrateurs et tiers de confiance responsables de la certification des baux dans MZAKA.
 
 ---
 

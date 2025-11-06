@@ -1,5 +1,5 @@
 /**
- * Centralized logging service for Mon Toit platform
+ * Centralized logging service for MZAKA platform
  * 
  * Replaces direct console.* calls with structured logging that:
  * - Provides consistent log formatting with timestamps

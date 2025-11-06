@@ -75,8 +75,8 @@ const PropertyDetail = () => {
 
   // Set document head with meta tags - MUST be called before any conditional returns
   useDocumentHead({
-    title: property ? `${property.title} - ${property.city} | Mon Toit` : 'Bien Immobilier | Mon Toit',
-    description: property?.description?.substring(0, 155) || `${property?.property_type || 'Bien'} à ${property?.city || 'Abidjan'} - ${property?.monthly_rent ? property.monthly_rent.toLocaleString('fr-FR') + ' FCFA/mois' : 'Prix sur demande'}`,
+    title: property ? `${property.title} - ${property.city} | MZAKA` : 'Bien Immobilier | MZAKA',
+    description: property?.description?.substring(0, 155) || `${property?.property_type || 'Bien'} à ${property?.city || 'Ouagadougou'} - ${property?.monthly_rent ? property.monthly_rent.toLocaleString('fr-FR') + ' FCFA/mois' : 'Prix sur demande'}`,
     ogTitle: property ? `${property.title} - ${property.city}` : 'Bien Immobilier',
     ogDescription: property?.description?.substring(0, 200),
     ogImage: property?.main_image || property?.images?.[0] || 'https://mon-toit.lovable.app/placeholder.svg',

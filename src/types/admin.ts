@@ -1,5 +1,5 @@
 /**
- * Admin-specific type definitions for Mon Toit
+ * Admin-specific type definitions for MZAKA
  * Provides strict typing for admin components to replace any types
  */
 

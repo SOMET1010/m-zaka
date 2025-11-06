@@ -1,5 +1,5 @@
 /**
- * Mobile File System Service for Mon Toit Real Estate App
+ * Mobile File System Service for MZAKA Real Estate App
  *
  * This file provides file system functionality for handling property documents,
  * contracts, photos, and other real estate related files.

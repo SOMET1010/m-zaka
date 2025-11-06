@@ -1,8 +1,8 @@
-# Corrections Modérées - Mon Toit
+# Corrections Modérées - MZAKA
 
 ## 🎯 Vue d'ensemble
 
-Ce dossier contient l'implémentation des **corrections modérées** pour le projet Mon Toit,为期 un mois d'implémentation. Les optimisations se concentrent sur trois axes principaux :
+Ce dossier contient l'implémentation des **corrections modérées** pour le projet MZAKA,为期 un mois d'implémentation. Les optimisations se concentrent sur trois axes principaux :
 
 1. **⚡ Optimisation du Bundle Size** - Réduction de la taille et amélioration des performances
 2. **🧪 Amélioration de la Couverture de Tests** - Tests automatisés complets

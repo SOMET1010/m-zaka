@@ -9,7 +9,7 @@ interface SimpleImageEnhancedProps {
   fallback?: string;
 }
 
-// Vraies photos de biens immobiliers à Abidjan
+// Vraies photos de biens immobiliers à Ouagadougou
 const FALLBACK_IMAGES: Record<string, string> = {
   'appartement': '/property-images/appartement-moderne-abidjan.jpg',
   'villa': '/property-images/villa-luxe-cocody.jpg',
@@ -21,7 +21,7 @@ const FALLBACK_IMAGES: Record<string, string> = {
 
 /**
  * Composant d'image amélioré avec fallback intelligent
- * Utilise de vraies photos de biens immobiliers à Abidjan si l'image source est invalide
+ * Utilise de vraies photos de biens immobiliers à Ouagadougou si l'image source est invalide
  */
 export const SimpleImageEnhanced = ({
   src,

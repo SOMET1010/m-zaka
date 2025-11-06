@@ -50,7 +50,7 @@ const Certification = () => {
                 <span className="text-gradient-animated">Certification ANSUT</span>
               </h1>
               <p className="text-lg max-w-2xl mx-auto opacity-95">
-                Mon Toit est propulsé par l'Agence Nationale de Soutien à l'Urbanisme et au Territoire (ANSUT), 
+                MZAKA est propulsé par l'Agence Nationale de Soutien à l'Urbanisme et au Territoire (ANSUT), 
                 garantissant sécurité, fiabilité et conformité pour tous vos projets immobiliers.
               </p>
             </div>
@@ -64,10 +64,10 @@ const Certification = () => {
               <p className="text-muted-foreground mb-4">
                 La certification ANSUT est un label de confiance délivré aux plateformes immobilières 
                 qui respectent les standards les plus élevés en matière de sécurité, transparence et 
-                conformité réglementaire en Côte d'Ivoire.
+                conformité réglementaire en Burkina Faso.
               </p>
               <p className="text-muted-foreground">
-                Mon Toit s'engage à protéger vos données personnelles, vérifier l'authenticité de chaque 
+                MZAKA s'engage à protéger vos données personnelles, vérifier l'authenticité de chaque 
                 annonce et garantir la sécurité de vos transactions financières.
               </p>
             </div>
@@ -94,7 +94,7 @@ const Certification = () => {
             <div className="bg-muted/50 rounded-xl p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Une plateforme 100% ivoirienne</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Développée en Côte d'Ivoire, pour les Ivoiriens. Mon Toit s'adapte aux réalités 
+                Développée en Burkina Faso, pour les Ivoiriens. MZAKA s'adapte aux réalités 
                 locales et propose des solutions de paiement compatibles avec Mobile Money 
                 (Orange Money, MTN Money, Moov Money).
               </p>

@@ -11,7 +11,7 @@ export const WelcomeBanner = () => {
   const roleConfig: Record<string, { illustration: IllustrationKey; message: string }> = {
     locataire: {
       illustration: "apartment-visit",
-      message: "Trouvez votre logement idéal en Côte d'Ivoire"
+      message: "Trouvez votre logement idéal au Burkina Faso"
     },
     proprietaire: {
       illustration: "ivorian-family-house",

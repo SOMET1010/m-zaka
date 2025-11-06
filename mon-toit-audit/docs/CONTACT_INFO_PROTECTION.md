@@ -2,7 +2,7 @@
 
 ## Overview
 
-Phone numbers and other contact information are sensitive PII that must be protected from harvesting attacks. This document explains how Mon Toit protects user contact information while allowing legitimate access.
+Phone numbers and other contact information are sensitive PII that must be protected from harvesting attacks. This document explains how MZAKA protects user contact information while allowing legitimate access.
 
 ## Security Architecture
 

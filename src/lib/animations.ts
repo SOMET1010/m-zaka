@@ -1,5 +1,5 @@
 /**
- * Animations et transitions réutilisables pour Mon Toit
+ * Animations et transitions réutilisables pour MZAKA
  * Utilise Tailwind CSS et des classes personnalisées
  */
 

@@ -85,7 +85,7 @@ const PropertyFiltersComponent = ({ onFilterChange, onReset }: PropertyFiltersPr
                   <Label>Ville</Label>
                   <Select onValueChange={(value) => handleFilterChange('city', value)} value={filters.city}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Ex: Abidjan, Yopougon, Cocody..." />
+                      <SelectValue placeholder="Ex: Ouagadougou, Yopougon, Cocody..." />
                     </SelectTrigger>
                     <SelectContent>
                       {CITIES.map(city => (

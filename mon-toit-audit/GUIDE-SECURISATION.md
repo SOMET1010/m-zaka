@@ -1,4 +1,4 @@
-# 🔐 Guide de Configuration Sécurisée - Mon Toit
+# 🔐 Guide de Configuration Sécurisée - MZAKA
 
 ## 📋 Corrections Critiques Appliquées
 
@@ -114,5 +114,5 @@ SENTRY_AUTH_TOKEN=votre-token
 ---
 
 **Date de création** : 2025-10-25  
-**Responsable** : Équipe Mon Toit  
+**Responsable** : Équipe MZAKA  
 **Prochaine révision** : 2025-11-25

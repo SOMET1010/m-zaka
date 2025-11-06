@@ -1,8 +1,8 @@
-# Mon Toit API Documentation
+# MZAKA API Documentation
 
 ## Overview
 
-Mon Toit is a certified real estate platform in Côte d'Ivoire built as a modern Progressive Web App (PWA) with React, TypeScript, and Supabase backend. This comprehensive API documentation covers all endpoints, authentication flows, and integration patterns for developers building on the Mon Toit platform.
+MZAKA is a certified real estate platform in Burkina Faso built as a modern Progressive Web App (PWA) with React, TypeScript, and Supabase backend. This comprehensive API documentation covers all endpoints, authentication flows, and integration patterns for developers building on the MZAKA platform.
 
 ## Base Configuration
 
@@ -147,7 +147,7 @@ Headers: {
 Body: {
   "full_name": "Updated Name",
   "bio": "Professional real estate investor",
-  "city": "Abidjan",
+  "city": "Ouagadougou",
   "phone": "+225XXXXXXXXX",
   "avatar_url": "https://example.com/avatar.jpg"
 }
@@ -225,7 +225,7 @@ Body: {
 ```typescript
 POST /rest/v1/rpc/get_public_properties
 Body: {
-  "p_city": "Abidjan",
+  "p_city": "Ouagadougou",
   "p_property_type": "appartement",
   "p_min_rent": 50000,
   "p_max_rent": 200000,
@@ -254,8 +254,8 @@ Headers: {
 Body: {
   "title": "Beautiful 3-bedroom apartment",
   "description": "Spacious apartment in great location",
-  "address": "123 Rue Principale, Cocody, Abidjan",
-  "city": "Abidjan",
+  "address": "123 Rue Principale, Cocody, Ouagadougou",
+  "city": "Ouagadougou",
   "property_type": "appartement",
   "monthly_rent": 150000,
   "bedrooms": 3,
@@ -320,7 +320,7 @@ Body: {
 // Use the property service for complex searches
 // This combines multiple filters and geolocation
 const searchParams = {
-  city: "Abidjan",
+  city: "Ouagadougou",
   propertyType: ["appartement", "villa"],
   minPrice: 50000,
   maxPrice: 300000,
@@ -1134,7 +1134,7 @@ api = MonToitAPI(
 )
 
 properties = api.search_properties({
-    "p_city": "Abidjan",
+    "p_city": "Ouagadougou",
     "p_max_rent": 200000,
     "p_min_bedrooms": 2
 })
@@ -1165,7 +1165,7 @@ const mockProperty = {
   id: "test-property-id",
   title: "Test Property",
   address: "123 Test Street",
-  city: "Abidjan",
+  city: "Ouagadougou",
   monthly_rent: 150000,
   bedrooms: 3,
   bathrooms: 2,
@@ -1229,4 +1229,4 @@ export const mockPropertyService = {
 
 ---
 
-*This documentation is maintained by the Mon Toit development team. For the most up-to-date information, please refer to the inline code documentation and GitHub repository.*
+*This documentation is maintained by the MZAKA development team. For the most up-to-date information, please refer to the inline code documentation and GitHub repository.*

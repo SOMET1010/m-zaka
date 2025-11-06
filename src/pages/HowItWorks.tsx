@@ -24,7 +24,7 @@ import {
 /**
  * Page "Comment ça marche ?"
  * 
- * Explique le workflow complet de Mon Toit avec :
+ * Explique le workflow complet de MZAKA avec :
  * - Les 4 parcours utilisateur
  * - Les 3 innovations ANSUT
  * - FAQ intégrée
@@ -138,7 +138,7 @@ const HowItWorks = () => {
   const faqs = [
     {
       question: 'Est-ce gratuit ?',
-      answer: 'Oui, Mon Toit est 100% gratuit pour les locataires et propriétaires. Seuls les services professionnels (Tiers de Confiance, Agences) sont payants.',
+      answer: 'Oui, MZAKA est 100% gratuit pour les locataires et propriétaires. Seuls les services professionnels (Tiers de Confiance, Agences) sont payants.',
     },
     {
       question: 'Comment se fait la vérification Smile ID ?',
@@ -150,14 +150,14 @@ const HowItWorks = () => {
     },
     {
       question: 'Les baux sont-ils légalement valides ?',
-      answer: 'Oui, tous les baux signés sur Mon Toit utilisent la signature électronique PSE agréé par l\'État ivoirien (Cryptoneo). Ces signatures ont la même valeur juridique qu\'une signature manuscrite.',
+      answer: 'Oui, tous les baux signés sur MZAKA utilisent la signature électronique PSE agréé par l\'État ivoirien (Cryptoneo). Ces signatures ont la même valeur juridique qu\'une signature manuscrite.',
     },
     {
       question: 'Qu\'est-ce qu\'un Tiers de Confiance ?',
       answer: 'Un Tiers de Confiance est un professionnel certifié qui vérifie et certifie les dossiers des locataires (identité, solvabilité, documents). Il garantit la fiabilité des informations pour les propriétaires.',
     },
     {
-      question: 'Les agences peuvent-elles utiliser Mon Toit ?',
+      question: 'Les agences peuvent-elles utiliser MZAKA ?',
       answer: 'Oui, les agences immobilières disposent d\'un dashboard dédié avec des outils avancés : gestion multi-biens, suivi des mandats, analytics, et gestion des commissions.',
     },
   ];
@@ -176,7 +176,7 @@ const HowItWorks = () => {
               Comment ça marche ?
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-              Mon Toit simplifie la location immobilière en Côte d'Ivoire grâce aux innovations ANSUT : 
+              MZAKA simplifie la location immobilière en Burkina Faso grâce aux innovations ANSUT : 
               vérification d'identité, signature électronique et paiement mobile.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -213,7 +213,7 @@ const HowItWorks = () => {
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Que vous soyez locataire, propriétaire, tiers de confiance ou agence, 
-              Mon Toit vous accompagne à chaque étape.
+              MZAKA vous accompagne à chaque étape.
             </p>
           </div>
 
@@ -345,7 +345,7 @@ const HowItWorks = () => {
               Questions Fréquentes
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tout ce que vous devez savoir sur Mon Toit
+              Tout ce que vous devez savoir sur MZAKA
             </p>
           </div>
 
@@ -379,7 +379,7 @@ const HowItWorks = () => {
               Prêt à commencer ?
             </h2>
             <p className="text-xl text-white/90">
-              Rejoignez des milliers d'Ivoiriens qui font confiance à Mon Toit
+              Rejoignez des milliers d'Ivoiriens qui font confiance à MZAKA
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button

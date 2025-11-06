@@ -1,6 +1,6 @@
-# Comptes Utilisateurs - Mon Toit
+# Comptes Utilisateurs - MZAKA
 
-Ce document détaille les différents types de comptes utilisateurs disponibles dans le système Mon Toit, leurs rôles, permissions et fonctionnalités associées.
+Ce document détaille les différents types de comptes utilisateurs disponibles dans le système MZAKA, leurs rôles, permissions et fonctionnalités associées.
 
 ## 📋 Table des Matières
 
@@ -196,7 +196,7 @@ graph TD
 - **Email + Mot de passe** : Standard
 - **Authentification à deux facteurs** : Recommandée
 - **OAuth Google/Apple** : Optionnelle
-- **Téléphone + OTP** : Disponible pour Côte d'Ivoire
+- **Téléphone + OTP** : Disponible pour Burkina Faso
 
 ### Politique de Mots de Passe
 - **Longueur minimale** : 8 caractères
@@ -261,4 +261,4 @@ graph TD
 
 ---
 
-*Document maintenu par l'équipe Mon Toit - Dernière mise à jour : 17/10/2025*
+*Document maintenu par l'équipe MZAKA - Dernière mise à jour : 17/10/2025*

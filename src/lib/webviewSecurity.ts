@@ -1,5 +1,5 @@
 /**
- * WebView Security Configuration for Mon Toit Mobile App
+ * WebView Security Configuration for MZAKA Mobile App
  *
  * This file contains security configurations to harden the WebView
  * against JavaScript injection attacks and other mobile-specific threats.

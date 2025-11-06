@@ -1,4 +1,4 @@
-// Symboles Adinkra - Icônes culturelles Akan de Côte d'Ivoire
+// Symboles Adinkra - Icônes culturelles Akan de Burkina Faso et Ghana
 
 export const GYE_NYAME = () => (
   // "Excepté Dieu" - Symbole de suprématie divine et confiance

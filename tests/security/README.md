@@ -1,4 +1,4 @@
-# Tests de Sécurité - Mon Toit Platform
+# Tests de Sécurité - MZAKA Platform
 
 ## 📋 Vue d'ensemble
 

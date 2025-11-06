@@ -1,8 +1,8 @@
-# Rapport des Corrections Modérées - Mon Toit
+# Rapport des Corrections Modérées - MZAKA
 
 ## 📋 Vue d'ensemble
 
-Ce rapport détaille l'implémentation des corrections modérées pour le projet Mon Toit,为期 un mois (Octobre 2025). Les optimisations se concentrent sur trois axes principaux : la réduction de la taille du bundle, l'amélioration de la couverture de tests, et la correction du versioning Capacitor.
+Ce rapport détaille l'implémentation des corrections modérées pour le projet MZAKA,为期 un mois (Octobre 2025). Les optimisations se concentrent sur trois axes principaux : la réduction de la taille du bundle, l'amélioration de la couverture de tests, et la correction du versioning Capacitor.
 
 ## 🎯 Objectifs Atteints
 
@@ -269,4 +269,4 @@ Les corrections modérées ont été implémentées avec succès, couvrant :
 - **🧪 Tests**: Couverture complète des composants critiques  
 - **📱 Mobile**: Versioning Capacitor corrigé et guide complet
 
-Le projet Mon Toit bénéficie maintenant d'une architecture optimisée, d'une suite de tests robuste, et d'une configuration mobile sécurisée, posant les bases pour une scalabilité et une maintenance efficaces.
+Le projet MZAKA bénéficie maintenant d'une architecture optimisée, d'une suite de tests robuste, et d'une configuration mobile sécurisée, posant les bases pour une scalabilité et une maintenance efficaces.

@@ -7,7 +7,7 @@
 
 ## 🎯 Vue d'ensemble
 
-Cette documentation couvre les nouvelles API et optimisations implémentées pour améliorer les performances de la plateforme Mon Toit.
+Cette documentation couvre les nouvelles API et optimisations implémentées pour améliorer les performances de la plateforme MZAKA.
 
 ---
 
@@ -397,7 +397,7 @@ const timelineData = [
 ];
 
 const citiesData = [
-  { city: 'Abidjan', count: 156 },
+  { city: 'Ouagadougou', count: 156 },
   { city: 'Bouaké', count: 45 },
   // ...
 ];

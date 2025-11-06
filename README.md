@@ -191,7 +191,7 @@ Créer la première plateforme immobilière numérique **100 % burkinabè**, off
 - [ ] Visites virtuelles 360°
 - [ ] Blockchain pour les contrats
 - [ ] IoT pour la maintenance
-- [ ] Expansion régionale (Mali, Niger, Côte d'Ivoire)
+- [ ] Expansion régionale (Mali, Niger, Togo)
 
 ---
 

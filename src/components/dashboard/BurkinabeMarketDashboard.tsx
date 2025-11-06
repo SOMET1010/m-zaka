@@ -23,11 +23,11 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 // Données statistiques du marché immobilier d'Ouagadougou
 export const OUAGA_MARKET_DATA = {
   priceRanges: [
-    { range: '< 50k', count: 45, avgPrice: 35000, color: '#10b981' },
-    { range: '50k-100k', count: 120, avgPrice: 75000, color: '#22c55e' },
-    { range: '100k-200k', count: 180, avgPrice: 150000, color: '#f59e0b' },
-    { range: '200k-300k', count: 95, avgPrice: 250000, color: '#f97316' },
-    { range: '300k+', count: 80, avgPrice: 450000, color: '#ef4444' }
+    { range: '< 50k', count: 45, avgPrice: 35000, color: '#146B3A' },
+    { range: '50k-100k', count: 120, avgPrice: 75000, color: '#059669' },
+    { range: '100k-200k', count: 180, avgPrice: 150000, color: '#F9B208' },
+    { range: '200k-300k', count: 95, avgPrice: 250000, color: '#D97706' },
+    { range: '300k+', count: 80, avgPrice: 450000, color: '#C1121F' }
   ],
   
   neighborhoodStats: [
@@ -100,14 +100,14 @@ export const OUAGA_MARKET_DATA = {
 
 // Couleurs du marché burkinabé
 export const MARKET_COLORS = {
-  primary: '#2256A3',      // Bleu ANSUT
-  secondary: '#F08224',    // Orange burkinabé
-  success: '#10B981',      // Vert croissance
-  warning: '#F59E0B',      // Orange attention
-  danger: '#EF4444',       // Rouge alerte
-  affordable: '#059669',   // Vert abordable
-  mid: '#0891B2',          // Bleu moyen
-  premium: '#7C3AED'       // Violet premium
+  primary: '#C1121F',      // Rouge Burkina
+  secondary: '#146B3A',    // Vert Sahel
+  success: '#146B3A',      // Vert Sahel
+  warning: '#F9B208',      // Or du Soleil
+  danger: '#C1121F',       // Rouge Burkina
+  affordable: '#146B3A',   // Vert Sahel
+  mid: '#F9B208',          // Or du Soleil
+  premium: '#C1121F'       // Rouge Burkina
 };
 
 interface MarketStatsCardProps {

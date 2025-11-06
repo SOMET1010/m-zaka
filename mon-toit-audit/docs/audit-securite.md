@@ -1,4 +1,4 @@
-# Audit de Sécurité - Plateforme Mon Toit
+# Audit de Sécurité - Plateforme MZAKA
 
 **Date d'audit :** 25 octobre 2025  
 **Auditeur :** Équipe de sécurité  
@@ -12,7 +12,7 @@
 ### État Général de la Sécurité
 **Niveau global :** ✅ **BON** - Sécurisé avec bonnes pratiques implémentées
 
-La plateforme Mon Toit présente une architecture de sécurité robuste avec plusieurs couches de protection. Les mesures de sécurité principales sont correctement implémentées, mais certaines améliorations sont recommandées.
+La plateforme MZAKA présente une architecture de sécurité robuste avec plusieurs couches de protection. Les mesures de sécurité principales sont correctement implémentées, mais certaines améliorations sont recommandées.
 
 ### Score de Sécurité
 - **Sécurité Frontend :** 8.5/10
@@ -99,8 +99,8 @@ minify: 'esbuild',
 #### **Configuration PWA Sécurisée**
 ```typescript
 manifest: {
-  name: 'Mon Toit - Plateforme Immobilière ANSUT',
-  short_name: 'Mon Toit',
+  name: 'MZAKA - Plateforme Immobilière ANSUT',
+  short_name: 'MZAKA',
   theme_color: '#FF8F00',
   display: 'standalone',
   start_url: '/',
@@ -471,8 +471,8 @@ verify_jwt = false
 #### **Manifest.json Sécurisé**
 ```json
 {
-  "name": "Mon Toit - Plateforme Immobilière ANSUT",
-  "short_name": "Mon Toit",
+  "name": "MZAKA - Plateforme Immobilière ANSUT",
+  "short_name": "MZAKA",
   "display": "standalone",
   "orientation": "portrait-primary",
   "scope": "/",
@@ -731,7 +731,7 @@ export const prodLog = {
   error: (error: Error | string, context?: string) => {
     if (IS_PRODUCTION) {
       // En production, log simple sans stack trace
-      console.error('[Mon Toit]', context || 'Erreur');
+      console.error('[MZAKA]', context || 'Erreur');
     }
   }
 };
@@ -1080,7 +1080,7 @@ describe('Penetration Security Tests', () => {
 
 ### Résumé de l'Audit
 
-La plateforme Mon Toit présente une **architecture de sécurité solide** avec des bonnes pratiques implémentées à plusieurs niveaux :
+La plateforme MZAKA présente une **architecture de sécurité solide** avec des bonnes pratiques implémentées à plusieurs niveaux :
 
 **✅ Points forts majeurs :**
 - Système RLS robuste avec politiques contextuelles
@@ -1110,7 +1110,7 @@ La plateforme est sécurisée mais nécessite des corrections urgentes pour les 
 
 ---
 
-**Audité par :** Équipe de Sécurité Mon Toit  
+**Audité par :** Équipe de Sécurité MZAKA  
 **Date :** 25 octobre 2025  
 **Prochaine révision :** 25 novembre 2025
 

@@ -10,7 +10,7 @@ interface BackupCodesDisplayProps {
 
 export const BackupCodesDisplay = ({ codes, onDownload }: BackupCodesDisplayProps) => {
   const handleDownload = () => {
-    const content = `Codes de récupération 2FA - Mon Toit
+    const content = `Codes de récupération 2FA - MZAKA
 
 IMPORTANT : Conservez ces codes en lieu sûr !
 Ces codes vous permettront de vous connecter si vous perdez l'accès à votre application d'authentification.

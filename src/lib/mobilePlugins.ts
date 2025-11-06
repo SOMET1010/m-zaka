@@ -40,7 +40,7 @@ export interface MobilePluginReport {
 }
 
 /**
- * Required plugins for Mon Toit mobile app
+ * Required plugins for MZAKA mobile app
  */
 const REQUIRED_PLUGINS = {
   core: [

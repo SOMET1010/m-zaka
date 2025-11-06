@@ -2,7 +2,7 @@
 
 ## 📋 Vue d'ensemble
 
-L'EPIC 8 implémente un système complet d'authentification à deux facteurs (2FA) pour renforcer la sécurité des comptes administrateurs sur Mon Toit.
+L'EPIC 8 implémente un système complet d'authentification à deux facteurs (2FA) pour renforcer la sécurité des comptes administrateurs sur MZAKA.
 
 ---
 
@@ -279,4 +279,4 @@ Pour toute question ou problème lié à la 2FA :
 
 **Dernière mise à jour :** 2025-10-05
 **Version :** 1.0.0
-**Auteur :** Équipe Mon Toit
+**Auteur :** Équipe MZAKA

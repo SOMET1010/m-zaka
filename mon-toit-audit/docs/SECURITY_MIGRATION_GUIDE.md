@@ -1,4 +1,4 @@
-# Guide de Migration des Corrections de Sécurité - Mon Toit
+# Guide de Migration des Corrections de Sécurité - MZAKA
 
 **Date:** 25 octobre 2025  
 **Version:** 2.0.0  
