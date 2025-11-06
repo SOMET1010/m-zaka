@@ -1,0 +1,354 @@
+/**
+ * M'ZAKA - Variables CSS Globales
+ * Identité Visuelle Infosec Burkina
+ * Version 1.0.0
+ */
+
+/* 🎨 Import des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 📦 Variables CSS - Identité Visuelle M'ZAKA */
+:root {
+  /* 🏠 Couleurs Principales M'ZAKA */
+  --burkina-red: #C1121F;
+  --burkina-red-50: #FEF2F2;
+  --burkina-red-100: #FEE2E2;
+  --burkina-red-200: #FECACA;
+  --burkina-red-300: #FCA5A5;
+  --burkina-red-400: #F87171;
+  --burkina-red-500: #C1121F;
+  --burkina-red-600: #B91C1C;
+  --burkina-red-700: #991B1B;
+  --burkina-red-800: #7F1D1D;
+  --burkina-red-900: #651F1F;
+
+  --sahel-green: #146B3A;
+  --sahel-green-50: #ECFDF5;
+  --sahel-green-100: #D1FAE5;
+  --sahel-green-200: #A7F3D0;
+  --sahel-green-300: #6EE7B7;
+  --sahel-green-400: #34D399;
+  --sahel-green-500: #146B3A;
+  --sahel-green-600: #059669;
+  --sahel-green-700: #047857;
+  --sahel-green-800: #065F46;
+  --sahel-green-900: #064E3B;
+
+  --sun-gold: #F9B208;
+  --sun-gold-50: #FFFBEB;
+  --sun-gold-100: #FEF3C7;
+  --sun-gold-200: #FDE68A;
+  --sun-gold-300: #FCD34D;
+  --sun-gold-400: #FBBF24;
+  --sun-gold-500: #F9B208;
+  --sun-gold-600: #D97706;
+  --sun-gold-700: #B45309;
+  --sun-gold-800: #92400E;
+  --sun-gold-900: #78350F;
+
+  --earth-dark: #1E1E1E;
+  --earth-dark-50: #F6F6F6;
+  --earth-dark-100: #E7E7E7;
+  --earth-dark-200: #D1D1D1;
+  --earth-dark-300: #B0B0B0;
+  --earth-dark-400: #888888;
+  --earth-dark-500: #6D6D6D;
+  --earth-dark-600: #5D5D5D;
+  --earth-dark-700: #4F4F4F;
+  --earth-dark-800: #454545;
+  --earth-dark-900: #1E1E1E;
+
+  --faso-beige: #F5EDE0;
+  --faso-beige-50: #FFFFFF;
+  --faso-beige-100: #FEFEFE;
+  --faso-beige-200: #FDF8F3;
+  --faso-beige-300: #FBF2E8;
+  --faso-beige-400: #F8EBDB;
+  --faso-beige-500: #F5EDE0;
+  --faso-beige-600: #E8D4B8;
+  --faso-beige-700: #D4B894;
+  --faso-beige-800: #B8996A;
+  --faso-beige-900: #9B7D4D;
+
+  /* 🎨 Typographie M'ZAKA */
+  --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* 📏 Tailles de police (minimum 18px pour l'accessibilité) */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px; /* Taille minimum */
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+
+  /* 📐 Zones tactiles (44px minimum) */
+  --touch-min: 44px;
+  --touch-sm: 48px;
+  --touch-md: 56px;
+  --touch-lg: 64px;
+  --touch-xl: 72px;
+
+  /* 📐 Espacements */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* 🔘 Angles de bordure (formes douces) */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* 🌊 Ombres inspirées de la terre */
+  --shadow-earth: 0 4px 12px rgba(30, 30, 30, 0.1);
+  --shadow-earth-lg: 0 8px 24px rgba(30, 30, 30, 0.15);
+  --shadow-earth-xl: 0 12px 32px rgba(30, 30, 30, 0.2);
+
+  --shadow-red: 0 4px 12px rgba(193, 18, 31, 0.2);
+  --shadow-red-lg: 0 8px 24px rgba(193, 18, 31, 0.3);
+
+  --shadow-green: 0 4px 12px rgba(20, 107, 58, 0.2);
+  --shadow-green-lg: 0 8px 24px rgba(20, 107, 58, 0.3);
+
+  --shadow-gold: 0 4px 12px rgba(249, 178, 8, 0.2);
+  --shadow-gold-lg: 0 8px 24px rgba(249, 178, 8, 0.3);
+}
+
+/* 🌓 Mode sombre M'ZAKA */
+[data-theme="dark"] {
+  --burkina-red: #DC2626;
+  --sahel-green: #10B981;
+  --sun-gold: #F59E0B;
+  --earth-dark: #F3F4F6;
+  --faso-beige: #1F2937;
+}
+
+/* 🔤 Classes utilitaires pour la typographie */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.font-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* 📱 Accessibilité - tailles minimum */
+.text-accessible {
+  font-size: var(--text-lg);
+  line-height: 1.5;
+}
+
+/* 🔘 Zones tactiles */
+.touch-target {
+  min-height: var(--touch-min);
+  min-width: var(--touch-min);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🎨 Classes de couleurs personnalisées */
+.text-burkina-red { color: var(--burkina-red); }
+.text-sahel-green { color: var(--sahel-green); }
+.text-sun-gold { color: var(--sun-gold); }
+.text-earth-dark { color: var(--earth-dark); }
+.text-faso-beige { color: var(--faso-beige); }
+
+.bg-burkina-red { background-color: var(--burkina-red); }
+.bg-sahel-green { background-color: var(--sahel-green); }
+.bg-sun-gold { background-color: var(--sun-gold); }
+.bg-earth-dark { background-color: var(--earth-dark); }
+.bg-faso-beige { background-color: var(--faso-beige); }
+
+.border-burkina-red { border-color: var(--burkina-red); }
+.border-sahel-green { border-color: var(--sahel-green); }
+.border-sun-gold { border-color: var(--sun-gold); }
+.border-earth-dark { border-color: var(--earth-dark); }
+.border-faso-beige { border-color: var(--faso-beige); }
+
+/* 🌊 Classes d'ombres personnalisées */
+.shadow-earth { box-shadow: var(--shadow-earth); }
+.shadow-earth-lg { box-shadow: var(--shadow-earth-lg); }
+.shadow-earth-xl { box-shadow: var(--shadow-earth-xl); }
+
+.shadow-red { box-shadow: var(--shadow-red); }
+.shadow-red-lg { box-shadow: var(--shadow-red-lg); }
+
+.shadow-green { box-shadow: var(--shadow-green); }
+.shadow-green-lg { box-shadow: var(--shadow-green-lg); }
+
+.shadow-gold { box-shadow: var(--shadow-gold); }
+.shadow-gold-lg { box-shadow: var(--shadow-gold-lg); }
+
+/* 🔄 Animations M'ZAKA */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-bounce-organic {
+  animation: bounceOrganic 1s infinite;
+}
+
+.animate-pulse-red {
+  animation: pulseRed 2s infinite;
+}
+
+.animate-pulse-green {
+  animation: pulseGreen 2s infinite;
+}
+
+/* 📱 Responsive design M'ZAKA */
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* 🎨 Classes utilitaires pour les boutons M'ZAKA */
+.btn-primary {
+  background-color: var(--burkina-red);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  min-height: var(--touch-min);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-red);
+}
+
+.btn-primary:hover {
+  background-color: var(--burkina-red-600);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-red-lg);
+}
+
+.btn-secondary {
+  background-color: var(--sahel-green);
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  min-height: var(--touch-min);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-green);
+}
+
+.btn-secondary:hover {
+  background-color: var(--sahel-green-600);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-green-lg);
+}
+
+.btn-accent {
+  background-color: var(--sun-gold);
+  color: var(--earth-dark);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  min-height: var(--touch-min);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-accent:hover {
+  background-color: var(--sun-gold-600);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-gold-lg);
+}
+
+/* 🏗️ Structure de page M'ZAKA */
+.page-container {
+  min-height: 100vh;
+  background-color: var(--faso-beige);
+  color: var(--earth-dark);
+}
+
+.header-mzaka {
+  background: linear-gradient(135deg, var(--sahel-green) 0%, var(--sahel-green-600) 100%);
+  color: white;
+  padding: var(--spacing-lg) 0;
+  box-shadow: var(--shadow-earth-lg);
+}
+
+.sidebar-mzaka {
+  background: linear-gradient(180deg, var(--sahel-green) 0%, var(--sahel-green-700) 100%);
+  color: white;
+  min-height: 100vh;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-earth);
+}
+
+.main-content-mzaka {
+  background-color: var(--faso-beige);
+  padding: var(--spacing-xl);
+  min-height: calc(100vh - 80px);
+}
+
+.card-mzaka {
+  background-color: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-earth);
+  border: 1px solid var(--faso-beige-200);
+  transition: all 0.2s ease;
+}
+
+.card-mzaka:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-earth-lg);
+}
+
+/* 📝 Fin des styles M'ZAKA - Infosec Burkina */

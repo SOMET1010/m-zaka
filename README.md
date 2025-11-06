@@ -69,10 +69,14 @@ Créer la première plateforme immobilière numérique **100 % burkinabè**, off
 
 ### 8. 🎨 UX/UI Optimisée pour le Burkina Faso
 - **Interface claire et mobile-first** pour smartphone
-- **Couleurs identitaires** :
-  - Bleu confiance (#1E40AF) - Stabilité et professionnalisme
-  - Rouge terre (#DC2626) - Tradition et chaleur
-  - Jaune prospérité (#EAB308) - Croissance et opportunités
+- **Couleurs identitaires M'ZAKA** :
+  - Rouge Burkina (#C1121F) - Vitalité, passion, boutons CTA
+  - Vert Sahel (#146B3A) - Espoir, durabilité, fonds et navigation
+  - Or Soleil (#F9B208) - Prospérité, accents, pictogrammes
+  - Terre sombre (#1E1E1E) - Contraste pour textes
+  - Beige Faso (#F5EDE0) - Fond neutre rappelant la terre
+- **Typographie** : Poppins (titres) + Nunito Sans (texte)
+- **Iconographie** : Style minimaliste inspiré Faso Dan Fani
 - **Texte lisible** (18px minimum) et **zones tactiles étendues** (44px)
 - **Expérience testée** avec des utilisateurs burkinabè
 
