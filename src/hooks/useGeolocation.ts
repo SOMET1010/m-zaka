@@ -15,17 +15,19 @@ interface GeolocationReturn {
   refresh: () => Promise<void>;
 }
 
-const ABIDJAN_NEIGHBORHOODS = [
-  { name: 'Cocody', lat: 5.3599, lng: -3.9889, bounds: { latMin: 5.32, latMax: 5.40, lngMin: -4.02, lngMax: -3.95 } },
-  { name: 'Plateau', lat: 5.3244, lng: -4.0125, bounds: { latMin: 5.31, latMax: 5.34, lngMin: -4.03, lngMax: -4.00 } },
-  { name: 'Marcory', lat: 5.2869, lng: -3.9967, bounds: { latMin: 5.27, latMax: 5.31, lngMin: -4.01, lngMax: -3.98 } },
-  { name: 'Yopougon', lat: 5.3456, lng: -4.0889, bounds: { latMin: 5.30, latMax: 5.39, lngMin: -4.15, lngMax: -4.05 } },
-  { name: 'Abobo', lat: 5.4167, lng: -4.0167, bounds: { latMin: 5.38, latMax: 5.45, lngMin: -4.05, lngMax: -3.98 } },
-  { name: 'Adjamé', lat: 5.3500, lng: -4.0333, bounds: { latMin: 5.33, latMax: 5.37, lngMin: -4.05, lngMax: -4.01 } },
-  { name: 'Treichville', lat: 5.2889, lng: -4.0089, bounds: { latMin: 5.27, latMax: 5.31, lngMin: -4.03, lngMax: -4.00 } },
-  { name: 'Koumassi', lat: 5.3000, lng: -3.9500, bounds: { latMin: 5.28, latMax: 5.32, lngMin: -3.97, lngMax: -3.93 } },
-  { name: 'Port-Bouët', lat: 5.2500, lng: -3.9333, bounds: { latMin: 5.23, latMax: 5.27, lngMin: -3.96, lngMax: -3.91 } },
-  { name: 'Attécoubé', lat: 5.3333, lng: -4.0500, bounds: { latMin: 5.31, latMax: 5.36, lngMin: -4.08, lngMax: -4.03 } }
+const OUAGADOUGOU_NEIGHBORHOODS = [
+  { name: 'Ouaga 2000', lat: 12.3500, lng: -1.5400, bounds: { latMin: 12.33, latMax: 12.37, lngMin: -1.56, lngMax: -1.52 } },
+  { name: 'Koulouba', lat: 12.3650, lng: -1.5650, bounds: { latMin: 12.35, latMax: 12.38, lngMin: -1.58, lngMax: -1.55 } },
+  { name: 'Dapoya', lat: 12.3450, lng: -1.5750, bounds: { latMin: 12.33, latMax: 12.36, lngMin: -1.59, lngMax: -1.56 } },
+  { name: 'Gounghin', lat: 12.3250, lng: -1.5950, bounds: { latMin: 12.31, latMax: 12.34, lngMin: -1.61, lngMax: -1.58 } },
+  { name: 'Pissy', lat: 12.3550, lng: -1.5550, bounds: { latMin: 12.34, latMax: 12.37, lngMin: -1.57, lngMax: -1.54 } },
+  { name: 'Tampouy', lat: 12.3050, lng: -1.5850, bounds: { latMin: 12.29, latMax: 12.32, lngMin: -1.60, lngMax: -1.57 } },
+  { name: 'Bogodogo', lat: 12.3850, lng: -1.5450, bounds: { latMin: 12.37, latMax: 12.40, lngMin: -1.56, lngMax: -1.53 } },
+  { name: 'Tanghin', lat: 12.3350, lng: -1.5150, bounds: { latMin: 12.32, latMax: 12.35, lngMin: -1.53, lngMax: -1.50 } },
+  { name: 'Somgandé', lat: 12.2950, lng: -1.5650, bounds: { latMin: 12.28, latMax: 12.31, lngMin: -1.58, lngMax: -1.55 } },
+  { name: 'Karpala', lat: 12.3150, lng: -1.6150, bounds: { latMin: 12.30, latMax: 12.33, lngMin: -1.63, lngMax: -1.60 } },
+  { name: 'Sanyiri', lat: 12.3650, lng: -1.5250, bounds: { latMin: 12.35, latMax: 12.38, lngMin: -1.54, lngMax: -1.51 } },
+  { name: "Patte d'Oie", lat: 12.3450, lng: -1.5650, bounds: { latMin: 12.33, latMax: 12.36, lngMin: -1.58, lngMax: -1.55 } }
 ];
 
 const CACHE_KEY = 'user_location';
@@ -33,7 +35,7 @@ const CACHE_TIMESTAMP_KEY = 'user_location_timestamp';
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
 const detectNeighborhood = (lat: number, lng: number): string | undefined => {
-  for (const neighborhood of ABIDJAN_NEIGHBORHOODS) {
+  for (const neighborhood of OUAGADOUGOU_NEIGHBORHOODS) {
     if (
       lat >= neighborhood.bounds.latMin &&
       lat <= neighborhood.bounds.latMax &&
@@ -48,8 +50,8 @@ const detectNeighborhood = (lat: number, lng: number): string | undefined => {
 
 export const useGeolocation = (): GeolocationReturn => {
   const [location, setLocation] = useState<GeolocationData>({
-    city: 'Abidjan',
-    country: 'Côte d\'Ivoire',
+    city: 'Ouagadougou',
+    country: 'Burkina Faso',
     neighborhood: undefined
   });
   const [isLoading, setIsLoading] = useState(true);
@@ -85,8 +87,8 @@ export const useGeolocation = (): GeolocationReturn => {
         const neighborhood = detectNeighborhood(latitude, longitude);
         
         const locationData: GeolocationData = {
-          city: 'Abidjan',
-          country: 'Côte d\'Ivoire',
+          city: 'Ouagadougou',
+          country: 'Burkina Faso',
           neighborhood,
           latitude,
           longitude
@@ -97,15 +99,15 @@ export const useGeolocation = (): GeolocationReturn => {
         localStorage.setItem(CACHE_TIMESTAMP_KEY, Date.now().toString());
       } else {
         setLocation({ 
-          city: 'Abidjan',
-          country: 'Côte d\'Ivoire'
+          city: 'Ouagadougou',
+          country: 'Burkina Faso'
         });
       }
     } catch (err) {
       setError(err as Error);
       setLocation({ 
-        city: 'Abidjan',
-        country: 'Côte d\'Ivoire'
+        city: 'Ouagadougou',
+        country: 'Burkina Faso'
       });
     } finally {
       setIsLoading(false);

@@ -103,7 +103,7 @@ export interface AuditTrailEvent {
 export interface PaymentRequest {
   lease_id: string;
   amount: number;
-  provider: 'orange_money' | 'mtn_money' | 'moov_money';
+  provider: 'orange_money_bf' | 'moov_africa' | 'coris_money' | 'wave';
   phone_number: string;
 }
 

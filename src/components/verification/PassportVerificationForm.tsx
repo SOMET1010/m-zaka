@@ -13,7 +13,7 @@ interface PassportVerificationFormProps {
 }
 
 const NATIONALITIES = [
-  'Française', 'Malienne', 'Burkinabè', 'Sénégalaise', 'Guinéenne',
+  'Ivoirienne', 'Française', 'Malienne', 'Sénégalaise', 'Guinéenne',
   'Béninoise', 'Nigérienne', 'Togolaise', 'Ghanéenne', 'Nigériane',
   'Camerounaise', 'Congolaise', 'Autre'
 ];

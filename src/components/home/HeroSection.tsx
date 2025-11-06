@@ -6,16 +6,16 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Search, ShieldCheck, Home, TrendingUp, Users } from 'lucide-react';
 
 const CITIES = [
-  'Abidjan',
-  'Cocody',
-  'Plateau',
-  'Marcory',
-  'Yopougon',
-  'Abobo',
-  'Adjamé',
-  'Koumassi',
-  'Port-Bouët',
-  'Treichville'
+  'Ouagadougou',
+  'Basilea',
+  'Koulouba',
+  'Azimmo',
+  'Gaoua',
+  'Kombissiri',
+  'Nonsin',
+  'Gounghin',
+  'Pabre',
+  'Ouaga 2000'
 ];
 
 const PROPERTY_TYPES = [

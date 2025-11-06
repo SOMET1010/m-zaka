@@ -10,9 +10,9 @@ import { logger } from '@/services/logger';
 import { secureStorage } from '@/lib/secureStorage';
 import { motion } from 'framer-motion';
 import { ABIDJAN_POI, POI_CATEGORIES } from '@/data/abidjanPOI';
-import { ABIDJAN_NEIGHBORHOODS, getPriceColor } from '@/data/abidjanNeighborhoods';
+import { OUAGADOUGOU_NEIGHBORHOODS, getPriceColor } from '@/data/ouagadougouNeighborhoods';
 import type { POIType } from './POILayer';
-import type { Neighborhood } from '@/data/abidjanNeighborhoods';
+import type { Neighborhood } from '@/data/ouagadougouNeighborhoods';
 
 interface EnhancedMapProps {
   properties: MapProperty[];
@@ -455,7 +455,7 @@ export const EnhancedMap = ({
   useEffect(() => {
     if (!map.current || !mapReady || !showNeighborhoods) return;
 
-    ABIDJAN_NEIGHBORHOODS.forEach((neighborhood, index) => {
+    OUAGADOUGOU_NEIGHBORHOODS.forEach((neighborhood, index) => {
       const sourceId = `neighborhood-${neighborhood.id}`;
       const layerId = `neighborhood-layer-${neighborhood.id}`;
       const labelLayerId = `neighborhood-label-${neighborhood.id}`;

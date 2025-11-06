@@ -28,8 +28,8 @@ serve(async (req) => {
     const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
     const supabase = createClient(supabaseUrl, supabaseKey);
 
-    // Validation du provider
-    const validProviders = ['orange_money', 'mtn_money', 'moov_money', 'wave'];
+    // Validation du provider - Burkina Faso
+    const validProviders = ['orange_money_bf', 'moov_africa', 'coris_money', 'wave'];
     if (!validProviders.includes(provider)) {
       return new Response(
         JSON.stringify({ error: 'Provider invalide' }),
@@ -37,11 +37,11 @@ serve(async (req) => {
       );
     }
 
-    // Validation du numéro selon le provider
+    // Validation du numéro selon le provider (Burkina Faso)
     const phoneValidation: any = {
-      orange_money: /^(07|227)\d{8}$/,
-      mtn_money: /^(05|054|055|056)\d{8}$/,
-      moov_money: /^(01)\d{8}$/,
+      orange_money_bf: /^(07|227)\d{8}$/,
+      moov_africa: /^(01|02)\d{8}$/,
+      coris_money: /^(03|04)\d{8}$/,
       wave: /^\d{8,10}$/
     };
 
@@ -66,12 +66,28 @@ serve(async (req) => {
       );
     }
 
-    // Calcul des frais selon le provider
+    // Calcul des frais selon le provider (Burkina Faso)
     let feesPercentage = 0.01; // 1% par défaut
-    if (provider === 'wave') feesPercentage = 0.01;
-    if (provider === 'orange_money') feesPercentage = 0.015; // 1.5%
-    if (provider === 'mtn_money') feesPercentage = 0.015; // 1.5%
-    if (provider === 'moov_money') feesPercentage = 0.012; // 1.2%
+    
+    // Orange Money BF: 1% (retraits), transferts OM→OM gratuits, 1% inter-opérateur
+    if (provider === 'orange_money_bf') {
+      feesPercentage = 0.01; // 1% (frais de retrait standard)
+    }
+    
+    // Moov Africa: à clarifier, estimation 1.2%
+    if (provider === 'moov_africa') {
+      feesPercentage = 0.012; // 1.2% (estimation)
+    }
+    
+    // Coris Money: frais bancaires, estimation 0.8%
+    if (provider === 'coris_money') {
+      feesPercentage = 0.008; // 0.8% (frais bancaires)
+    }
+    
+    // Wave: transferts à 1%, dépôts/retraits gratuits
+    if (provider === 'wave') {
+      feesPercentage = 0.01; // 1%
+    }
 
     const fees = Math.round(amount * feesPercentage);
     const totalAmount = amount + fees;

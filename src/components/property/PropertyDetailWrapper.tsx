@@ -13,14 +13,9 @@ export function PropertyDetailWrapper() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-  // Validation UUID
-  const isValidUUID = (uuid: string): boolean => {
-    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-    return uuidRegex.test(uuid);
-  };
-
-  // Si l'ID est invalide, afficher une erreur propre
-  if (!id || !isValidUUID(id)) {
+  // Validation basique - seulement vérifier qu'un ID est présent
+  // La validation détaillée sera gérée par PropertyDetail
+  if (!id) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 bg-background">
         <Card className="w-full max-w-lg">
@@ -35,7 +30,7 @@ export function PropertyDetailWrapper() {
 
           <CardContent className="space-y-4">
             <p className="text-center text-muted-foreground">
-              Le bien que vous recherchez n'existe pas ou a été supprimé.
+              L'identifiant du bien est manquant.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
@@ -62,7 +57,7 @@ export function PropertyDetailWrapper() {
     );
   }
 
-  // Si l'ID est valide, afficher PropertyDetail normalement
+  // Afficher PropertyDetail qui gérera la validation détaillée et l'affichage
   return <PropertyDetail />;
 }
 

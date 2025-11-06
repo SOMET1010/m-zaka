@@ -13,13 +13,13 @@ interface LocationPickerProps {
 }
 
 const CITY_COORDINATES: Record<string, [number, number]> = {
-  'Abidjan': [-4.0083, 5.3600],
-  'Yamoussoukro': [-5.2767, 6.8276],
-  'Bouaké': [-5.0300, 7.6900],
-  'Daloa': [-6.4503, 6.8770],
-  'San-Pédro': [-6.6361, 4.7485],
-  'Korhogo': [-5.6300, 9.4500],
-  'Man': [-7.5542, 7.4125],
+  'Ouagadougou': [-1.5204, 12.3714],
+  'Bobo-Dioulasso': [-4.2833, 11.1833],
+  'Koudougou': [-2.3667, 12.2500],
+  'Ouahigouya': [-2.4167, 13.5833],
+  'Banfora': [-4.7500, 10.6333],
+  'Fada N\'gourma': [0.0333, 12.0667],
+  'Dori': [-0.0333, 14.4833],
 };
 
 export const LocationPicker = ({ onLocationSelect, initialLat, initialLng, city }: LocationPickerProps) => {

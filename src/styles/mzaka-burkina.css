@@ -1,0 +1,572 @@
+/**
+ * M'ZAKA - Styles UX/UI optimisés pour le marché burkinabé
+ * Design system adapté aux habitudes de navigation et couleurs locales
+ */
+
+/* ===== VARIABLES CSS POUR LE MARCHÉ BURKINABÉ ===== */
+
+:root {
+  /* Couleurs inspirées du drapeau et de la culture burkinabé */
+  --color-burkina-red: #EF4444;
+  --color-burkina-yellow: #FBBF24;
+  --color-burkina-green: #10B981;
+  --color-earth: #92400E;
+  --color-sand: #F3F4F6;
+  --color-mud: #78716C;
+  
+  /* Palette principale M'ZAKA adaptée */
+  --color-mzaka-primary: #1E40AF;      /* Bleu profond - confiance */
+  --color-mzaka-secondary: #DC2626;    /* Rouge terre - énergie locale */
+  --color-mzaka-accent: #FBBF24;       /* Jaune or - prosperité */
+  --color-mzaka-success: #059669;      /* Vert croissance */
+  --color-mzaka-warning: #D97706;      /* Orange attention */
+  --color-mzaka-neutral: #6B7280;      /* Gris équilibré */
+  
+  /* Gradients inspirés des paysages burkinabés */
+  --gradient-savanna: linear-gradient(135deg, #92400E 0%, #FBBF24 100%);
+  --gradient-sunset: linear-gradient(135deg, #DC2626 0%, #FBBF24 100%);
+  --gradient-earth: linear-gradient(135deg, #78716C 0%, #F3F4F6 100%);
+  
+  /* Typographie optimisée pour la lecture locale */
+  --font-size-base: 1.125rem;   /* 18px - Taille par défaut agrandie */
+  --font-size-large: 1.25rem;   /* 20px - Texte important */
+  --font-size-xlarge: 1.5rem;   /* 24px - Titres */
+  --line-height-relaxed: 1.75;   /* Hauteur de ligne confortable */
+  
+  /* Espacements adaptés aux écrans mobiles locaux */
+  --spacing-touch: 44px;        /* Taille minimum de zone tactile */
+  --spacing-comfortable: 24px;  /* Espacement comfortable */
+  --spacing-spacious: 32px;     /* Espacement généreux */
+  
+  /* Bordures et ombres inspirées de l'art local */
+  --border-radius-cultural: 12px; /* Arrondis subtils */
+  --shadow-cultural: 0 4px 6px -1px rgba(139, 92, 246, 0.1);
+  --shadow-deep: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== STYLES DE BASE OPTIMISÉS ===== */
+
+/* Amélioration de la lisibilité pour les utilisateurs locaux */
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1F2937;
+  background-color: #FAFAFA;
+}
+
+/* Texte plus grand par défaut pour l'accessibilité */
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Boutons avec zones de toucher optimisées */
+button, 
+.btn,
+[role="button"] {
+  min-height: var(--spacing-touch);
+  min-width: var(--spacing-touch);
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  border-radius: var(--border-radius-cultural);
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-cultural);
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-deep);
+}
+
+/* ===== NAVIGATION SIMPLIFIÉE ===== */
+
+/* Menu principal avec icônes plus grandes */
+.navbar-main {
+  background: linear-gradient(90deg, var(--color-mzaka-primary) 0%, #1E3A8A 100%);
+  box-shadow: 0 2px 10px rgba(30, 64, 175, 0.1);
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  margin: 0 4px;
+}
+
+.navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.navbar-item.active {
+  background-color: var(--color-mzaka-secondary);
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
+}
+
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* ===== CARTES DE PROPRIÉTÉS ===== */
+
+.property-card {
+  background: white;
+  border-radius: var(--border-radius-cultural);
+  box-shadow: var(--shadow-cultural);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 1px solid #F3F4F6;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-deep);
+  border-color: var(--color-mzaka-primary);
+}
+
+.property-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--gradient-sunset);
+}
+
+.property-card-content {
+  padding: 20px;
+}
+
+.property-card-title {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.property-card-price {
+  font-size: var(--font-size-xlarge);
+  font-weight: 700;
+  color: var(--color-mzaka-secondary);
+  margin-bottom: 12px;
+}
+
+.property-card-location {
+  display: flex;
+  align-items: center;
+  color: var(--color-mzaka-neutral);
+  font-size: var(--font-size-base);
+  margin-bottom: 12px;
+}
+
+.property-card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.property-feature-tag {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: #F3F4F6;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: var(--color-mzaka-neutral);
+}
+
+/* ===== BADGES ET INDICATEURS ===== */
+
+.quality-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  background: var(--gradient-savanna);
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(139, 92, 246, 0.2);
+}
+
+.neighborhood-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  background-color: #EFF6FF;
+  color: var(--color-mzaka-primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 1px solid #DBEAFE;
+}
+
+/* ===== FORMULAIRES ADAPTÉS ===== */
+
+.form-input {
+  font-size: var(--font-size-base);
+  padding: 12px 16px;
+  border: 2px solid #E5E7EB;
+  border-radius: var(--border-radius-cultural);
+  background-color: white;
+  transition: all 0.2s ease;
+  min-height: var(--spacing-touch);
+}
+
+.form-input:focus {
+  border-color: var(--color-mzaka-primary);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+  outline: none;
+}
+
+.form-label {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ===== SYSTÈME D'ÉTOILES ===== */
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-rating .star {
+  width: 20px;
+  height: 20px;
+  color: #D1D5DB;
+  transition: color 0.2s ease;
+}
+
+.star-rating .star.filled {
+  color: #FBBF24;
+}
+
+.star-rating .star:hover {
+  color: #F59E0B;
+  transform: scale(1.1);
+}
+
+/* ===== INDICATEURS DE STATUT ===== */
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-indicator.disponible {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.status-indicator.loue {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.status-indicator.en_attente {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+/* ===== FILTRES ET RECHERCHE ===== */
+
+.filter-section {
+  background: white;
+  border-radius: var(--border-radius-cultural);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-cultural);
+  border: 1px solid #E5E7EB;
+}
+
+.filter-title {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 16px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #F3F4F6;
+  color: var(--color-mzaka-neutral);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 4px;
+}
+
+.filter-button:hover {
+  background-color: #E5E7EB;
+  color: var(--color-mzaka-primary);
+}
+
+.filter-button.active {
+  background-color: var(--color-mzaka-primary);
+  color: white;
+  border-color: var(--color-mzaka-primary);
+}
+
+/* ===== DASHBOARDS ET STATISTIQUES ===== */
+
+.stats-card {
+  background: white;
+  border-radius: var(--border-radius-cultural);
+  padding: 24px;
+  box-shadow: var(--shadow-cultural);
+  border: 1px solid #E5E7EB;
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-deep);
+}
+
+.stats-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-mzaka-primary);
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: var(--font-size-base);
+  color: var(--color-mzaka-neutral);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.stats-change {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.stats-change.positive {
+  color: var(--color-mzaka-success);
+}
+
+.stats-change.negative {
+  color: var(--color-burkina-red);
+}
+
+/* ===== MODAL ET OVERLAYS ===== */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background: white;
+  border-radius: var(--border-radius-cultural);
+  box-shadow: var(--shadow-deep);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  padding: 24px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.modal-title {
+  font-size: var(--font-size-xlarge);
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+/* ===== ANIMATIONS SUBTILES ===== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* ===== RESPONSIVE DESIGN MOBILE-FIRST ===== */
+
+/* Mobile (< 640px) */
+@media (max-width: 639px) {
+  :root {
+    --font-size-base: 1.125rem;
+    --spacing-touch: 48px;
+  }
+  
+  .navbar-item {
+    padding: 16px;
+    font-size: 1.125rem;
+  }
+  
+  .property-card-content {
+    padding: 16px;
+  }
+  
+  .property-card-title {
+    font-size: 1.25rem;
+  }
+  
+  .property-card-price {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablette (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .navbar-item {
+    padding: 14px 18px;
+  }
+  
+  .property-card-image {
+    height: 220px;
+  }
+}
+
+/* Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+  .navbar-item {
+    padding: 12px 16px;
+  }
+  
+  .property-card-image {
+    height: 240px;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-6px);
+  }
+}
+
+/* ===== ACCESSIBILITÉ ===== */
+
+/* Focus visible pour la navigation au clavier */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-mzaka-primary);
+  outline-offset: 2px;
+}
+
+/* Réduction des animations pour les utilisateurs qui le préfèrent */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mode sombre (optionnel) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mzaka-primary: #3B82F6;
+    --color-mzaka-secondary: #EF4444;
+    --color-mzaka-neutral: #9CA3AF;
+  }
+  
+  body {
+    background-color: #1F2937;
+    color: #F9FAFB;
+  }
+  
+  .property-card {
+    background-color: #374151;
+    border-color: #4B5563;
+  }
+  
+  .property-card-title {
+    color: #F9FAFB;
+  }
+}
+
+/* ===== IMPRESSIONS ===== */
+
+@media print {
+  .navbar-main,
+  button,
+  .filter-section {
+    display: none !important;
+  }
+  
+  .property-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}

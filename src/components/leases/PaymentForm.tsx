@@ -1,6 +1,6 @@
 /**
- * Formulaire de paiement Mobile Money pour les baux
- * Supporte Orange Money, MTN Money, Moov Money
+ * Formulaire de paiement Mobile Money pour les baux - Burkina Faso
+ * Supporte Orange Money BF, Moov Africa, Coris Money, Wave
  */
 
 import { useState } from 'react';
@@ -19,11 +19,11 @@ interface PaymentFormProps {
   onPaymentSuccess: () => void;
 }
 
-type Provider = 'orange_money' | 'mtn_money' | 'moov_money';
+type Provider = 'orange_money_bf' | 'moov_africa' | 'coris_money' | 'wave';
 type PaymentStatus = 'idle' | 'processing' | 'otp_sent' | 'success' | 'failed';
 
 export function PaymentForm({ leaseId, amount, onPaymentSuccess }: PaymentFormProps) {
-  const [provider, setProvider] = useState<Provider>('orange_money');
+  const [provider, setProvider] = useState<Provider>('orange_money_bf');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [otp, setOtp] = useState('');
   const [status, setStatus] = useState<PaymentStatus>('idle');
@@ -32,22 +32,32 @@ export function PaymentForm({ leaseId, amount, onPaymentSuccess }: PaymentFormPr
 
   const providers = [
     {
-      id: 'orange_money' as Provider,
-      name: 'Orange Money',
+      id: 'orange_money_bf' as Provider,
+      name: 'Orange Money BF',
       color: 'bg-orange-500',
       logo: '🟠',
+      description: 'Leader du marché (12M clients)',
     },
     {
-      id: 'mtn_money' as Provider,
-      name: 'MTN Money',
-      color: 'bg-yellow-500',
-      logo: '🟡',
-    },
-    {
-      id: 'moov_money' as Provider,
-      name: 'Moov Money',
+      id: 'moov_africa' as Provider,
+      name: 'Moov Africa',
       color: 'bg-blue-500',
       logo: '🔵',
+      description: 'Opérateur historique',
+    },
+    {
+      id: 'coris_money' as Provider,
+      name: 'Coris Money',
+      color: 'bg-green-500',
+      logo: '🟢',
+      description: 'Portée par Coris Bank',
+    },
+    {
+      id: 'wave' as Provider,
+      name: 'Wave',
+      color: 'bg-purple-500',
+      logo: '🟣',
+      description: 'Transferts à 1%',
     },
   ];
 

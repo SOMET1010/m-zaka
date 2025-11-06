@@ -24,7 +24,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { KentePattern } from '@/components/ui/african-patterns';
-import type { Neighborhood } from '@/data/abidjanNeighborhoods';
+import type { Neighborhood } from '@/data/ouagadougouNeighborhoods';
 
 const SmartMapV2 = () => {
   const navigate = useNavigate();

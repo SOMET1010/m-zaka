@@ -133,9 +133,9 @@ export const PAYMENT_TYPES = {
 } as const;
 
 export const MOBILE_MONEY_PROVIDERS = {
-  ORANGE: 'orange_money',
-  MTN: 'mtn_money',
-  MOOV: 'moov_money',
+  ORANGE_BF: 'orange_money_bf',
+  MOOV_AFRICA: 'moov_africa',
+  CORIS_MONEY: 'coris_money',
   WAVE: 'wave',
 } as const;
 

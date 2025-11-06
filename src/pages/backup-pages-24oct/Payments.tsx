@@ -36,7 +36,7 @@ export default function Payments() {
   const [loading, setLoading] = useState(false);
   const [amount, setAmount] = useState("");
   const [paymentType, setPaymentType] = useState("loyer");
-  const [paymentMethod, setPaymentMethod] = useState("orange_money");
+  const [paymentMethod, setPaymentMethod] = useState("orange_money_bf");
   const [phoneNumber, setPhoneNumber] = useState("");
 
   useEffect(() => {
@@ -172,8 +172,9 @@ export default function Payments() {
 
   const getProviderIcon = (method: string) => {
     switch (method) {
-      case "orange_money":
-      case "mtn_money":
+      case "orange_money_bf":
+      case "moov_africa":
+      case "coris_money":
       case "wave":
         return <Smartphone className="h-4 w-4" />;
       default:
@@ -234,17 +235,17 @@ export default function Payments() {
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="orange_money">
-                        🟠 Orange Money
+                      <SelectItem value="orange_money_bf">
+                        🟠 Orange Money BF (Leader - 12M clients)
                       </SelectItem>
-                      <SelectItem value="mtn_money">
-                        🟡 MTN Money
+                      <SelectItem value="moov_africa">
+                        🔵 Moov Africa (Ex-ONATEL)
                       </SelectItem>
-                      <SelectItem value="moov_money">
-                        🔵 Moov Money
+                      <SelectItem value="coris_money">
+                        🟢 Coris Money (Coris Bank)
                       </SelectItem>
                       <SelectItem value="wave">
-                        💙 Wave
+                        🟣 Wave (Transferts 1%)
                       </SelectItem>
                     </SelectContent>
                   </Select>
@@ -258,20 +259,20 @@ export default function Payments() {
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     placeholder={
-                      paymentMethod === "orange_money"
+                      paymentMethod === "orange_money_bf"
                         ? "07XXXXXXXX ou 227XXXXXXXX"
-                        : paymentMethod === "mtn_money"
-                        ? "05XXXXXXXX ou 054XXXXXXXX"
-                        : paymentMethod === "moov_money"
-                        ? "01XXXXXXXX"
+                        : paymentMethod === "moov_africa"
+                        ? "01XXXXXXXX ou 02XXXXXXXX"
+                        : paymentMethod === "coris_money"
+                        ? "03XXXXXXXX ou 04XXXXXXXX"
                         : "XXXXXXXX"
                     }
                     required
                   />
                   <p className="text-xs text-muted-foreground mt-1">
-                    {paymentMethod === "orange_money" && "Format: 07 ou 227 + 8 chiffres"}
-                    {paymentMethod === "mtn_money" && "Format: 05, 054, 055 ou 056 + 8 chiffres"}
-                    {paymentMethod === "moov_money" && "Format: 01 + 8 chiffres"}
+                    {paymentMethod === "orange_money_bf" && "Format: 07 ou 227 + 8 chiffres"}
+                    {paymentMethod === "moov_africa" && "Format: 01 ou 02 + 8 chiffres"}
+                    {paymentMethod === "coris_money" && "Format: 03 ou 04 + 8 chiffres"}
                     {paymentMethod === "wave" && "Format: 8 à 10 chiffres"}
                   </p>
                 </div>
