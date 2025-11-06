@@ -1,7 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "mzaka",
+  "description": "Marketplace Immobilière Burkinabè - Première plateforme immobilière numérique 100% burkinabè",
+  "version": "1.0.0",
+  "author": "Infosec Burkina",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
