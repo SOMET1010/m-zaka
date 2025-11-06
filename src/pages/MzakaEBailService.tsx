@@ -1,92 +1,48 @@
 import React, { useState } from 'react';
-import { FileText, CreditCard, Download, Share, CheckCircle, QrCode, Smartphone, Shield, Clock, AlertCircle } from 'lucide-react';
+import { FileText, CreditCard, Download, Share, CheckCircle, QrCode, Smartphone, Shield, Clock, AlertCircle, Home, User, Receipt, Settings } from 'lucide-react';
 import { HeaderMzaka } from '../components/ui/HeaderMzaka';
 import { ButtonMzaka } from '../components/ui/ButtonMzaka';
+import { DigitalLeaseGenerator } from '../components/leases/DigitalLeaseGenerator';
+import { ElectronicSignature } from '../components/leases/ElectronicSignature';
+import { ElectronicReceipt } from '../components/leases/ElectronicReceipt';
+import { LeaseManagement } from '../components/leases/LeaseManagement';
+import { ReceiptManagement } from '../components/leases/ReceiptManagement';
 
 const MzakaEBailService: React.FC = () => {
-  const [currentStep, setCurrentStep] = useState(1);
-  const [documentType, setDocumentType] = useState<'bail' | 'quittance'>('bail');
-  const [formData, setFormData] = useState({
-    // Bailleur
-    bailleurNom: '',
-    bailleurPhone: '',
-    bailleurEmail: '',
-    // Locataire  
-    locataireNom: '',
-    locatairePhone: '',
-    locataireEmail: '',
-    // Bien
-    adresseBien: '',
-    ville: 'Ouagadougou',
-    typeBien: 'Appartement',
-    surface: '',
-    // Contrat
-    montantLoyer: '',
-    depot: '',
-    dureeMois: '12',
-    dateDebut: '',
-    // Paiement
-    paiementEffectue: false,
-    montantPaiement: 0
-  });
+  const [activeTab, setActiveTab] = useState<'generator' | 'sign' | 'management' | 'receipts'>('generator');
+  const [userType, setUserType] = useState<'proprietaire' | 'locataire'>('proprietaire');
+  const [generatedLease, setGeneratedLease] = useState<any>(null);
+  const [generatedReceipt, setGeneratedReceipt] = useState<any>(null);
 
-  // Tarifs selon maquette
+  // Tarifs selon spécifications
   const tarifs = {
     bail: 1000,
     quittance: 500,
     packAnnuel: 5000
   };
 
-  // Méthodes de paiement Mobile Money
-  const paiementMethods = [
-    { id: 'orange', name: 'Orange Money', logo: '🟠', color: 'text-orange-600' },
-    { id: 'moov', name: 'Moov Money', logo: '🔵', color: 'text-blue-600' },
-    { id: 'coris', name: 'Coris Money', logo: '🟢', color: 'text-green-600' },
-    { id: 'wave', name: 'Wave', logo: '💙', color: 'text-blue-500' }
-  ];
-
-  // Documents générés demo
-  const documentsGeneres = [
-    {
-      id: 1,
-      type: 'Bail',
-      titre: 'Bail Appartement T3 - Ouaga 2000',
-      date: '25/10/2025',
-      montant: 200000,
-      statut: 'Valide',
-      qrCode: 'QR-20251025-BAIL-001'
-    },
-    {
-      id: 2,
-      type: 'Quittance',
-      titre: 'Quittance Octobre 2025',
-      date: '25/10/2025',
-      montant: 200000,
-      statut: 'Validé',
-      qrCode: 'QR-20251025-QUIT-001'
-    }
-  ];
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+  // Gestionnaires d'événements pour les nouveaux composants
+  const handleLeaseGenerated = (leaseData: any) => {
+    setGeneratedLease(leaseData);
+    setActiveTab('sign');
   };
 
-  const handlePayment = (method: string) => {
-    setFormData(prev => ({ 
-      ...prev, 
-      paiementEffectue: true,
-      montantPaiement: documentType === 'bail' ? tarifs.bail : tarifs.quittance
-    }));
+  const handleReceiptGenerated = (receiptData: any) => {
+    setGeneratedReceipt(receiptData);
   };
 
-  const generateDocument = () => {
-    // TODO: Implémenter la génération de PDF avec signature numérique
-    alert('Document généré avec succès ! Vérification par QR code disponible.');
+  const handleSignatureCompleted = (signatureData: any) => {
+    console.log('Signature complétée:', signatureData);
+    // Rediriger vers la gestion ou confirmer
+  };
+
+  const handleSignatureFailed = () => {
+    console.log('Signature échouée');
   };
 
   return (
     <div className="min-h-screen bg-beige-faso">
-      <HeaderMzaka userType="locataire" userName="Utilisateur" />
+      <HeaderMzaka userType={userType} userName="Utilisateur" />
       
       <div className="max-w-6xl mx-auto p-6">
         {/* En-tête du service */}
@@ -98,425 +54,289 @@ const MzakaEBailService: React.FC = () => {
             Service public numérique pour générer vos baux électroniques et quittances légales. 
             <span className="text-rouge-burkina font-semibold"> 100% conforme aux standards burkinabés.</span>
           </p>
-          <div className="mt-4 p-4 bg-vert-sahel/10 rounded-lg inline-block">
-            <p className="text-vert-sahel font-nunito text-sm">
-              🔗 Portail dédié: <span className="font-mono">https://ebail.mzaka.bf</span>
-            </p>
+        </div>
+
+        {/* Sélecteur de type d'utilisateur */}
+        <div className="flex justify-center mb-8">
+          <div className="bg-white rounded-lg p-1 shadow-sm">
+            <button
+              onClick={() => setUserType('proprietaire')}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                userType === 'proprietaire'
+                  ? 'bg-rouge-burkina text-white shadow-sm'
+                  : 'text-terre-sombre hover:text-rouge-burkina'
+              }`}
+            >
+              👤 Propriétaire
+            </button>
+            <button
+              onClick={() => setUserType('locataire')}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                userType === 'locataire'
+                  ? 'bg-rouge-burkina text-white shadow-sm'
+                  : 'text-terre-sombre hover:text-rouge-burkina'
+              }`}
+            >
+              🏠 Locataire
+            </button>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Colonne principale - Génération de documents */}
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h2 className="text-xl font-poppins font-bold text-terre-sombre mb-6 flex items-center">
-                <FileText className="h-5 w-5 mr-2" />
-                Générer un document
-              </h2>
-              
-              {/* Sélecteur de type de document selon maquette */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <button
-                  onClick={() => setDocumentType('bail')}
-                  className={`p-6 rounded-xl border-2 transition-all ${
-                    documentType === 'bail' 
-                      ? 'border-rouge-burkina bg-rouge-burkina/5' 
-                      : 'border-gris-clair hover:border-rouge-burkina/50'
-                  }`}
-                >
-                  <div className="text-center">
-                    <FileText className={`h-12 w-12 mx-auto mb-3 ${
-                      documentType === 'bail' ? 'text-rouge-burkina' : 'text-terre-sombre/40'
-                    }`} />
-                    <h3 className="font-poppins font-bold text-terre-sombre mb-2">
+        {/* Navigation par onglets */}
+        <div className="bg-white rounded-lg shadow-lg mb-8">
+          <div className="flex border-b border-gray-200">
+            {[
+              { id: 'generator', label: 'Générateur', icon: FileText },
+              { id: 'sign', label: 'Signature', icon: Shield },
+              { id: 'management', label: 'Contrats', icon: Home },
+              { id: 'receipts', label: 'Quittances', icon: Receipt }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id as any)}
+                className={`flex-1 flex items-center justify-center py-4 px-6 text-sm font-medium border-b-2 transition-colors ${
+                  activeTab === tab.id
+                    ? 'border-rouge-burkina text-rouge-burkina bg-red-50'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }`}
+              >
+                <tab.icon className="w-4 h-4 mr-2" />
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Contenu des onglets */}
+          <div className="p-6">
+            {activeTab === 'generator' && (
+              <div className="space-y-6">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Générateur de Documents</h2>
+                  <p className="text-gray-600">Créez vos baux électroniques et quittances en quelques étapes</p>
+                </div>
+
+                {/* Choix du type de document */}
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div className="bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-200 rounded-xl p-6 text-center">
+                    <FileText className="h-12 w-12 text-red-600 mx-auto mb-4" />
+                    <h3 className="text-xl font-bold text-red-800 mb-2">
                       🧾 Créer un bail
                     </h3>
-                    <p className="text-terre-sombre/60 font-nunito text-sm">
+                    <p className="text-red-700/80 text-sm mb-4">
                       Bail électronique légal avec signature numérique
                     </p>
-                    <p className="text-rouge-burkina font-poppins font-bold mt-2">
+                    <p className="text-red-600 font-bold text-lg">
                       {tarifs.bail} FCFA
                     </p>
                   </div>
-                </button>
-                
-                <button
-                  onClick={() => setDocumentType('quittance')}
-                  className={`p-6 rounded-xl border-2 transition-all ${
-                    documentType === 'quittance' 
-                      ? 'border-vert-sahel bg-vert-sahel/5' 
-                      : 'border-gris-clair hover:border-vert-sahel/50'
-                  }`}
-                >
-                  <div className="text-center">
-                    <CreditCard className={`h-12 w-12 mx-auto mb-3 ${
-                      documentType === 'quittance' ? 'text-vert-sahel' : 'text-terre-sombre/40'
-                    }`} />
-                    <h3 className="font-poppins font-bold text-terre-sombre mb-2">
+                  
+                  <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-200 rounded-xl p-6 text-center">
+                    <Receipt className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <h3 className="text-xl font-bold text-blue-800 mb-2">
                       💳 Générer une quittance
                     </h3>
-                    <p className="text-terre-sombre/60 font-nunito text-sm">
+                    <p className="text-blue-700/80 text-sm mb-4">
                       Quittance mensuelle avec QR code vérifiable
                     </p>
-                    <p className="text-vert-sahel font-poppins font-bold mt-2">
+                    <p className="text-blue-600 font-bold text-lg">
                       {tarifs.quittance} FCFA
                     </p>
                   </div>
-                </button>
-              </div>
-              
-              {/* Étapes du processus selon maquette */}
-              <div className="mb-8">
-                <div className="flex items-center justify-between mb-4">
-                  {['Informations', 'Adresse', 'Montant', 'Paiement'].map((step, index) => (
-                    <div key={index} className="flex items-center">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                        currentStep > index + 1 
-                          ? 'bg-vert-sahel text-white' 
-                          : currentStep === index + 1
-                          ? 'bg-rouge-burkina text-white'
-                          : 'bg-gris-clair text-terre-sombre/40'
-                      }`}>
-                        {currentStep > index + 1 ? '✓' : index + 1}
-                      </div>
-                      <span className={`ml-2 text-sm font-nunito ${
-                        currentStep >= index + 1 ? 'text-terre-sombre' : 'text-terre-sombre/40'
-                      }`}>
-                        {step}
-                      </span>
-                      {index < 3 && (
-                        <div className={`w-8 h-0.5 mx-2 ${
-                          currentStep > index + 1 ? 'bg-vert-sahel' : 'bg-gris-clair'
-                        }`}></div>
-                      )}
-                    </div>
-                  ))}
+                </div>
+
+                {/* Générateur de bail numérique */}
+                <DigitalLeaseGenerator onLeaseGenerated={handleLeaseGenerated} />
+
+                {/* Générateur de quittance (démo) */}
+                <div className="border-t border-gray-200 pt-8">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">Générateur de Quittance</h3>
+                  <ElectronicReceipt
+                    paymentData={{
+                      montant: 250000,
+                      mois: 'Novembre',
+                      annee: 2025,
+                      modePaiement: 'Orange Money',
+                      referenceTransaction: 'OM789456123'
+                    }}
+                    onReceiptGenerated={handleReceiptGenerated}
+                  />
                 </div>
               </div>
-              
-              {/* Formulaires selon les étapes */}
-              {currentStep === 1 && (
-                <div className="space-y-6">
-                  <h3 className="font-poppins font-bold text-terre-sombre">1️⃣ Informations bailleur/locataire</h3>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Bailleur */}
-                    <div>
-                      <h4 className="font-nunito font-semibold text-terre-sombre mb-3">Bailleur</h4>
-                      <div className="space-y-3">
-                        <input
-                          type="text"
-                          placeholder="Nom complet"
-                          value={formData.bailleurNom}
-                          onChange={(e) => handleInputChange('bailleurNom', e.target.value)}
-                          className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                        />
-                        <input
-                          type="tel"
-                          placeholder="Téléphone"
-                          value={formData.bailleurPhone}
-                          onChange={(e) => handleInputChange('bailleurPhone', e.target.value)}
-                          className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                        />
-                        <input
-                          type="email"
-                          placeholder="Email"
-                          value={formData.bailleurEmail}
-                          onChange={(e) => handleInputChange('bailleurEmail', e.target.value)}
-                          className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                        />
-                      </div>
-                    </div>
-                    
-                    {/* Locataire */}
-                    <div>
-                      <h4 className="font-nunito font-semibold text-terre-sombre mb-3">Locataire</h4>
-                      <div className="space-y-3">
-                        <input
-                          type="text"
-                          placeholder="Nom complet"
-                          value={formData.locataireNom}
-                          onChange={(e) => handleInputChange('locataireNom', e.target.value)}
-                          className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                        />
-                        <input
-                          type="tel"
-                          placeholder="Téléphone"
-                          value={formData.locatairePhone}
-                          onChange={(e) => handleInputChange('locatairePhone', e.target.value)}
-                          className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                        />
-                        <input
-                          type="email"
-                          placeholder="Email"
-                          value={formData.locataireEmail}
-                          onChange={(e) => handleInputChange('locataireEmail', e.target.value)}
-                          className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                        />
-                      </div>
-                    </div>
-                  </div>
+            )}
+
+            {activeTab === 'sign' && (
+              <div className="space-y-6">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Signature Électronique</h2>
+                  <p className="text-gray-600">Validez vos documents avec une signature électronique sécurisée</p>
                 </div>
-              )}
-              
-              {currentStep === 2 && (
-                <div className="space-y-6">
-                  <h3 className="font-poppins font-bold text-terre-sombre">2️⃣ Adresse du bien</h3>
-                  
-                  <div className="space-y-4">
-                    <input
-                      type="text"
-                      placeholder="Adresse complète du bien"
-                      value={formData.adresseBien}
-                      onChange={(e) => handleInputChange('adresseBien', e.target.value)}
-                      className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                    />
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                      <select
-                        value={formData.ville}
-                        onChange={(e) => handleInputChange('ville', e.target.value)}
-                        className="p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                      >
-                        <option value="Ouagadougou">Ouagadougou</option>
-                        <option value="Bobo-Dioulasso">Bobo-Dioulasso</option>
-                        <option value="Koudougou">Koudougou</option>
-                        <option value="Ouahigouya">Ouahigouya</option>
-                      </select>
-                      
-                      <select
-                        value={formData.typeBien}
-                        onChange={(e) => handleInputChange('typeBien', e.target.value)}
-                        className="p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                      >
-                        <option value="Appartement">Appartement</option>
-                        <option value="Maison">Maison</option>
-                        <option value="Studio">Studio</option>
-                        <option value="Bureau">Bureau</option>
-                      </select>
-                      
-                      <input
-                        type="text"
-                        placeholder="Surface (m²)"
-                        value={formData.surface}
-                        onChange={(e) => handleInputChange('surface', e.target.value)}
-                        className="p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                      />
-                    </div>
-                  </div>
-                </div>
-              )}
-              
-              {currentStep === 3 && (
-                <div className="space-y-6">
-                  <h3 className="font-poppins font-bold text-terre-sombre">3️⃣ Montant et période</h3>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input
-                      type="text"
-                      placeholder="Loyer mensuel (FCFA)"
-                      value={formData.montantLoyer}
-                      onChange={(e) => handleInputChange('montantLoyer', e.target.value)}
-                      className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                    />
-                    
-                    <input
-                      type="text"
-                      placeholder="Dépôt de garantie (FCFA)"
-                      value={formData.depot}
-                      onChange={(e) => handleInputChange('depot', e.target.value)}
-                      className="w-full p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <select
-                      value={formData.dureeMois}
-                      onChange={(e) => handleInputChange('dureeMois', e.target.value)}
-                      className="p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
+
+                {generatedLease ? (
+                  <ElectronicSignature
+                    documentType="bail"
+                    documentData={{
+                      id: generatedLease.id,
+                      signataire: {
+                        nom: generatedLease.locataire.nom,
+                        prenom: generatedLease.locataire.prenom,
+                        telephone: generatedLease.locataire.telephone,
+                        email: generatedLease.locataire.email,
+                        role: 'locataire'
+                      },
+                      documentName: `Bail - ${generatedLease.bien.adresse}`
+                    }}
+                    onSignatureCompleted={handleSignatureCompleted}
+                    onSignatureFailed={handleSignatureFailed}
+                  />
+                ) : (
+                  <div className="text-center py-12">
+                    <Shield className="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">Aucun document à signer</h3>
+                    <p className="text-gray-500 mb-6">
+                      Générez d'abord un bail ou une quittance pour procéder à la signature électronique.
+                    </p>
+                    <ButtonMzaka
+                      variant="primary"
+                      onClick={() => setActiveTab('generator')}
                     >
-                      <option value="6">6 mois</option>
-                      <option value="12">12 mois</option>
-                      <option value="24">24 mois</option>
-                      <option value="36">36 mois</option>
-                    </select>
-                    
-                    <input
-                      type="date"
-                      placeholder="Date de début"
-                      value={formData.dateDebut}
-                      onChange={(e) => handleInputChange('dateDebut', e.target.value)}
-                      className="p-3 border border-gris-clair rounded-lg font-nunito focus:ring-2 focus:ring-vert-sahel focus:border-transparent"
-                    />
+                      Générer un document
+                    </ButtonMzaka>
                   </div>
-                </div>
-              )}
-              
-              {currentStep === 4 && (
-                <div className="space-y-6">
-                  <h3 className="font-poppins font-bold text-terre-sombre">4️⃣ Paiement Mobile Money</h3>
-                  
-                  {!formData.paiementEffectue ? (
-                    <div>
-                      <div className="text-center mb-6 p-4 bg-rouge-burkina/10 rounded-lg">
-                        <p className="text-rouge-burkina font-poppins font-bold text-lg">
-                          Montant à payer: {documentType === 'bail' ? tarifs.bail : tarifs.quittance} FCFA
-                        </p>
-                        <p className="text-terre-sombre/60 font-nunito text-sm">
-                          Paiement sécurisé via Mobile Money
-                        </p>
-                      </div>
-                      
-                      <div className="grid grid-cols-2 gap-4">
-                        {paiementMethods.map((method) => (
-                          <button
-                            key={method.id}
-                            onClick={() => handlePayment(method.id)}
-                            className="p-4 border-2 border-gris-clair rounded-lg hover:border-vert-sahel transition-colors text-left"
-                          >
-                            <div className="flex items-center space-x-3">
-                              <span className="text-2xl">{method.logo}</span>
-                              <div>
-                                <p className="font-nunito font-medium text-terre-sombre">
-                                  {method.name}
-                                </p>
-                                <p className="text-terre-sombre/60 text-sm">
-                                  Paiement instantané
-                                </p>
-                              </div>
-                            </div>
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="text-center p-6 bg-vert-sahel/10 rounded-lg">
-                      <CheckCircle className="h-16 w-16 text-vert-sahel mx-auto mb-4" />
-                      <h3 className="font-poppins font-bold text-vert-sahel mb-2">
-                        Paiement confirmé !
-                      </h3>
-                      <p className="text-terre-sombre/80 font-nunito">
-                        Référence: PM-{Date.now()}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              )}
-              
-              {/* Boutons de navigation */}
-              <div className="flex justify-between mt-8">
-                <ButtonMzaka
-                  variant="outline"
-                  onClick={() => setCurrentStep(Math.max(1, currentStep - 1))}
-                  disabled={currentStep === 1}
-                >
-                  Précédent
-                </ButtonMzaka>
-                
-                {currentStep < 4 ? (
-                  <ButtonMzaka
-                    variant="primary"
-                    onClick={() => setCurrentStep(currentStep + 1)}
-                  >
-                    Suivant
-                  </ButtonMzaka>
-                ) : formData.paiementEffectue ? (
-                  <ButtonMzaka
-                    variant="primary"
-                    onClick={generateDocument}
-                    className="flex items-center"
-                  >
-                    <CheckCircle className="h-4 w-4 mr-2" />
-                    ✅ Générer le PDF
-                  </ButtonMzaka>
-                ) : null}
+                )}
               </div>
+            )}
+
+            {activeTab === 'management' && (
+              <div className="space-y-6">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Gestion des Contrats</h2>
+                  <p className="text-gray-600">
+                    {userType === 'proprietaire' 
+                      ? 'Gérez vos contrats de location et suivez les paiements'
+                      : 'Consultez vos baux et suivez vos engagements'
+                    }
+                  </p>
+                </div>
+
+                <LeaseManagement userType={userType} />
+              </div>
+            )}
+
+            {activeTab === 'receipts' && (
+              <div className="space-y-6">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-4">Gestion des Quittances</h2>
+                  <p className="text-gray-600">
+                    {userType === 'proprietaire' 
+                      ? 'Téléchargez et partagez les quittances de vos locataires'
+                      : 'Téléchargez vos quittances de loyer payées'
+                    }
+                  </p>
+                </div>
+
+                <ReceiptManagement userType={userType} />
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Sidebar d'informations */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Authenticité et sécurité */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="font-poppins font-bold text-terre-sombre mb-4 flex items-center">
+              <Shield className="h-5 w-5 mr-2" />
+              🔒 Authenticité
+            </h3>
+            
+            <div className="space-y-3 text-sm">
+              <div className="flex items-center space-x-2">
+                <CheckCircle className="h-4 w-4 text-vert-sahel" />
+                <span className="font-nunito text-terre-sombre/80">Signature numérique</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <QrCode className="h-4 w-4 text-or-soleil" />
+                <span className="font-nunito text-terre-sombre/80">QR code unique</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 text-rouge-burkina" />
+                <span className="font-nunito text-terre-sombre/80">Horodatage certifié</span>
+              </div>
+            </div>
+            
+            <div className="mt-4 p-3 bg-beige-faso rounded-lg">
+              <p className="text-terre-sombre/60 font-nunito text-xs">
+                Vérification: <span className="font-mono text-terre-sombre">verify.mzaka.bf/QR12345</span>
+              </p>
             </div>
           </div>
           
-          {/* Sidebar - Informations et archives */}
-          <div className="space-y-6">
-            {/* Authentification et vérification */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="font-poppins font-bold text-terre-sombre mb-4 flex items-center">
-                <Shield className="h-5 w-5 mr-2" />
-                🔒 Authenticité
-              </h3>
-              
-              <div className="space-y-3 text-sm">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-vert-sahel" />
-                  <span className="font-nunito text-terre-sombre/80">Signature numérique</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <QrCode className="h-4 w-4 text-or-soleil" />
-                  <span className="font-nunito text-terre-sombre/80">QR code unique</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Clock className="h-4 w-4 text-rouge-burkina" />
-                  <span className="font-nunito text-terre-sombre/80">Horodatage certifié</span>
-                </div>
+          {/* Modèle économique */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="font-poppins font-bold text-terre-sombre mb-4">
+              💰 Tarification
+            </h3>
+            
+            <div className="space-y-3 text-sm">
+              <div className="flex justify-between">
+                <span className="font-nunito text-terre-sombre/80">Bail simple</span>
+                <span className="font-poppins font-bold text-rouge-burkina">1 000 FCFA</span>
               </div>
-              
-              <div className="mt-4 p-3 bg-beige-faso rounded-lg">
-                <p className="text-terre-sombre/60 font-nunito text-xs">
-                  Vérification: <span className="font-mono text-terre-sombre">verify.mzaka.bf/QR12345</span>
-                </p>
+              <div className="flex justify-between">
+                <span className="font-nunito text-terre-sombre/80">Quittance mensuelle</span>
+                <span className="font-poppins font-bold text-rouge-burkina">500 FCFA</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="font-nunito text-terre-sombre/80">Pack annuel (12 quit.)</span>
+                <span className="font-poppins font-bold text-or-soleil">5 000 FCFA</span>
               </div>
             </div>
+
+            <div className="mt-4 p-3 bg-green-50 rounded-lg">
+              <p className="text-green-700 text-xs font-medium">
+                💡 Économisez 40% avec le pack annuel !
+              </p>
+            </div>
+          </div>
+          
+          {/* Support et aide */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="font-poppins font-bold text-terre-sombre mb-4">
+              🆘 Support
+            </h3>
             
-            {/* Modèle économique */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="font-poppins font-bold text-terre-sombre mb-4">
-                💰 Modèle économique
-              </h3>
-              
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="font-nunito text-terre-sombre/80">Bail simple</span>
-                  <span className="font-poppins font-bold text-rouge-burkina">1 000 FCFA</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-nunito text-terre-sombre/80">Quittance mensuelle</span>
-                  <span className="font-poppins font-bold text-rouge-burkina">500 FCFA</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-nunito text-terre-sombre/80">Pack annuel (12quit)</span>
-                  <span className="font-poppins font-bold text-or-soleil">5 000 FCFA</span>
-                </div>
+            <div className="space-y-3 text-sm">
+              <div className="flex items-center space-x-2">
+                <Smartphone className="h-4 w-4 text-blue-600" />
+                <span className="font-nunito text-terre-sombre/80">+226 XX XX XX XX</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <AlertCircle className="h-4 w-4 text-green-600" />
+                <span className="font-nunito text-terre-sombre/80">support@mzaka.bf</span>
               </div>
             </div>
-            
-            {/* Historique des documents */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="font-poppins font-bold text-terre-sombre mb-4">
-                📂 Mes documents
-              </h3>
-              
-              <div className="space-y-3">
-                {documentsGeneres.map((doc) => (
-                  <div key={doc.id} className="p-3 bg-beige-faso rounded-lg">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-xs font-nunito text-terre-sombre/60">{doc.type}</span>
-                      <span className="text-xs font-nunito text-terre-sombre/40">{doc.date}</span>
-                    </div>
-                    <p className="font-nunito text-terre-sombre text-sm mb-2">{doc.titre}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="font-poppins font-bold text-rouge-burkina text-sm">
-                        {doc.montant.toLocaleString()} FCFA
-                      </span>
-                      <div className="flex space-x-1">
-                        <ButtonMzaka variant="outline" className="p-1 text-xs">
-                          <Download className="h-3 w-3" />
-                        </ButtonMzaka>
-                        <ButtonMzaka variant="outline" className="p-1 text-xs">
-                          <Share className="h-3 w-3" />
-                        </ButtonMzaka>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+
+            <div className="mt-4 p-3 bg-blue-50 rounded-lg">
+              <p className="text-blue-700 text-xs">
+                📞 Assistance 24h/24 pour la génération et signature de documents
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Informations légales en pied de page */}
+        <div className="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+          <div className="flex items-start">
+            <Shield className="w-6 h-6 text-blue-600 mr-3 mt-1" />
+            <div className="text-sm text-blue-800">
+              <h4 className="font-semibold mb-2">Conformité légale et sécurité</h4>
+              <ul className="space-y-1 text-xs">
+                <li>• Conformité totale à la législation burkinabé sur les transactions électroniques</li>
+                <li>• Opéré par Infosec Burkina, opérateur certifié ANSSI</li>
+                <li>• Signature électronique avec certificat numérique et horodatage certifié</li>
+                <li>• QR codes de vérification pour l'authenticité de tous les documents</li>
+                <li>• Archive sécurisée avec métadonnées complètes et traçabilité</li>
+              </ul>
             </div>
           </div>
         </div>
